@@ -1,0 +1,1103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+/*header start*/
+.top-header{
+    padding: 30px 50px;
+}
+
+.margins-container{
+    
+}
+
+.margins-container{
+    
+}
+
+.top-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-nav ul{
+    list-style-type: none; 
+    display: flex;
+    justify-content: space-between;
+    justify-content: flex-end;
+    gap: 50px;
+}
+
+.top-nav li{
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    justify-content: center;
+}
+
+.top-nav button{
+    padding: 5px 10px;
+    background-color: #DDF1F3;
+    border:none;
+    font-family: "Poppins", sans-serif;
+}
+
+.top-nav ul li i.fa-search {
+    font-size: 18px;      /* Set the font size of the icon */
+    margin-left: 5px;     /* Add some space between text and icon */
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.secondary-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px; /* Optional: adjust padding for spacing */
+    background-color: white; /* Dark background for header */
+}
+
+.margins-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.secondary-header ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px; /* Space between menu items */
+    margin: 0px;
+    padding: 0;
+}
+
+.secondary-header li {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+.secondary-header li a {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+}
+
+.secondary-header li i {
+    font-size: 12px;
+    margin: 0 5px;
+}
+
+.secondary-header li a:hover {
+    background-color: #E0EED8;
+    border: none;
+    cursor: pointer;
+}
+
+.secondary-header .dropdown {
+    position: relative; /* Important for positioning the dropdown content */
+    margin: auto 30px;
+}
+
+.secondary-header .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #333;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif; /* Ensure Poppins font is applied */
+    font-size: 14px; /* Set font size to 10px */
+}
+
+.secondary-header .dropdown:hover .dropdown-content {
+    display: block; /* Show the dropdown content on hover */
+}
+
+.secondary-header .dropdown-content {
+    display: none; /* Initially hidden */
+    position: absolute;
+    background-color: #65A346;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%; /* Position dropdown below the button */
+    left: 0;
+}
+
+.secondary-header .dropdown-content a {
+    padding: 12px 0px;
+    color: black;
+    text-decoration: none;
+    display: block;
+    margin: 0px;
+}
+
+.secondary-header .dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.secondary-header a {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    margin: 0 30px;
+    padding: 0;
+}
+
+.secondary-header li button {
+    background-color: white;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    
+}
+
+.secondary-header li button:hover {
+    background-color: #E0EED8;
+}
+
+/*header end*/
+
+/*margins-container start*/
+
+.third-bar{
+    display: flex;
+    justify-content: center;
+    background-color: #E0EED8;
+}
+
+.third-bar ul{
+    list-style-type: none; 
+    display: flex;
+    justify-content: space-between;
+    justify-content: flex-end;
+    gap: 100px;
+    margin: 20px 5px;
+}
+
+.third-bar ul li{
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    justify-content: center;
+}
+
+.third-bar ul li a{
+    text-decoration: none;
+    color:black;
+}
+
+.third-bar .btn{
+    background-color: #E0EED8;
+    border:none;
+    color:black;
+}
+
+.third-bar .btn:hover{
+    background-color: #E0EED8;
+    border:none;
+    color:black;
+}
+.third-bar .btn:active{
+    background-color: #E0EED8;
+    border:none;
+    color:black;
+}
+.third-bar .btn:focus{
+    background-color: #E0EED8;
+    border:none;
+    color:black;
+}
+
+#demo1{
+    background-color: #65A346;
+    padding: 40px 200px;
+}
+
+#demo1 a{
+    color: black;
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block; /* Ensure each <a> takes a new line */
+    text-decoration: none; 
+}
+
+#demo2{
+    background-color: #65A346;
+    padding: 40px 200px;
+}
+
+#demo2 a{
+    color: black;
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block; /* Ensure each <a> takes a new line */
+    text-decoration: none; 
+}
+
+#demo2 h4{
+    text-transform: uppercase;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: block; /* Ensure each <a> takes a new line */
+    text-decoration: none; 
+}
+
+#advice{
+    border-right: 2px solid black;
+}
+
+/*margins-container end*/
+
+
+/*banner start*/
+
+
+
+/* Change the color of the icons inside the buttons */
+.banner-carousel .carousel-control-prev-icon,
+.banner-carousel .carousel-control-next-icon {
+   
+    background-color: rgba(255, 255, 255, 1); /* Fully transparent */
+    border-radius: 50%; /* Optional: Make icons circular */ 
+
+}
+
+.banner-carousel .carousel-indicators button{
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    border: none;
+    border-radius: 50px;
+    margin: 5px;
+}
+
+.banner-carousel {
+    overflow: hidden; /* To hide anything that overflows */
+    font-family: "Poppins", sans-serif;
+}
+
+.carousel-inner {
+    height: 400px; /* Set a fixed height for the carousel */
+    overflow: hidden;
+}
+
+.carousel-item {
+    height: 100%; /* Make sure each carousel item takes the full height of the container */
+    
+}
+
+.carousel-item .left {
+    padding: 155px 50px; /* Reduce padding */
+    color: #333;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Vertically center the items */
+    height: 100%; /* Fill the full height */
+    background-color: #65A346;
+}
+
+.carousel-item .left h2 {
+    font-size: 48px; /* Reduced font size for compactness */
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0px; /* Reduced margin to minimize space */
+    color: black;
+}
+
+.carousel-item .left p {
+    font-size: 16px; /* Reduced font size for compactness */
+    margin-bottom: 10px;
+    color: black;
+}
+
+.carousel-item .breadcrumbs {
+    position: absolute;
+    bottom: 10px; /* Adjust the breadcrumbs position */
+    margin-left: 20px; /* Adjust the left margin for breadcrumbs */
+}
+
+.carousel-item .breadcrumbs ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.carousel-item .breadcrumbs li {
+    display: inline;
+    margin-right: 8px; /* Reduced space between list items */
+}
+
+.carousel-item .breadcrumbs a {
+    text-decoration: none;
+    color: #333;
+}
+
+.carousel-item .breadcrumbs i {
+    font-size: 10px; /* Reduced size of the arrow icons */
+    margin: 5px;
+    color: #333;
+}
+
+.carousel-item .right {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.carousel-item .right img {
+    width: 100%; /* Make the image take up the full width */
+    height: 100%; /* Make the image take up the full height */
+    object-fit: cover; /* Maintain aspect ratio while filling the container */
+}
+
+.carousel-item .background-container .box {
+    position: absolute;
+    background-color: #65A346;
+}
+
+.carousel-item .background-container .top-left {
+    top: 0px;
+    left: 0px;
+    width: 130px;
+    height: 130px;
+}
+
+.carousel-item .background-container .middle {
+    top: 50%;
+    left: 200px;
+    width: 130px;
+    height: 130px;
+    transform: translate(-50%, -50%);
+}
+
+.carousel-item .background-container .bottom-left {
+    bottom: 0px;
+    left: 0px;
+    width: 130px;
+    height: 130px;
+}
+
+/*banner end*/
+
+/*main area start*/
+
+.main-content-area{
+    margin: 0px;
+    font-family: "Poppins", sans-serif;
+}
+
+/*jumpto_first start*/
+
+#jumpto_first{
+    padding: 40px;
+    border-radius: 50px ;
+}
+
+#jumpto_first .row{
+    background-color: #F0F4F9;
+    padding: 50px;
+    border-radius: 50px;
+}
+
+#jumpto_first .left{
+    padding: 0px 60px;
+}
+
+#jumpto_first .left h2{
+    font-weight: 600;
+    
+}
+
+#jumpto_first .left .underline{
+    height: 10px;
+    width: 40px;
+    background-color: #65A346;
+    
+}
+
+#jumpto_first .left p{
+    text-align: justify;
+    margin-top: 30px;
+}
+
+#jumpto_first .left button{
+    margin: 30px 0px;
+    padding: 10px 20px;
+    background-color: #65A346;
+    border: none;
+}
+
+#jumpto_first .right{
+    display: flex;
+    align-items: center;
+}
+
+#jumpto_first .right img{
+    height: 300px;
+    width: auto;
+}
+
+#jumpto_first .right .about_box{
+    background-color: #65A346;
+    width: 60px;
+    height: 60px;
+    position: absolute; /* Absolute positioning */
+    top: 50%; /* Position it vertically in the center */
+    left: 450px; /* Position it on the left half (adjust as needed) */
+    transform: translateY(-50%); /* Vertically center it */
+    background-color: #65A346;
+}
+
+/*jumpto_first end*/
+
+/*jumpto_second start*/
+#jumpto_second{
+                
+}
+
+#jumpto_second .left{
+    display: flex; 
+    align-items: top;
+    padding: 0px 40px;
+}
+
+#jumpto_second .circle{
+    height: 30px;
+    width: 30px;
+    background-color: #ECF4E8;
+    border: none;
+    border-radius: 30px;
+}
+
+#jumpto_second .circle i{
+    color: #65A346;
+    margin: 9px;
+}
+
+#jumpto_second .left p{
+    margin: 0;
+    text-decoration: underline;
+}
+
+#jumpto_second .middle{
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+#jumpto_second .middle iframe {
+    width: 100%;
+    height: 300px;
+}
+
+#jumpto_second .middle p{
+    margin: 40px 10px;
+    font-size: 18px;
+}
+
+/*jumpto_second end*/
+
+
+/*jumpto_third start*/
+
+#jumpto_third{
+
+}
+
+#jumpto_third p{
+    font-size: 18px;
+}
+
+#jumpto_third h3{
+    font-weight: 600;
+}
+
+#jumpto_third h3,
+#jumpto_third p{
+    margin: 5% 20%;
+}
+
+/*jumpto_third end*/
+
+/*jumpto_fourth start*/
+
+#jumpto_fourth{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center all content inside */
+    padding: 20px 0; /* Optional, if you want some spacing around the section */
+    
+}
+
+#jumpto_fourth h3{
+    font-weight: 600;
+    margin: 20px 0px;
+    text-align: center; /* Center the heading */    
+}
+
+#jumpto_fourth button{
+    display: flex;
+    justify-content: space-between; /* Pushes text to the left, icon to the right */
+    align-items: center; /* Vertically center the text and icon */
+    width: 600px;
+    margin: 0px auto;
+    font-size: 24px;
+    font-weight: 600;
+    background-color: white;
+    color: #333;
+    text-align: left;
+    border-top:1px solid #333; 
+    padding: 40px 10px;
+}
+
+#jumpto_fourth .btn .fa{
+   
+}
+
+#jumpto_fourth button:focus{
+    display: flex;
+    justify-content: space-between; /* Pushes text to the left, icon to the right */
+    align-items: center; /* Vertically center the text and icon */
+    width: 600px;
+    margin: 0px;
+    font-size: 24px;
+    font-weight: 600;
+    background-color: white;
+    color: #333;
+    text-align: left;
+    border-top:1px solid #333; 
+    padding: 40px 10px;
+}
+
+
+#jumpto_fourth p{
+    text-align: justify;
+    width: 600px;
+    margin: 10px auto; /* Centers the paragraph and gives spacing */
+}
+
+/*jumpto_fourth end*/
+
+/*jumpto_fifth start*/
+#jumpto_fifth{
+    height: 200px; /* Set a height for the section (or use 100vh for full viewport height) */
+    display: flex;
+    justify-content: center; /* Center the contents horizontally */
+    align-items: center; /* Center the contents vertically */
+}
+
+#jumpto_fifth .margins-container{
+    width: 100%; /* Make sure the container takes the full width of the section */
+    display: flex;
+    justify-content: flex-start; /* Align the item to the left horizontally */
+    align-items: center; /* Vertically center the content */
+}
+
+#jumpto_fifth h3{
+    font-weight: 600;
+    margin: 60px 0px;
+    margin-left: 405px;
+}
+/*jumpto_fifth end*/
+
+/*jumpto_sixth start*/
+
+
+#jumpto_sixth {
+    padding: 20px 0;
+}
+
+/* Container Styles */
+#jumpto_sixth .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Aligns content to the top */
+    align-items: flex-start; /* Aligns items to the left */
+    margin: 0 auto; /* Centers the container horizontally */
+}
+
+#jumpto_sixth h3 {
+    font-weight: 600;
+    margin-left: 260px; /* Aligns h4 to the right */
+    margin-bottom: 80px; /* Adds space below the heading */
+}
+
+
+/* Heading Styles */
+#jumpto_sixth h4 {
+    font-weight: 600;
+    margin-left: 260px; /* Aligns h4 to the right */
+    margin-bottom: 80px; /* Adds space below the heading */
+}
+
+/* iframe Styles */
+#jumpto_sixth iframe {
+    height: 400px;
+    width: 800px;
+    margin: 0 20%; /* Centers the iframe */
+}
+
+/* Graph Details (h5 Elements) */
+#jumpto_sixth .graph_details {
+    display: flex;
+    gap: 70px; /* Adds space between the h5 elements */
+    flex-wrap: wrap; /* Allows wrapping if necessary */
+    margin-left: 320px; /* Centers the graph details */
+    margin-bottom: 50px; /* Adds space below the graph details */
+}
+
+#jumpto_sixth .graph_details h5 {
+    margin: 0; /* Removes any default margin */
+}
+
+/* Paragraph Styles */
+#jumpto_sixth p {
+    border-bottom: 1px solid gray; /* Adds a bottom border */
+    margin-left: 250px; /* Aligns paragraph to the left */
+    margin-right: 150px; /* Adds space on the right side */
+    text-align: justify; /* Justifies the text */
+    font-weight: 600;
+    line-height: 1.6; /* Improves line spacing */
+    margin-bottom: 30px; /* Adds space below the paragraph */
+}
+
+/* Logo (Body Logo) Styles */
+#jumpto_sixth .body_logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-left: 900px; /* Moves the logo to the right */
+    margin-top: 0px; /* Adds space above the logo */
+}
+
+/*jumpto_sixth end*/
+
+/*jumpto_seventh start*/
+
+
+#jumpto_seventh {
+    padding: 20px 0;
+}
+
+/* Container Styles */
+#jumpto_seventh .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Aligns content to the top */
+    align-items: flex-start; /* Aligns items to the left */
+    margin: 0 auto; /* Centers the container horizontally */
+}
+
+/* Heading Styles */
+#jumpto_seventh h4 {
+    font-weight: 600;
+    margin-left: 260px; /* Aligns h4 to the right */
+    margin-bottom: 80px; /* Adds space below the heading */
+}
+
+/* iframe Styles */
+#jumpto_seventh iframe {
+    height: 400px;
+    width: 800px;
+    margin: 0 20%; /* Centers the iframe */
+}
+
+/* Graph Details (h5 Elements) */
+#jumpto_seventh .graph_details {
+    display: flex;
+    gap: 70px; /* Adds space between the h5 elements */
+    flex-wrap: wrap; /* Allows wrapping if necessary */
+    margin-left: 320px; /* Centers the graph details */
+    margin-bottom: 50px; /* Adds space below the graph details */
+}
+
+#jumpto_seventh .graph_details h5 {
+    margin: 0; /* Removes any default margin */
+}
+
+/* Paragraph Styles */
+#jumpto_seventh p {
+    border-bottom: 1px solid gray; /* Adds a bottom border */
+    margin-left: 250px; /* Aligns paragraph to the left */
+    margin-right: 150px; /* Adds space on the right side */
+    text-align: justify; /* Justifies the text */
+    font-weight: 600;
+    line-height: 1.6; /* Improves line spacing */
+    margin-bottom: 30px; /* Adds space below the paragraph */
+}
+
+/* Logo (Body Logo) Styles */
+#jumpto_seventh .body_logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-left: 900px; /* Moves the logo to the right */
+    margin-top: 0px; /* Adds space above the logo */
+}
+
+
+/*jumpto_seventh end*/
+
+/*jumpto_eighth start*/
+
+
+#jumpto_eighth {
+    padding: 20px 0;
+}
+
+/* Container Styles */
+#jumpto_eighth .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Aligns content to the top */
+    align-items: flex-start; /* Aligns items to the left */
+    margin: 0 auto; /* Centers the container horizontally */
+}
+
+#jumpto_eighth h3 {
+    font-weight: 600;
+    margin-left: 260px; /* Aligns h4 to the right */
+    margin-bottom: 80px; /* Adds space below the heading */
+}
+
+/* Heading Styles */
+#jumpto_eighth h4 {
+    font-weight: 600;
+    margin-left: 260px; /* Aligns h4 to the right */
+    margin-bottom: 80px; /* Adds space below the heading */
+}
+
+/* iframe Styles */
+#jumpto_eighth iframe {
+    height: 400px;
+    width: 800px;
+    margin: 0 20%; /* Centers the iframe */
+}
+
+/* Graph Details (h5 Elements) */
+#jumpto_eighth .graph_details {
+    display: flex;
+    gap: 70px; /* Adds space between the h5 elements */
+    flex-wrap: wrap; /* Allows wrapping if necessary */
+    margin-left: 320px; /* Centers the graph details */
+    margin-bottom: 50px; /* Adds space below the graph details */
+}
+
+#jumpto_eighth .graph_details h5 {
+    margin: 0; /* Removes any default margin */
+}
+
+/* Paragraph Styles */
+#jumpto_eighth p {
+    border-bottom: 1px solid gray; /* Adds a bottom border */
+    margin-left: 250px; /* Aligns paragraph to the left */
+    margin-right: 150px; /* Adds space on the right side */
+    text-align: justify; /* Justifies the text */
+    font-weight: 600;
+    line-height: 1.6; /* Improves line spacing */
+    margin-bottom: 30px; /* Adds space below the paragraph */
+}
+
+/* Logo (Body Logo) Styles */
+#jumpto_eighth .body_logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-left: 900px; /* Moves the logo to the right */
+    margin-top: 0px; /* Adds space above the logo */
+}
+
+/*jumpto_eighth start*/
+
+/*jumpto_ninth strat*/
+
+#jumpto_ninth {
+    padding: 20px 0;
+}
+
+/* Container Styles */
+#jumpto_ninth .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Aligns content to the top */
+    align-items: flex-start; /* Aligns items to the left */
+    margin: 0 auto; /* Centers the container horizontally */
+}
+
+/* Heading Styles */
+#jumpto_ninth h4 {
+    font-weight: 600;
+    margin-left: 260px; /* Aligns h4 to the right */
+    margin-bottom: 80px; /* Adds space below the heading */
+}
+
+/* iframe Styles */
+#jumpto_ninth iframe {
+    height: 400px;
+    width: 800px;
+    margin: 0 20%; /* Centers the iframe */
+}
+
+/* Graph Details (h5 Elements) */
+#jumpto_ninth .graph_details {
+    display: flex;
+    gap: 70px; /* Adds space between the h5 elements */
+    flex-wrap: wrap; /* Allows wrapping if necessary */
+    margin-left: 320px; /* Centers the graph details */
+    margin-bottom: 50px; /* Adds space below the graph details */
+}
+
+#jumpto_ninth .graph_details h5 {
+    margin: 0; /* Removes any default margin */
+}
+
+/* Paragraph Styles */
+#jumpto_ninth p {
+    border-bottom: 1px solid gray; /* Adds a bottom border */
+    margin-left: 250px; /* Aligns paragraph to the left */
+    margin-right: 150px; /* Adds space on the right side */
+    text-align: justify; /* Justifies the text */
+    font-weight: 600;
+    line-height: 1.6; /* Improves line spacing */
+    margin-bottom: 30px; /* Adds space below the paragraph */
+}
+
+/* Logo (Body Logo) Styles */
+#jumpto_ninth .body_logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-left: 900px; /* Moves the logo to the right */
+    margin-top: 0px; /* Adds space above the logo */
+}
+
+/*jumpto_ninth end*/
+
+/*jumpto_tenth start*/
+
+
+#jumpto_tenth{
+
+}
+
+#jumpto_tenth p{
+    font-size: 18px;
+}
+
+#jumpto_tenth h3{
+    font-weight: 600;
+}
+
+#jumpto_tenth h3,
+#jumpto_tenth p{
+    margin: 5% 20%;
+}
+
+/*jumpto_tenth end*/
+
+/*jumbo_eleventh start*/
+
+#jumpto_eleventh{
+    margin-bottom: 40px;
+}
+
+#jumpto_eleventh h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: left;
+    margin-left: auto;
+    padding-left: 230px;
+}
+
+/* Targeting the p element */
+#jumpto_eleventh p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left; 
+    margin-bottom: 30px;
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+/* Targeting the button element */
+#jumpto_eleventh button {
+    font-size: 16px;
+    padding: 10px 50px;
+    background-color: black; /* Button color */
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: inline-flex; /* Ensures the icon aligns with the text */
+    align-items: center; /* Aligns the icon vertically with the text */
+    margin-left: 230px;
+}
+
+/* Button hover effect */
+#jumpto_eleventh button:hover {
+    background-color: #0056b3; /* Darker color on hover */
+}
+
+/* Targeting the icon inside the button */
+#jumpto_eleventh button i {
+    margin-left: 8px; /* Adds space between the text and icon */
+}
+
+/*jumbo_eleventh end*/
+
+/*main area end*/
+
+/*further_reading start*/
+
+.further_reading{
+    background-color: #F0F4F9;
+    padding: 100px 50px;
+}
+
+.further_reading .row h2{
+    font-weight: 600;
+}
+
+.further_reading .row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.further_reading .box1,
+.further_reading .box2, 
+.further_reading .box3{
+    background-color: white;
+    width: 300px;
+    margin: 10px;
+    border-radius: 20px;
+    position: relative; /* Set relative positioning for the box */
+    padding: 20px; /* Add padding inside the box */
+    box-sizing: border-box; /* Ensure padding doesn't affect width/height */
+    display: flex;
+    flex-direction: column; /* Ensures content inside the box stacks vertically */
+    justify-content: space-between; /* Ensures proper space between elements */
+}
+
+
+.further_reading .row h3{
+    font-weight: 600;
+}
+
+.further_reading .row p{
+    margin-top: 10px; /* Ensure p starts a little further from h3 */
+}
+
+.further_reading .fa{
+    position: absolute; /* Absolutely position the icon inside the box */
+    bottom: 10px; /* Position it 10px from the bottom of the box */
+    right: 10px; /* Position it 10px from the right of the box */
+    font-size: 20px; /* Set a size for the icon */
+}
+
+/*further_reading end*/
+
+/*update_date start*/
+#update_date{
+    background-color: white;
+    display:flex;
+    justify-content: flex-end;
+}
+
+#update_date p{
+    margin-right: 100px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+/*update_date end*/
+
+/*footer strat*/
+footer .container-fluid{
+    background-color: #E5ECF3;
+    padding:100px 50px;
+}
+
+footer h2{
+    font-weight: 600;
+    margin: 0;
+}
+
+footer h4{
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+footer ul{
+    
+}
+
+footer ul li{
+    list-style-type: none;
+    margin: 10px 0px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+}
+
+.footer_end{
+
+}
+
+.footer_end h4{
+    margin: 0;
+    font-size: 18px;
+}
+
+.footer_end button{
+    margin-top: 50px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+}
+
+/*footer end*/
+
+/*footer_bottom start*/
+
+.footer_bottom {
+    background-color: white; /* Dark background for footer */
+    padding: 20px 0; /* Padding to create space inside the footer */
+}
+
+.footer_bottom .container-fluid {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+}
+
+.footer_bottom ul {
+    list-style-type: none; /* Remove default list bullets */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Display list items in a row */
+}
+
+.footer_bottom li {
+    margin: 0 20px; /* Add horizontal spacing between list items */
+    font-size: 16px; /* Set the font size */
+    color: #333; /* Text color */
+    font-family: "Poppins", sans-serif;
+}
+
+.footer_bottom li:hover {
+    text-decoration: underline; /* Add underline on hover for better interactivity */
+}
+
+/*footer_bottom end*/

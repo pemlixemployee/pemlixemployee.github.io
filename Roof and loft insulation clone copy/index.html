@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Pemlix</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/style.css"><!--css file included-->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"><!--Bootstrap5 included-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script><!--Bootstrap5 included-->
+
+  <!--fonts include-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!--font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <!--jQuery include-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <!--bootstrap3 include-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+   
+    <header>
+        <div class="top-header">
+            <div class="d-flex flex-row-reverse" class="margins-container">
+                <div class="top-nav" area-label="functional">
+                    <ul>
+                        <li>Contact</li>
+                        <li>Location:<a>All</a></li>
+                        <li>Search<i class="fa fa-search" aria-hidden="true"></i></li>
+                        <li><button>Get a Code</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="secondary-header">
+            <div class="margins-container">
+                <a>Logo</a>
+                <nav id="site-navigation-nav" area-label="main site">
+                    <ul>
+                        <li class="dropdown">
+                            <button class="dropbtn">
+                                About Us
+                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </botton class="dropdown">
+                            <div class="dropdown-content">
+                                <a href="#">Our Team</a>
+                                <a href="#">Server</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <button class="dropbtn">
+                                Products
+                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </botton class="dropdown">
+                            <div class="dropdown-content">
+                                <a href="#">Solar Panel</a>
+                                <a href="#">Home Improvement</a>
+                                <a href="#">Home Insulation</a>
+                                <a href="#">Windows & Doors Improvement</a>
+                            </div>
+                        </li>
+                        <li><a>Gallery</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Privacy Policy</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <!--third nav area start -->
+    <div class="third-bar">
+        <ul>
+            <li>
+                <button type="button" class="btn" data-toggle="collapse" data-target="#demo1">
+                    I'm looking for...
+                    <i class="fa fa-caret-down" aria-hidden="true"></i>
+                </button>
+            </li>
+            <li>
+                <button type="button" class="btn" data-toggle="collapse" data-target="#demo2">
+                    Home energy advice
+                    <i class="fa fa-caret-down" aria-hidden="true"></i>
+                </button>
+            </li>
+            <li><a href="#">Heat pumps</a></li>
+            <li><a href="#">Financial support</a></li>
+            <li><a href="#">Energy tools and calculators</a></li>
+        </ul>
+        
+    </div>
+    <div id="demo1" class="collapse">
+        <a href="#">Quick tips to save energy</a>
+        <a href="#">Inspiration for my next home improvement project</a>
+        <a href="#">How to save money on my energy bills</a>
+        <a href="#">Help for my community</a>
+        <a href="#">Case studies</a>
+    </div>
+    <div id="demo2" class="collapse">
+        <div class="container">
+            <div class="row">
+                    <div class="col-sm-8">
+                        <div class="row" id="advice">
+                                <h4 class="dropdown-label">Practical advice</h4>
+                                <div class="col-sm-6">
+                                    <a>Heating your home</a>
+                                    <a>Reducing home heat loss</a>
+                                    <a>Renewable energy generation</a>
+                                    <a>Fixing damp and condensation</a>
+                                </div>
+                                <div class="col-sm-6">
+                                    <a>Buying energy efficient products</a>
+                                    <a>How to switch energy supplier</a>
+                                    <a>Saving water at home</a>
+                                    <a>Energy storage options explained</a>
+                                </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-4">
+                        <h4 class="dropdown-label">Energy efficient guides</h4>
+                        <a>Energy performance certificates explained</a>
+                        <a>Smart meters explained</a>
+                    </div>
+            </div>
+        </div>
+    </div>
+   
+    <!--third nav area end-->
+
+
+
+
+    <!--banner start-->
+    <div class="banner-carousel">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicators (optional) -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            
+            <!-- Carousel items (the banner containers) -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container-fluid">
+                        <div class="row banner1">
+                            <div class="col-sm-7 left">
+                                <p>Our Products</p>
+                                <h2>Loft Insulation</h2>
+                                <nav class="breadcrumbs">
+                                    <ul>
+                                        <li><a href="#">Home</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
+                                        <li><a href="#">Energy at home</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
+                                        <li><a href="#">Reducing home heat loss</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
+                                        <li><a href="#">Roof and loft insulation</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="col-sm-5 right">
+                                <img src="images/Loft Insulation.jpg" alt="bed">
+                                <div class="background-container">
+                                    <div class="box top-left"></div>
+                                    <div class="box middle"></div>
+                                    <div class="box bottom-left"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Second Banner -->
+                <div class="carousel-item">
+                    <div class="container-fluid">
+                        <div class="row banner2">
+                            <div class="col-sm-7 left">
+                                <p>Our Products</p>
+                                <h2>Solar Panel</h2>
+                                <nav class="breadcrumbs">
+                                    <ul>
+                                        <li><a href="#">Home</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
+                                        <li><a href="#">Energy at home</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
+                                        <li><a href="#">Reducing home heat loss</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
+                                        <li><a href="#">Roof and loft insulation</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="col-sm-5 right">
+                                <img src="images/Solar Panel.jpg" alt="bed">
+                                <div class="background-container">
+                                    <div class="box top-left"></div>
+                                    <div class="box middle"></div>
+                                    <div class="box bottom-left"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Third Banner -->
+                <div class="carousel-item">
+                    <div class="container-fluid">
+                        <div class="row banner3">
+                            <div class="col-sm-7 left">
+                                <p>Our Products</p>
+                                <h2>Home Improvement</h2>
+                                <nav class="breadcrumbs">
+                                    <ul>
+                                        <li><a href="#">Home</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
+                                        <li><a href="#">Energy at home</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
+                                        <li><a href="#">Reducing home heat loss</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
+                                        <li><a href="#">Roof and loft insulation</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="col-sm-5 right">
+                                <img src="images/GettyImages.jpg" alt="bed">
+                                <div class="background-container">
+                                    <div class="box top-left"></div>
+                                    <div class="box middle"></div>
+                                    <div class="box bottom-left"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Fourth Banner -->
+                <div class="carousel-item">
+                    <div class="container-fluid">
+                        <div class="row banner4">
+                            <div class="col-sm-7 left">
+                                <p>Our Products</p>
+                                <h2>Windows & Doors Improvement</h2>
+                                <nav class="breadcrumbs">
+                                    <ul>
+                                        <li><a href="#">Home</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
+                                        <li><a href="#">Energy at home</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
+                                        <li><a href="#">Reducing home heat loss</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
+                                        <li><a href="#">Roof and loft insulation</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="col-sm-5 right">
+                                <img src="images/Windows & Doors Improvement.jpg" alt="bed">
+                                <div class="background-container">
+                                    <div class="box top-left"></div>
+                                    <div class="box middle"></div>
+                                    <div class="box bottom-left"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Left and Right Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    
+    <!--banner end-->
+
+    <!--main area start-->
+    <div class="main-content-area">
+        <!--jumpto_first start-->
+        <section id="jumpto_first">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6 left">
+                        <h2>About Us</h2>
+                        <div class="underline"></div>
+                        <p>Photo resizing often leads to blurry or pixelated images. But with Fotor, you don't have to make that compromise! 
+                            You can effortlessly resize images using our photo resizer online to make your photos smaller or bigger without 
+                            sacrificing quality. Moreover, it supports common image formats, including JPEG, JPG, PNG, WebP, HEIC, HEIF, and
+                             more.</p>
+
+                        <button>Know More</button>
+
+                    </div>
+                    <div class="col-sm-6 right">
+                        <img src="images/about_us.webp" alt="about section image">
+                        <div class="about_box"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--jumpto_first end-->
+
+
+        <!--jumpto_second start-->
+        <section id="jumpto_second">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-3 left">
+                        <div class="circle">
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                        </div>
+                        <p>Why you can trust our data</p>
+                    </div>
+                    <div class="col-sm-6 middle">
+                        <iframe src="https://www.youtube.com/embed/ySc00kho3WE?autoplay=1" frameborder="0" allowfullscreen></iframe>
+
+                        <p>A quarter of heat is lost through the roof in an uninsulated home. 
+                            Insulating your loft, attic or flat roof is an effective way to reduce heat loss and reduce your heating bills.
+                            <br><br>
+                            
+                            Installed correctly, loft insulation should pay for itself many times over in its 40-year lifetime.
+                        </p>
+                    </div>
+                    <div class="col-sm-3 right">
+                        <!--No content-->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--jumpto_second end-->
+
+        <!--jumpto_third start-->
+        <section id="jumpto_third">
+            <div class="container">
+                <h3>Choosing loft insulation</h3>
+                <p>If your loft is easy to access and has no damp or condensation problems, 
+                    it should be easy to insulate – and in many cases, it is possible to do it yourself.
+                    <br><br>
+                    f access is easy and your loft joists are regular, you can use rolls of mineral wool insulation. 
+                    The first layer is laid between the joists – the horizontal beams that make up the floor of the loft 
+                    – then another layer is laid at right angles to cover the joists and make the insulation up to 
+                    the required depth.
+                </p>
+            </div>
+        </section>
+        <!--jumpto_third end-->
+
+        <!--jumpto_fourth start-->
+        <section id="jumpto_fourth">
+            <div class="container">
+                <h3>Things to consider when installing loft insulation</h3>
+
+                    <div id="storage_space">
+                        <button type="button" class="btn" data-toggle="collapse" data-target="#demo">
+                            Storage space
+                            <i class="fa fa-angle-down ml-auto" aria-hidden="true"></i>
+                        </button>
+                        
+                        <p id="demo" class="collapse">
+                            If you plan to use the loft or attic for storage, you will want to lay boards over the joists. 
+                            Unfortunately, if you only insulate between the joists before doing this, the insulation won’t 
+                            be thick enough.
+                            <br><br>
+                            To get enough insulation, you can raise the level of the floor so you can fit enough 
+                            mineral wool beneath the new floor level. You can do this by fitting timber battens across 
+                            the joists, or you can buy purpose-built plastic legs that fit on the joists and support 
+                            the new floor. It’s important to leave a ventilated air gap between the insulation and the 
+                            boards to prevent condensation on the underside of the boards.
+                            <br><br>
+                            Make sure you don’t squash the mineral wool when you fit the boards on top, 
+                            as this will reduce its insulation value.
+                        </p>
+                    </div>
+
+                    <div id="damp_lofts">
+                        <button type="button" class="btn" data-toggle="collapse" data-target="#demo">
+                            Damp lofts
+                            <i class="fa fa-angle-down ml-auto" aria-hidden="true"></i>
+                        </button>
+                        
+                        <p id="demo" class="collapse">
+                            If you plan to use the loft or attic for storage, you will want to lay boards over the joists. 
+                            Unfortunately, if you only insulate between the joists before doing this, the insulation won’t 
+                            be thick enough.
+                            <br><br>
+                            To get enough insulation, you can raise the level of the floor so you can fit enough 
+                            mineral wool beneath the new floor level. You can do this by fitting timber battens across 
+                            the joists, or you can buy purpose-built plastic legs that fit on the joists and support 
+                            the new floor. It’s important to leave a ventilated air gap between the insulation and the 
+                            boards to prevent condensation on the underside of the boards.
+                            <br><br>
+                            Make sure you don’t squash the mineral wool when you fit the boards on top, 
+                            as this will reduce its insulation value.
+                        </p>
+                    </div>
+                    <div id="warm_loft">
+                        <button type="button" class="btn" data-toggle="collapse" data-target="#demo">
+                            Warm loft
+                            <i class="fa fa-angle-down ml-auto" aria-hidden="true"></i>
+                        </button>
+                        
+                        <p id="demo" class="collapse">
+                            If you plan to use the loft or attic for storage, you will want to lay boards over the joists. 
+                            Unfortunately, if you only insulate between the joists before doing this, the insulation won’t 
+                            be thick enough.
+                            <br><br>
+                            To get enough insulation, you can raise the level of the floor so you can fit enough 
+                            mineral wool beneath the new floor level. You can do this by fitting timber battens across 
+                            the joists, or you can buy purpose-built plastic legs that fit on the joists and support 
+                            the new floor. It’s important to leave a ventilated air gap between the insulation and the 
+                            boards to prevent condensation on the underside of the boards.
+                            <br><br>
+                            Make sure you don’t squash the mineral wool when you fit the boards on top, 
+                            as this will reduce its insulation value.
+                        </p>
+                    </div>
+                    <div id="room_in_roof">
+                        <button type="button" class="btn" data-toggle="collapse" data-target="#demo">
+                            Room in roof
+                            <i class="fa fa-angle-down ml-auto" aria-hidden="true"></i>
+                        </button>
+                        
+                        <p id="demo" class="collapse">
+                            If you plan to use the loft or attic for storage, you will want to lay boards over the joists. 
+                            Unfortunately, if you only insulate between the joists before doing this, the insulation won’t 
+                            be thick enough.
+                            <br><br>
+                            To get enough insulation, you can raise the level of the floor so you can fit enough 
+                            mineral wool beneath the new floor level. You can do this by fitting timber battens across 
+                            the joists, or you can buy purpose-built plastic legs that fit on the joists and support 
+                            the new floor. It’s important to leave a ventilated air gap between the insulation and the 
+                            boards to prevent condensation on the underside of the boards.
+                            <br><br>
+                            Make sure you don’t squash the mineral wool when you fit the boards on top, 
+                            as this will reduce its insulation value.
+                        </p>
+                    </div>
+                    <div id="ventilation">
+                        <button type="button" class="btn" data-toggle="collapse" data-target="#demo">
+                            Ventilation
+                            <i class="fa fa-angle-down ml-auto" aria-hidden="true"></i>
+                        </button>
+                        
+                        <p id="demo" class="collapse">
+                            If you plan to use the loft or attic for storage, you will want to lay boards over the joists. 
+                            Unfortunately, if you only insulate between the joists before doing this, the insulation won’t 
+                            be thick enough.
+                            <br><br>
+                            To get enough insulation, you can raise the level of the floor so you can fit enough 
+                            mineral wool beneath the new floor level. You can do this by fitting timber battens across 
+                            the joists, or you can buy purpose-built plastic legs that fit on the joists and support 
+                            the new floor. It’s important to leave a ventilated air gap between the insulation and the 
+                            boards to prevent condensation on the underside of the boards.
+                            <br><br>
+                            Make sure you don’t squash the mineral wool when you fit the boards on top, 
+                            as this will reduce its insulation value.
+                        </p>
+                    </div>
+                    <div id="inaccessible_loft_spaces">
+                        <button type="button" class="btn" data-toggle="collapse" data-target="#demo">
+                            Inaccessible loft spaces
+                            <i class="fa fa-angle-down ml-auto" aria-hidden="true"></i>
+                        </button>
+                        
+                        <p id="demo" class="collapse">
+                            If you plan to use the loft or attic for storage, you will want to lay boards over the joists. 
+                            Unfortunately, if you only insulate between the joists before doing this, the insulation won’t 
+                            be thick enough.
+                            <br><br>
+                            To get enough insulation, you can raise the level of the floor so you can fit enough 
+                            mineral wool beneath the new floor level. You can do this by fitting timber battens across 
+                            the joists, or you can buy purpose-built plastic legs that fit on the joists and support 
+                            the new floor. It’s important to leave a ventilated air gap between the insulation and the 
+                            boards to prevent condensation on the underside of the boards.
+                            <br><br>
+                            Make sure you don’t squash the mineral wool when you fit the boards on top, 
+                            as this will reduce its insulation value.
+                        </p>
+                    </div>
+                    <div id="flat_roofs">
+                        <button type="button" class="btn" data-toggle="collapse" data-target="#demo">
+                            Flat roofs
+                            <i class="fa fa-angle-down ml-auto" aria-hidden="true"></i>
+                        </button>
+                        
+                        <p id="demo" class="collapse">
+                            If you plan to use the loft or attic for storage, you will want to lay boards over the joists. 
+                            Unfortunately, if you only insulate between the joists before doing this, the insulation won’t 
+                            be thick enough.
+                            <br><br>
+                            To get enough insulation, you can raise the level of the floor so you can fit enough 
+                            mineral wool beneath the new floor level. You can do this by fitting timber battens across 
+                            the joists, or you can buy purpose-built plastic legs that fit on the joists and support 
+                            the new floor. It’s important to leave a ventilated air gap between the insulation and the 
+                            boards to prevent condensation on the underside of the boards.
+                            <br><br>
+                            Make sure you don’t squash the mineral wool when you fit the boards on top, 
+                            as this will reduce its insulation value.
+                        </p>
+                    </div>
+            </div>
+        </section>
+        <!--jumpto_fourth end-->
+
+
+        <!--jumpto_fifth start-->
+        <section id="jumpto_fifth">
+
+            <div class="margins-container">
+                
+                <h3>Costs and savings</h3>
+
+            </div>
+            
+        </section>
+        <!--jumpto_fifth end-->
+
+        <!--jumpto_sixth start-->
+        <section id="jumpto_sixth">
+            <div class="container">
+
+                <h3>England, Scotland and Wales</h3>
+
+                <h4>0mm - 270mm loft insulation</h4>
+
+                <iframe src="https://e.infogram.com/_/8eNh4o3cPNMXuH8A16MV?parent_url=https%3A%2F%2Fenergysavingtrust.org.uk%2Fadvice%2Froof-and-loft-insulation%2F&src=embed#async_embed" frameboard="0" scrolling="no" allowfullscreen></iframe>
+
+                <div class="graph_details">
+                    <h5>Detached house</h5>
+                    <h5>Semi-detached house</h5>
+                    <h5>Mid-terrace house</h5>
+                    <h5>Detached bungalow</h5>
+                </div>
+
+                <p>Estimates based insulating a gas-heated home with a totally uninsulated loft (0mm) with 270mm of loft insulation. The recommended depth of mineral wool insulation is 270mm, but other materials need different depths. The average professional installation cost is unsubsidised, but prices will vary. 
+                    Figures are based on fuel prices as of October 2024. Find out more about how we made these calculations.</p>
+
+                <a class="body_logo">Logo</a>    
+            </div>
+        </section>
+        <!--jumpto_sixth end-->
+
+        <!--jumpto_seventh start-->
+        <section id="jumpto_seventh">
+            <div class="container">
+
+                <h4>120mm - 270mm loft insulation</h4>
+
+                <iframe src="https://e.infogram.com/_/8eNh4o3cPNMXuH8A16MV?parent_url=https%3A%2F%2Fenergysavingtrust.org.uk%2Fadvice%2Froof-and-loft-insulation%2F&src=embed#async_embed" frameboard="0" scrolling="no" allowfullscreen></iframe>
+
+                <div class="graph_details">
+                    <h5>Detached house</h5>
+                    <h5>Semi-detached house</h5>
+                    <h5>Mid-terrace house</h5>
+                    <h5>Detached bungalow</h5>
+                </div>
+
+                <p>Estimates based insulating a gas-heated home with a totally uninsulated loft (0mm) with 270mm of loft insulation. The recommended depth of mineral wool insulation is 270mm, but other materials need different depths. The average professional installation cost is unsubsidised, but prices will vary. 
+                    Figures are based on fuel prices as of October 2024. Find out more about how we made these calculations.</p>
+
+                <a class="body_logo">Logo</a>    
+            </div>
+        </section>
+        <!--jumpto_seventh end-->
+
+        <!--jumpto_eighth start-->
+        <section id="jumpto_eighth">
+            <div class="container">
+
+                <h3>Northern Ireland</h3>
+
+                <h4>120mm - 270mm loft insulation</h4>
+
+                <iframe src="https://e.infogram.com/_/8eNh4o3cPNMXuH8A16MV?parent_url=https%3A%2F%2Fenergysavingtrust.org.uk%2Fadvice%2Froof-and-loft-insulation%2F&src=embed#async_embed" frameboard="0" scrolling="no" allowfullscreen></iframe>
+
+                <div class="graph_details">
+                    <h5>Detached house</h5>
+                    <h5>Semi-detached house</h5>
+                    <h5>Mid-terrace house</h5>
+                    <h5>Detached bungalow</h5>
+                </div>
+
+                <p>Estimates based insulating a gas-heated home with a totally uninsulated loft (0mm) with 270mm of loft insulation. The recommended depth of mineral wool insulation is 270mm, but other materials need different depths. The average professional installation cost is unsubsidised, but prices will vary. 
+                    Figures are based on fuel prices as of October 2024. Find out more about how we made these calculations.</p>
+
+                <a class="body_logo">Logo</a>    
+            </div>
+        </section>
+        <!--jumpto_eighth end-->
+
+        <!--jumpto_ninth start-->
+        <section id="jumpto_ninth">
+            <div class="container">
+
+                <h4>120mm - 270mm loft insulation</h4>
+
+                <iframe src="https://e.infogram.com/_/8eNh4o3cPNMXuH8A16MV?parent_url=https%3A%2F%2Fenergysavingtrust.org.uk%2Fadvice%2Froof-and-loft-insulation%2F&src=embed#async_embed" frameboard="0" scrolling="no" allowfullscreen></iframe>
+
+                <div class="graph_details">
+                    <h5>Detached house</h5>
+                    <h5>Semi-detached house</h5>
+                    <h5>Mid-terrace house</h5>
+                    <h5>Detached bungalow</h5>
+                </div>
+
+                <p>Estimates based insulating a gas-heated home with a totally uninsulated loft (0mm) with 270mm of loft insulation. The recommended depth of mineral wool insulation is 270mm, but other materials need different depths. The average professional installation cost is unsubsidised, but prices will vary. 
+                    Figures are based on fuel prices as of October 2024. Find out more about how we made these calculations.</p>
+
+                <a class="body_logo">Logo</a>    
+            </div>
+        </section>
+        <!--jumpto_ninth end-->
+        
+        <!--jumpto_tenth start-->
+        <section id="jumpto_third">
+            <div class="container">
+                <h3>DIY loft insulation</h3>
+                <p>If your loft is easy to access and has no damp or condensation problems, 
+                    it should be easy to insulate – and in many cases, it is possible to do it yourself.
+                    <br><br>
+                    f access is easy and your loft joists are regular, you can use rolls of mineral wool insulation. 
+                    The first layer is laid between the joists – the horizontal beams that make up the floor of the loft 
+                    – then another layer is laid at right angles to cover the joists and make the insulation up to 
+                    the required depth.
+                </p>
+            </div>
+
+            <div class="container">
+                <h3>Pipes, water tank and loft hatch</h3>
+                <p>If your loft is easy to access and has no damp or condensation problems, 
+                    it should be easy to insulate – and in many cases, it is possible to do it yourself.
+                    <br><br>
+                    f access is easy and your loft joists are regular, you can use rolls of mineral wool insulation. 
+                    The first layer is laid between the joists – the horizontal beams that make up the floor of the loft 
+                    – then another layer is laid at right angles to cover the joists and make the insulation up to 
+                    the required depth.
+                </p>
+            </div>
+
+            <div class="container">
+                <h3>Finding an installer</h3>
+                <p>If your loft is easy to access and has no damp or condensation problems, 
+                    it should be easy to insulate – and in many cases, it is possible to do it yourself.
+                    <br><br>
+                    f access is easy and your loft joists are regular, you can use rolls of mineral wool insulation. 
+                    The first layer is laid between the joists – the horizontal beams that make up the floor of the loft 
+                    – then another layer is laid at right angles to cover the joists and make the insulation up to 
+                    the required depth.
+                </p>
+            </div>
+        </section>
+        <!--jumpto_tenth end-->
+
+        <!--jumbo_eleventh start-->
+        <section id="jumpto_eleventh">
+            <div class="container">
+                <h3>Get our monthly newsletter for more advice</h3>
+
+                <p>Sign up to Energywire, our monthly newsletter full of news, advice and tips on energy saving and renewable energy options.</p>
+
+                <button>Sign up<i class="fa fa-sign-in" aria-hidden="true"></i></button>
+            </div>
+        </section>
+        <!--jumbo_eleventh end-->
+        
+
+    </div>
+    <!--main area end-->
+
+
+    <!--further_reading start-->
+    <div class="further_reading">
+        <div class="row">
+            <div class="col-sm-3">
+                <h2>Further reading</h2>
+            </div>
+            <div class="col-sm-9">
+                <div class="row">
+                    <div class="col-sm-4 box1">
+                        <h3>Floor insulation</h3>
+                        <p>Insulating your ground floor is a great way to keep your property warm, as well as lower your energy bills and emissions.</p>
+                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>    
+                    </div>
+                    <div class="col-sm-4 box2">
+                        <h3>How to tackle insulation problems</h3>
+                        <p>Insulating your ground floor is a great way to keep your property warm, as well as lower your energy bills and emissions.</p>
+                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>    
+                    </div>
+                    <div class="col-sm-4 box3">
+                        <h3>Financial support</h3>
+                        <p>Insulating your ground floor is a great way to keep your property warm, as well as lower your energy bills and emissions.</p>
+                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>    
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!--further_reading end-->
+
+    <!--update_date start-->
+    <div class="container-fluid">
+        <div id="update_date">
+            <p>Last updated: 8 November 2024</p>
+        </div>
+    </div>
+    <!--update_date end-->
+
+    <!--footer start-->
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-1 logo">
+                    <h2>Logo</h2>
+                </div>
+                <div class="col-sm-9">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <h4>About</h4>
+                            <ul class="pages">
+                                <li>Compliance</li>
+                                <li>Careers</li>
+                                <li>The Foundation</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
+                            <h4>Latest</h4>
+                            <ul class="pages">
+                                <li>News</li>
+                                <li>Blog</li>
+                                <li>Campaigns</li>
+                                <li>Case studies</li>
+                                <li>Collections</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
+                            <h4>Follow us</h4>
+                            <ul class="pages">
+                                <li>LinkedIn</li>
+                                <li>X (Twitter)</li>
+                                <li>Facebook</li>
+                                <li>Instagram</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2 footer_end">
+                    <h4>Energywire newsletter</h4>
+                    <button>Subscribe to newsletter</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--footer end-->
+
+    <!--footer_bottom start-->
+    <div class="footer_bottom">
+        <div class="container-fluid">
+            <ul>
+                <li>Terms and conditions</li>
+                <li>Privacy policy </li>
+                <li>Cookie policy</li>
+            </ul>
+        </div>
+    </div>
+    <!--footer_bottom start-->
+
+    <script src="js/myScript.js"></script><!--js file included-->
+    
+    
+</body>
+</html>
