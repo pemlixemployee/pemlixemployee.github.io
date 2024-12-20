@@ -164,6 +164,12 @@ body{
     background-color: #cddbf1;
 }
 
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
 /*header end*/
 
 /*margins-container start*/
@@ -260,26 +266,6 @@ body{
 
 
 /*banner start*/
-
-.banner-carousel{
-    padding: 0; /* Ensure no padding */
-    margin: 0; /* Ensure no margin */    
-}
-
-.banner-carousel .carousel-inner{
-    padding: 0; /* Ensure no padding */
-    margin: 0; /* Ensure no margin */    
-}
-
-.banner-carousel .carousel-item{
-    padding: 0; /* Ensure no padding */
-    margin: 0; /* Ensure no margin */
-}
-
-.banner-carousel img{
-    padding: 0; /* Ensure no padding */
-    margin: 0; /* Ensure no margin */
-}
 
 
 /*banner end*/
@@ -506,8 +492,6 @@ body{
 /*jumpto_second end*/
 
 
-
-
 /*jumpto_third start*/
 
 #jumpto_third{
@@ -719,16 +703,8 @@ padding: 50px;
 }
 /*jumpto_seventh end*
 
-
 /*main area end*/
 
-
-
-/*customer_review start*/
-
-
-
-/*customer_review end*/
 
 /*contact us start*/
 
@@ -895,3 +871,473 @@ footer ul li{
 }
 
 /*footer_bottom end*/
+
+
+
+
+
+
+/* Laptop devices (1024px to 1366px) */
+@media (min-width: 1024px) and (max-width: 1366px) {
+
+    /*header start*/
+.top-header{
+    padding: 30px 50px;
+}
+
+.margins-container{
+    
+}
+
+.margins-container{
+    
+}
+
+.top-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-nav ul{
+    list-style-type: none; 
+    display: flex;
+    justify-content: space-between;
+    justify-content: flex-end;
+    gap: 50px;
+}
+
+.top-nav li{
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    justify-content: center;
+}
+
+.top-nav button{
+    padding: 5px 10px;
+    background-color: #cddbf1;
+    border:none;
+    font-family: "Poppins", sans-serif;
+}
+
+.top-nav ul li i.fa-search {
+    font-size: 18px;      /* Set the font size of the icon */
+    margin-left: 5px;     /* Add some space between text and icon */
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.secondary-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Optional: adjust padding for spacing */
+    background-color: white; /* Dark background for header */
+}
+
+.margins-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.secondary-header ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px; /* Space between menu items */
+    margin: 0px;
+    padding: 0;
+}
+
+.secondary-header li {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+.secondary-header li a {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+}
+
+.secondary-header li i {
+    font-size: 12px;
+    margin: 0 5px;
+}
+
+.secondary-header li a:hover {
+    background-color: #cddbf1;
+    border: none;
+    cursor: pointer;
+}
+
+.secondary-header .dropdown {
+    position: relative; /* Important for positioning the dropdown content */
+    margin: auto 30px;
+}
+
+.secondary-header .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #333;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif; /* Ensure Poppins font is applied */
+    font-size: 14px; /* Set font size to 10px */
+    display: flex;
+}
+
+.secondary-header .fa{
+    margin: 5px;
+}
+
+.secondary-header .dropdown:hover .dropdown-content {
+    display: block; /* Show the dropdown content on hover */
+}
+
+.secondary-header .dropdown-content {
+    display: none; /* Initially hidden */
+    position: absolute;
+    background-color: #004aad;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%; /* Position dropdown below the button */
+    left: 0;
+}
+
+.secondary-header .dropdown-content a {
+    padding: 12px 0px;
+    color: black;
+    text-decoration: none;
+    display: block;
+    margin: 0px;
+}
+
+.secondary-header .dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.secondary-header a {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    margin: 0 30px;
+    padding: 0;
+}
+
+.secondary-header li button {
+    background-color: white;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    
+}
+
+.secondary-header li button:hover {
+    background-color: #cddbf1;
+}
+
+/*header end*/
+
+/*margins-container start*/
+
+.third-bar{
+    display: flex;
+    justify-content: center;
+    background-color: #cddbf1;
+}
+
+.third-bar ul{
+    list-style-type: none; 
+    display: flex;
+    justify-content: space-between;
+    justify-content: flex-end;
+    gap: 50px;
+    margin: 20px 5px;
+}
+
+.third-bar ul li{
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    justify-content: center;
+}
+
+.third-bar ul li a{
+    text-decoration: none;
+    color:black;
+}
+
+.third-bar .btn{
+    background-color: #cddbf1;
+    border:none;
+    color:black;
+}
+
+.third-bar .btn:hover{
+    background-color: #cddbf1;
+    border:none;
+    color:black;
+}
+.third-bar .btn:active{
+    background-color: #cddbf1;
+    border:none;
+    color:black;
+}
+.third-bar .btn:focus{
+    background-color: #cddbf1;
+    border:none;
+    color:black;
+}
+
+#demo1{
+    background-color: #004aad;
+    padding: 40px 200px;
+}
+
+#demo1 a{
+    color: black;
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block; /* Ensure each <a> takes a new line */
+    text-decoration: none; 
+}
+
+#demo2{
+    background-color: #004aad;
+    padding: 40px 200px;
+}
+
+#demo2 a{
+    color: black;
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block; /* Ensure each <a> takes a new line */
+    text-decoration: none; 
+}
+
+#demo2 h4{
+    text-transform: uppercase;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: block; /* Ensure each <a> takes a new line */
+    text-decoration: none; 
+}
+
+#advice{
+    border-right: 2px solid black;
+}
+/*margins-container end*/
+
+/*footer strat*/
+footer .container-fluid{
+    background-color: #E5ECF3;
+    padding:100px 50px;
+}
+
+footer h2{
+    font-weight: 600;
+    margin: 0;
+}
+
+footer h4{
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+footer ul{
+    
+}
+
+footer ul li{
+    list-style-type: none;
+    margin: 10px 0px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+}
+
+.footer_end{
+
+}
+
+.footer_end h4{
+    margin: 0;
+    font-size: 18px;
+}
+
+.footer_end button{
+    margin-top: 50px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+}
+
+/*footer end*/
+
+/*footer_bottom start*/
+
+.footer_bottom {
+    background-color: white; /* Dark background for footer */
+    padding: 20px 0; /* Padding to create space inside the footer */
+}
+
+.footer_bottom .container-fluid {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+}
+
+.footer_bottom ul {
+    list-style-type: none; /* Remove default list bullets */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Display list items in a row */
+}
+
+.footer_bottom li {
+    margin: 0 20px; /* Add horizontal spacing between list items */
+    font-size: 16px; /* Set the font size */
+    color: #333; /* Text color */
+    font-family: "Poppins", sans-serif;
+}
+
+.footer_bottom li:hover {
+    text-decoration: underline; /* Add underline on hover for better interactivity */
+}
+
+/*footer_bottom end*/
+    
+}
+
+
+/* Tablet-Specific Styling (768px to 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+    
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+
+    .top-header{
+        padding: 20px 10px;
+    }
+
+    .top-nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .top-nav ul{
+        list-style-type: none; 
+        display: flex;
+        justify-content: space-between;
+        justify-content: flex-end;
+        gap: 25px;
+    }
+
+    .top-nav li{
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        justify-content: center;
+        margin: 0;
+        font-size: 12px;
+    }
+
+    .top-header .search{
+        display: flex;
+    }
+
+    .secondary-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px; /* Optional: adjust padding for spacing */
+    }
+
+    .secondary-header .menu-toggle{
+       margin-left: 100px;
+    }
+
+    .margins-container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    /* Initially hide the navigation links */
+    .secondary-header ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #6B98D6;
+        position: absolute;
+        top: 150px; /* Adjust based on header height */
+        left: 0;
+        z-index: 1;
+    }
+
+    /* Show the menu when the active class is added */
+    .secondary-header ul.active {
+        display: flex;
+    }
+
+    /* Hamburger icon (toggle button) */
+    .menu-toggle {
+        display: block;
+        font-size: 30px;
+        color: #333;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+    }
+
+    /* Hamburger icon using Unicode character for three horizontal lines */
+    .menu-toggle:before {
+        content: "\2630"; /* Unicode for hamburger icon */
+        font-size: 30px;
+        color: #333;
+    }
+
+    /* Style nav items when they are shown in mobile */
+    .secondary-header ul li {
+        width: 100%;
+        padding: 0;
+        text-align: left;
+        border-top: 1px solid white;
+    }
+
+    /* Style links in mobile */
+    .secondary-header ul li a {
+        font-size: 14px;
+        color: white;
+        padding: 10px;
+        width: 100%;
+        display: block;
+    }
+
+    /* Hover effect for links */
+    .secondary-header ul li a:hover {
+        background-color: #cddbf1;
+        cursor: pointer;
+    }
+
+    .secondary-header .dropdown{
+        padding: 0;
+        margin: 0;    
+    }
+
+    .secondary-header .dropbtn{
+        margin-left: 40px;
+    }
+}
+
+
+
+
+
+/*PRODUCT PAGE*/
