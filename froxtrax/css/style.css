@@ -10,11 +10,11 @@ body{
 
 /*header start*/
 .top-header{
-    padding: 30px 50px;
+    padding: 20px 100px;
 }
 
 .margins-container{
-    
+    margin: 0;
 }
 
 .margins-container{
@@ -38,6 +38,34 @@ body{
     font-family: "Poppins", sans-serif;
     text-align: center;
     justify-content: center;
+    margin: 0px 20px;
+}
+
+.top-nav .email,
+.top-nav .call{
+    display: flex;               /* Make the container a flexbox */
+    align-items: center;         /* Vertically center the content */
+    justify-content: center;     /* Horizontally center the content */
+    
+}
+
+.top-nav .email a,
+.top-nav .call a{
+    font-weight: 600;
+    color: #004aad;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.top-nav .email .fa,
+.top-nav .call .fa{
+    font-weight: 600;
+    color: #004aad;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
 }
 
 .top-nav button{
@@ -85,7 +113,7 @@ body{
     font-family: "Poppins", sans-serif;
     font-size: 14px;
     font-weight: 400;
-    color: white;
+    color: #333;
     text-decoration: none;
 }
 
@@ -106,17 +134,31 @@ body{
 }
 
 .secondary-header .dropbtn {
-    font-size: 16px;
+    display: flex;
+    align-items: center;   /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+    font-size: 14px;        /* Font size */
     border: none;
     outline: none;
     color: #333;
     background-color: inherit;
-    font-family: inherit;
+    font-family: "Poppins", sans-serif;
     margin: 0;
     cursor: pointer;
-    font-family: "Poppins", sans-serif; /* Ensure Poppins font is applied */
-    font-size: 14px; /* Set font size to 10px */
 }
+
+.secondary-header .dropbtn a {
+    text-decoration: none; /* Remove underline */
+    color: #333;           /* Text color */
+    display: inline-block;  /* Aligns the text with the icon */
+    margin-right: 5px;     /* Adds space between text and icon */
+}
+
+.secondary-header .dropbtn .fa {
+    display: inline-block;  /* Aligns the icon with the text */
+    margin-left: 5px;      /* Adds space between the text and icon */
+}
+
 
 .secondary-header .dropdown:hover .dropdown-content {
     display: block; /* Show the dropdown content on hover */
@@ -135,7 +177,7 @@ body{
 
 .secondary-header .dropdown-content a {
     padding: 12px 0px;
-    color: black;
+    color: white;
     text-decoration: none;
     display: block;
     margin: 0px;
@@ -143,6 +185,7 @@ body{
 
 .secondary-header .dropdown-content a:hover {
     background-color: #ddd;
+    color: #333;
 }
 
 .secondary-header a {
@@ -172,7 +215,7 @@ body{
 
 /*header end*/
 
-/*margins-container start*/
+/*Third Nav start*/
 
 .third-bar{
     display: flex;
@@ -185,8 +228,8 @@ body{
     display: flex;
     justify-content: space-between;
     justify-content: flex-end;
-    gap: 100px;
-    margin: 20px 5px;
+    gap: 120px;
+    margin: 20px 0px;
 }
 
 .third-bar ul li{
@@ -197,75 +240,124 @@ body{
 
 .third-bar ul li a{
     text-decoration: none;
-    color:black;
-}
-
-.third-bar .btn{
-    background-color: #cddbf1;
-    border:none;
-    color:black;
-}
-
-.third-bar .btn:hover{
-    background-color: #cddbf1;
-    border:none;
-    color:black;
-}
-.third-bar .btn:active{
-    background-color: #cddbf1;
-    border:none;
-    color:black;
-}
-.third-bar .btn:focus{
-    background-color: #cddbf1;
-    border:none;
-    color:black;
-}
-
-#demo1{
-    background-color: #004aad;
-    padding: 40px 200px;
-}
-
-#demo1 a{
-    color: black;
-    font-size: 18px;
-    margin-bottom: 10px;
-    display: block; /* Ensure each <a> takes a new line */
-    text-decoration: none; 
-}
-
-#demo2{
-    background-color: #004aad;
-    padding: 40px 200px;
-}
-
-#demo2 a{
-    color: black;
-    font-size: 18px;
-    margin-bottom: 10px;
-    display: block; /* Ensure each <a> takes a new line */
-    text-decoration: none; 
-}
-
-#demo2 h4{
-    text-transform: uppercase;
-    color: black;
-    font-size: 14px;
+    color: #004aad;
     font-weight: 600;
-    margin-bottom: 10px;
-    display: block; /* Ensure each <a> takes a new line */
-    text-decoration: none; 
+    font-size: 16px;
+    text-transform: uppercase;
+    
 }
 
-#advice{
-    border-right: 2px solid black;
+.third-bar ul li a:hover{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    
 }
 
-/*margins-container end*/
+
+/*Third Nav end*/
 
 
 /*banner start*/
+
+/* Ensure carousel takes full width and height of viewport */
+.banner-carousel .carousel-item {
+    width: 100%;
+    height: 500px; /* Full height of the viewport */
+    position: relative;
+}
+
+/* Ensure images cover the entire carousel item */
+.banner-carousel .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the container while maintaining the aspect ratio */
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for carousel indicators */
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6); /* Inactive state with low opacity */
+    border: none;
+    transition: background-color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Active indicator button style */
+.carousel-indicators .active {
+    background-color: #ffffff; /* White for the active indicator */
+}
+
+/* Style for the text inside the carousel */
+.carousel-item h4, .carousel-item h2 {
+    position: absolute;
+    z-index: 10; /* Ensure the text appears above the image */
+    color: #ffffff; /* White color for text */
+    font-family: 'Poppins', sans-serif; /* Font style */
+}
+
+/* Positioning the text inside each carousel item */
+.carousel-item .banner1 h4,
+.carousel-item .banner2 h4,
+.carousel-item .banner3 h4,
+.carousel-item .banner4 h4,
+.carousel-item .banner5 h4 {
+    top: 30%;
+    left: 68%; /* Adjust to make text look good */
+    font-size: 24px;
+    font-weight: 400;
+    color: #6B98D6; /* Soft blue color for subtitle */
+}
+
+.carousel-item .banner1 h2,
+.carousel-item .banner2 h2,
+.carousel-item .banner3 h2,
+.carousel-item .banner4 h2,
+.carousel-item .banner5 h2 {
+    top: 40%;
+    left: 68%;
+    font-size: 52px; /* Larger font size for titles */
+    font-weight: 700;
+    color: #004aad; /* White color for main title */
+}
+
+/* Carousel control icons (Next/Previous) */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: rgba(255, 255, 255, 0.8); /* Light white background */
+    width: 40px; /* Set the control icon size */
+    height: 40px;
+    border-radius: 50%; /* Make them circular */
+}
+
+/* Ensure the controls appear on top of the carousel */
+.carousel-control-prev, .carousel-control-next {
+    z-index: 10; /* Controls must be on top of the images */
+}
+
+/* Make the carousel responsive on small screens */
+@media (max-width: 768px) {
+    .carousel-item h4, .carousel-item h2 {
+        font-size: 16px; /* Smaller font size for smaller screens */
+        left: 5%; /* Adjust position for smaller screen */
+    }
+
+    .carousel-item h2 {
+        font-size: 30px; /* Smaller title size */
+    }
+
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+        width: 30px;   /* Smaller control icons on mobile */
+        height: 30px;
+    }
+}
 
 
 /*banner end*/
@@ -470,6 +562,27 @@ body{
 }
 
 #jumpto_second #show-more-btn:hover{
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-bottom: 2px solid #004aad;
+    border-radius: 0;
+    margin: 0;
+    background-color: #F0F4F9;
+    color: #004aad;
+}
+
+#jumpto_second #show-less-btn{
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-bottom: 2px solid #004aad;
+    border-radius: 0;
+    margin: 0;
+    background-color: #F0F4F9;
+}
+
+#jumpto_second #show-less-btn:hover{
     width: 100px;
     height: 50px;
     border: none;
@@ -1224,7 +1337,7 @@ footer ul li{
 @media (max-width: 768px) {
 
     .top-header{
-        padding: 20px 10px;
+        padding: 20px 10px 0px 10px;
     }
 
     .top-nav{
@@ -1274,7 +1387,7 @@ footer ul li{
         display: none;
         flex-direction: column;
         width: 100%;
-        background-color: #6B98D6;
+        background-color: #F0F4F9;
         position: absolute;
         top: 150px; /* Adjust based on header height */
         left: 0;
@@ -1308,14 +1421,14 @@ footer ul li{
         width: 100%;
         padding: 0;
         text-align: left;
-        border-top: 1px solid white;
+        border-top: 1px solid black;
     }
 
     /* Style links in mobile */
     .secondary-header ul li a {
-        font-size: 14px;
+        font-size: 18px;
         color: white;
-        padding: 10px;
+        padding: 0px 50px;
         width: 100%;
         display: block;
     }
@@ -1331,13 +1444,199 @@ footer ul li{
         margin: 0;    
     }
 
-    .secondary-header .dropbtn{
-        margin-left: 40px;
+
+    /* Dropdown content */
+    .secondary-header .dropdown-content {
+        display: none; /* Initially hide the dropdown content */
+        position: absolute;
+        background-color: #6B98D6;
+        width: 100%;
+        z-index: 1;
+        left: 0;
     }
+
+    /* Style for the dropdown button */
+    .secondary-header .dropbtn {
+        background: none;
+        border: none;
+        font-size: 18px;
+        padding: 0 80px;
+        cursor: pointer;
+        width: 100%;
+        text-align: left;
+    }
+
+
+    /* Show the dropdown when the parent is active */
+    .secondary-header .dropdown.active .dropdown-content {
+        display: block; /* Show dropdown */
+    }
+
+    /* Styling for dropdown links */
+    .secondary-header .dropdown-content a {
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        border-top: 1px solid white;
+    }
+
+    /* Hover effect for dropdown items */
+    .secondary-header .dropdown-content a:hover {
+        background-color: #cddbf1;
+        cursor: pointer;
+    }
+
+    /*third nav area start*/
+        /* Style for third-bar (mobile version) */
+    .third-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        background-color: #cddbf1;
+        padding: 0 30px;
+    }
+
+    /* Flex layout for menu */
+    .third-bar ul {
+        list-style-type: none;
+        display: none; /* Hide the menu on mobile by default */
+        flex-direction: column; /* Stack menu items vertically */
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        background-color: #cddbf1;
+        text-align: center;
+    }
+
+    /* Show the menu when the 'active' class is added */
+    .third-bar ul.active {
+        display: flex;
+    }
+
+    /* Style for each list item */
+    .third-bar ul li {
+        font-family: "Poppins", sans-serif;
+        padding: 5px 0;
+        text-align: center;
+    }
+
+    .third-bar ul li a {
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+        display: block;
+    }
+
+    /* Style the dropdown button */
+    .third-bar .btn {
+        background-color: #cddbf1;
+        border: none;
+        color: black;
+        padding: 10px 15px;
+        font-size: 16px;
+        text-align: left;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    .third-bar .btn:hover,
+    .third-bar .btn:focus {
+        background-color: #cddbf1;
+        color: black;
+    }
+
+    /* Style the dropdown arrows */
+    .third-bar .fa-caret-down {
+        float: right;
+    }
+
+    /* Initially hide the collapsible content */
+    #demo1, #demo2 {
+        display: none;
+        background-color: #004aad;
+        padding: 20px;
+        margin-top: 10px;
+    }
+
+    /* Show the collapsible content when expanded */
+    .third-bar .collapse.show {
+        display: block;
+    }
+
+    /* Hamburger icon for mobile menu toggle */
+    .third-menu-toggle {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        margin-top: 10px;
+        background: none;
+        border: none;
+        color: black;
+    }
+
+    /* Use a hamburger icon (Unicode character for three horizontal lines) */
+    .third-menu-toggle:before {
+        content: "\2630"; /* Hamburger icon */
+        font-size: 30px;
+        color: black;
+    }
+    
+    /*third nav area end*/
+
+    
 }
 
 
+/*ENERGY EFFICIENT DOORS PAGE START*/
+
+/*banner start*/
+
+.sub_energy_banner{
+    font-family: "Poppins", sans-serif;
+}
+
+.sub_energy_banner .container-fluid{
+    background-color: #004aad;
+    align-items: center;
+    text-align: center;
+}
+
+
+.sub_energy_banner h2{
+    color: white;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+/*banner end*/
+
+
+/*section_one start*/
+
+#sub_energy_one{
+
+}
+
+#sub_energy_one .left{
+
+}
+
+#sub_energy_one img{
+    height: 100px;
+    width: auto;
+}
+
+#sub_energy_one .right{
+   
+}
+
+/*section_one end*/
+
+/*ENERGY EFFICIENT DOORS PAGE END*/
 
 
 
-/*PRODUCT PAGE*/
+
+

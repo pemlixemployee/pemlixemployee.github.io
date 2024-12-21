@@ -25,6 +25,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
    
@@ -281,87 +283,113 @@
     <!--banner end-->
 
 
-    <!--products start-->
-    <div class="products">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-12">
-                    <h2>Our Products</h2>
-                    <p>We offer a wide range of products to help you save energy and enhance your home’s efficiency and comfort.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="card mb-4">
-                        <div class="row g-0">
-                            <div class="col-md-6">
-                                <img src="images/solar-panels.jpg" alt="Solar Panels" class="img-fluid rounded-start" width="1000vh" height="40vh">
-                            </div>
-                            <div class="col-md-6">
-                                <div class="card-body">
-                                    <h3 class="card-title">Solar Panels</h3>
-                                    <p class="card-text">Save on electricity bills and increase your home’s value with our high-efficiency solar panels. Enjoy quick returns on investment, minimal maintenance, and energy independence while reducing your carbon footprint. Contact us for a free consultation and start your journey to renewable energy today!</p>
-                                    <button class="products_btn">Learn More</button>
-                                </div>
-                            </div>
-                        </div>
+    
+    <!--gallery start-->
+    
+    <div class="container mx-auto p-4 gallery-container">
+        <h2 class="font-bold mb-4 text-center gallery-main-title"></h2>
+    
+        <!-- Solar Panels Section -->
+        <div class="mb-12"> <!-- Increased margin bottom -->
+            <h3 class="gallery-title">Solar Panels</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4"> <!-- Changed to 3 columns -->
+                <div>
+                    <div class="gallery-image" style="height: 250px;">
+                        <img alt="A close-up of solar panels on a roof" class="w-full h-full object-cover rounded-lg shadow-lg" src="https://storage.googleapis.com/a1aa/image/JTsCSfUKPlTLQCoZuPFLGFugnCtnDSEF8mjqywEJLcTmn39JA.jpg" />
+                        <p class="gallery-caption">Solar Panels Installation: Harnessing renewable energy for a sustainable home.</p>
                     </div>
                 </div>
-                <div class="col-sm-12">
-                    <div class="card mb-4">
-                        <div class="row g-0 flex-row-reverse">
-                            <div class="col-md-6">
-                                <img src="images/home-improvement.jpg" alt="Home Improvement" class="img-fluid rounded-end" width="1000vh" height="40vh">
-                            </div>
-                            <div class="col-md-6">
-                                <div class="card-body">
-                                    <h3 class="card-title">Home Improvement</h3>
-                                    <p class="card-text">Elevate your living space with our innovative home improvement solutions! Designed to enhance comfort, functionality, and style, our services transform your home into a sanctuary. Whether it’s a kitchen remodel, bathroom upgrade, or a complete renovation, we tailor our approach to meet your needs. Contact us today for a free consultation and start creating the home of your dreams!</p>
-                                    <button class="products_btn">Learn More</button>
-                                </div>
-                            </div>
-                        </div>
+                <div>
+                    <div class="gallery-image" style="height: 250px;">
+                        <img alt="Solar panels in a residential area" class="w-full h-full object-cover rounded-lg shadow-lg" src="images/solar_panel_example_1.jpg" />
+                        <p class="gallery-caption">Residential Solar Panels: Efficient energy solutions for homes.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="gallery-image" style="height: 250px;">
+                        <img alt="Solar panels on a commercial building" class="w-full h-full object-cover rounded-lg shadow-lg" src="images/solar_panel_example_2.jpg" />
+                        <p class="gallery-caption">Commercial Solar Panels: Powering businesses sustainably.</p>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="card mb-4">
-                        <div class="row g-0">
-                            <div class="col-md-6">
-                                <img src="images/windows-doors.jpg" alt="Windows and Doors Improvement" class="img-fluid rounded-start" width="1000vh" height="40vh">
-                            </div>
-                            <div class="col-md-6">
-                                <div class="card-body">
-                                    <h3 class="card-title">Windows and Doors Improvement</h3>
-                                    <p class="card-text">Enhance your home with our windows and doors improvement solutions! Upgrade to energy-efficient designs that boost security, curb appeal, and comfort while reducing noise. Transform your living space today, contact us for a free consultation and start enjoying the benefits of modern windows and doors!</p>
-                                    <button class="products_btn">Learn More</button>
-                                </div>
-                            </div>
-                        </div>
+        </div>
+    
+        <!-- Home and Loft Insulation Section -->
+        <div class="mb-12"> <!-- Increased margin bottom -->
+            <h3 class="gallery-title">Home and Loft Insulation</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4"> <!-- Changed to 3 columns -->
+                <div>
+                    <div class="gallery-image" style="height: 250px;">
+                        <img alt="A person installing home insulation in the attic" class="w-full h-full object-cover rounded-lg shadow-lg" src="https://storage.googleapis.com/a1aa/image/I2kkNDgWWkJpKRjEBV5BR9xp7iWTFjJ1ByNFDTTN6bDyz7eJA.jpg" />
+                        <p class="gallery-caption">Attic Insulation Installation: Improving energy efficiency and comfort.</p>
                     </div>
                 </div>
-                <div class="col-sm-12">
-                    <div class="card mb-4">
-                        <div class="row g-0 flex-row-reverse">
-                            <div class="col-md-6">
-                                <img src="images/home-insulation.jpg" alt="Home Insulation" class="img-fluid rounded-end" width="1000vh" height="40vh">
-                            </div>
-                            <div class="col-md-6">
-                                <div class="card-body">
-                                    <h3 class="card-title">Home Insulation</h3>
-                                    <p class="card-text">Boost your home's energy efficiency with our premium insulation solutions! Designed to keep your space comfortable year-round, our products reduce energy costs and enhance comfort. Don’t wait, contact us today for a free consultation and start enjoying a cozier, more efficient home!</p>
-                                    <button class="products_btn">Learn More</button>
-                                </div>
-                            </div>
-                        </div>
+                <div>
+                    <div class="gallery-image" style="height: 250px;">
+                        <img alt="Loft insulation being installed" class="w-full h-full object-cover rounded-lg shadow-lg" src="images/loft_insulation_example_1.jpg" />
+                        <p class="gallery-caption">Loft Insulation: Essential for maintaining temperature and reducing energy costs.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="gallery-image" style="height: 250px;">
+                        <img alt="Insulation materials stacked" class="w-full h-full object-cover rounded-lg shadow-lg" src="images/insulation_materials_example.jpg" />
+                        <p class="gallery-caption">Insulation Materials: Key to energy efficiency in homes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Home Improvement Section -->
+        <div class="mb-12"> <!-- Increased margin bottom -->
+            <h3 class="gallery-title">Home Improvement</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4"> <!-- Changed to 3 columns -->
+                <div>
+                    <div class="gallery-image" style="height: 250px;">
+                        <img alt="A modern loft interior with large windows and stylish furniture" class="w-full h-full object-cover rounded-lg shadow-lg" src="images/outdoor-living.jpg" />
+                        <p class="gallery-caption">Stylish Loft Interior: A blend of modern design and natural light.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="gallery-image" style="height: 250px;">
+                        <img alt="A person painting a wall in a home" class="w-full h-full object-cover rounded-lg shadow-lg" src="https://storage.googleapis.com/a1aa/image/4bpmZqj6syK6CZrketPWL7FwllLkjJdjmk9hUa8B0zSdn39JA.jpg" />
+                        <p class="gallery-caption">Home Painting: Refreshing interiors with a new coat of paint.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="gallery-image" style="height: 250px;">
+                        <img alt="A renovated kitchen with modern appliances" class="w-full h-full object-cover rounded-lg shadow-lg" src="images/renovated_kitchen_example.jpg" />
+                        <p class="gallery-caption">Renovated Kitchen: Modern upgrades for a functional space.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Windows and Doors Section -->
+        <div class="mb-12"> <!-- Increased margin bottom -->
+            <h3 class="gallery-title">Windows and Doors</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4"> <!-- Changed to 3 columns -->
+                <div>
+                    <div class="gallery-image" style="height: 250px;">
+                        <img alt="A close-up of a person installing a new window" class="w-full h-full object-cover rounded-lg shadow-lg" src="https://storage.googleapis.com/a1aa/image/mTz2GDMHnobbGxOHi34JTs78GSzxquhD1iHppeuhEXOin39JA.jpg" />
+                        <p class="gallery-caption">Window Installation: Enhancing natural light and energy efficiency.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="gallery-image" style="height: 250px;">
+                        <img alt="A person installing a new door" class="w-full h-full object-cover rounded-lg shadow-lg" src="https://storage.googleapis.com/a1aa/image/ezfojrLGz0gyF0np5smbN91JFMR6rl9dIG0PNQI5VDI7Ov7TA.jpg" />
+                        <p class="gallery-caption">New Door Installation: Enhancing security and aesthetics.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="gallery-image" style="height: 250px;">
+                        <img alt="A variety of window styles displayed" class="w-full h-full object-cover rounded-lg shadow-lg" src="images/window_styles_example.jpg" />
+                        <p class="gallery-caption">Window Styles: A range of options for every home.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!--products end-->
-
+    
 
     <!--footer start-->
     <footer>

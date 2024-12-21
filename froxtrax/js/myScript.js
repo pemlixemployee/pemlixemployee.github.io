@@ -1,3 +1,28 @@
+//nav-toggle
+$(document).ready(function() {
+    // Toggle the mobile menu when the hamburger icon is clicked
+    $('#mobile-menu').click(function() {
+        $('ul').toggleClass('active'); // Toggle visibility of the navigation links
+    });
+
+    // Toggle the dropdown menu when clicked (for mobile)
+    $('.secondary-header .dropdown').click(function(e) {
+        e.stopPropagation(); // Prevent the event from propagating and triggering other clicks
+        $(this).toggleClass('active'); // Toggle the active class for the dropdown
+        $(this).children('.dropdown-content').slideToggle(); // Toggle the dropdown content visibility
+    });
+
+    // Close the dropdown if clicked outside
+    $(document).click(function(e) {
+        if (!$(e.target).closest('.dropdown').length) {
+            $('.dropdown').removeClass('active'); // Remove the active class
+            $('.dropdown-content').slideUp(); // Hide the dropdown content
+        }
+    });
+});
+
+
+
 //jumpto_first
 $(window).on('scroll', function() {
     // Get the position of the section relative to the viewport
@@ -15,8 +40,6 @@ $(window).on('scroll', function() {
 
 
 //jumpto_second
-//zoom
-
 $(document).ready(function() {
     // Target all the columns inside #jumpto_second
     $('#jumpto_second .col-sm-3').hover(
@@ -33,19 +56,40 @@ $(document).ready(function() {
     );
 });
 
+
+//jumpto_second
 //show more - show less
-
-
-
-
-
 $(document).ready(function() {
-    // When the hamburger menu (menu-toggle) is clicked
-    $('.secondary-header #mobile-menu').click(function() {
-        // Toggle the 'active' class on the <ul> to show or hide the navigation links
-        $('.secondary-header ul').toggleClass('active');
+    // Initially hide the "Show Less" button
+    $('#show-less-btn').hide();
+
+    // Click event for the "Show More" button
+    $('#show-more-btn').click(function() {
+        // Show additional product cards
+        $('#jumpto_second .additional-cards').fadeIn(); // Smooth fade-in for additional cards
+
+        // Hide "Show More" button and show "Show Less" button
+        $(this).hide(); // Hide "Show More" button
+        $('#show-less-btn').show(); // Show "Show Less" button
+    });
+
+    // Click event for the "Show Less" button
+    $('#show-less-btn').click(function() {
+        // Hide additional product cards
+        $('#jumpto_second .additional-cards').fadeOut(); // Smooth fade-out for additional cards
+
+        // Hide "Show Less" button and show "Show More" button
+        $(this).hide(); // Hide "Show Less" button
+        $('#show-more-btn').show(); // Show "Show More" button
     });
 });
+
+
+
+
+
+
+
 
 
 
