@@ -1643,26 +1643,410 @@ footer ul li{
 /*SOHINI*/
 
 /*ABOUT US START*/
+.grid {
+    margin: 40px;
+    padding: 20px;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 8rem;
+}
+.section-subtitle {
+    font-size: 1.5rem;
+    color: #666;
+}
+.content-section {
+    padding: 2rem 0;
+}
+.content-section img {
+    width: 100%;
+    height: 300px;
+}
+.team-member {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-top: 2rem;
+    background-color: #c3ced9;
+    padding-bottom: -15rem;
+}
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+.team-member h5 {
+    margin-top: 1rem;
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+.team-member p {
+    color: #2e2d2d;
+}
+.review {
+    margin-top: 2rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+.review p {
+    font-style: italic;
+}
+.review span {
+    display: block;
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+.text-center {
+    margin: auto;
+    padding: 0;
+}
+.sub {
+    padding-left: 20px;
+    padding-right: 20px;
+}
 /*ABOUT US END*/
 
 
 /*GALLERY START*/
+/* Custom styles */
+.gallery-container {
+    background-color: #f9fafb; /* Light background for contrast */
+    padding: 2rem; /* Padding around the gallery */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.gallery-caption {
+    position: absolute; /* Position caption absolutely */
+    bottom: 0; /* Align to the bottom */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    color: white; /* White text color */
+    padding: 0.5rem; /* Padding around the text */
+    text-align: center; /* Center the text */
+    font-size: 1.5rem; /* Smaller font size for captions */
+}
+
+
+/* General Container Styles */
+.container {
+    max-width: 1200px; /* Set a maximum width for the container */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add padding around the container */
+    margin: 40px;
+}
+
+/* Gallery Title Styles */
+.gallery-title {
+    font-size: 2rem; /* Font size for the main title */
+    color: #333; /* Dark gray color for the title */
+    font-size: 2.5rem; /* Increased font size for the main title */
+    color: #333; /* Dark gray color for the title */
+    text-align: center; /* Center align the title */
+    margin-bottom: -30px; /* Space below the title */
+    text-transform: uppercase; /* Uppercase letters for emphasis */
+    letter-spacing: 1px; /* Spacing between letters */
+    font-weight: bold; /* Bold font weight */
+}
+
+/* Section Title Styles */
+.gallery-main-title {
+    font-size: 2.5rem; /* Font size for section titles */
+    color: #444; /* Slightly lighter gray for section titles */
+    margin-bottom: 10px; /* Space below section titles */
+}
+
+/* Gallery Image Styles */
+.gallery-image {
+    position: relative; /* Position relative for caption positioning */
+    overflow: hidden; /* Hide overflow for rounded corners */
+    border-radius: 8px; /* Rounded corners for images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Image Styles */
+.gallery-image img {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Smooth zoom effect on hover */
+}
+
+
+/* Hover Effect for Images */
+.gallery-image:hover img {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr; /* Single column on small screens */
+    }
+}
 /*GALLERY US END*/
 
 /*HOME IMPROVEMENT START*/
+body {
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.card-title {
+    padding-top: 40px;
+}
+
+.container-fluid {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.card-body {
+    padding: 20px;
+    text-align: center;
+}
+
 /*HOME IMPROVEMENT END*/
 
 
 /*HOME INSULATION START*/
+/* Heading Styles */
+.home-insulation h2 {
+    text-align: center;
+    margin: 20px 20px;
+    color: #333;
+}
+
+h3.card-title {
+    font-family: "Poppins", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+/* Paragraph Styles */
+p {
+    color: #555;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+/* Button Styles */
+ .home_cta_btn, .home_products_btn {
+    background-color: #45a049;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.home_products_btn:hover, .home_cta_btn:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 15px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    
+}
+
+.row {
+    display: flex;
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically (if needed) */
+    text-align: center; /* Centers text within the column */
+}
+
+.home_cta_btn {
+    display: block; /* Make the button a block element */
+    margin: 20px auto; /* Center the button and add vertical spacing */
+}
+
+.card-text {
+    font-size: 1.5rem; /* Adjust text size */
+    padding-top: 20px;
+}
 /*HOME INSULATION END*/
 
 /*LOFT INSULATION START*/
 /*LOFT INSULATION END*/
 
 /*PRODUCTS START*/
+.products {
+    padding: 20px;
+    font-weight: 200;
+    text-align: center;
+    
+}
+
+.card {
+    border: 1px solid #ddd; /* Optional: Add a border */
+    border-radius: 8px; /* Optional: Rounded corners */
+}
+
+.card-title {
+    font-size: 2rem; /* Adjust title size */
+}
+
+.card-text {
+    font-size: 1.5rem; /* Adjust text size */
+    padding-top: 20px;
+}
+
+.products_btn {
+    margin-top: 10px; 
+    background-color: #65A346;
+    color: white; /* Optional: to change the text color for better contrast */
+    border: none; /* Optional: to remove the default border */
+    padding: 10px 20px; /* Optional: to add some padding */
+    cursor: pointer; /* Optional: to change the cursor on hover */
+    border-radius: 5px; /* Optional: to round the corners */
+}
+
+.products_btn:hover {
+    background-color: #4E8A2A; /* Optional: darker shade on hover */
+}
+
+.products img {
+    width: 100%; /* Make the image take the full width of its container */
+    height: 300px; /* Set a fixed height for all images */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+}
+
+.products p {
+    margin-bottom: 40px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .top-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .third-bar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .products .card {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 576px) {
+    .top-nav li {
+        margin: 5px 0;
+    }
+
+    nav li {
+        margin: 5px 0;
+    }
+
+    .products {
+        padding: 10px 0;
+    }
+}
 /*PRODUCTS END*/
 
 /*SOLAR PANEL START*/
+.lead-generation {
+    padding: 40px 0;
+    background-color: #f9f9f9; /* Light background for contrast */
+    text-align: center;
+}
+
+.lead-generation h1, .lead-generation h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Darker text for better readability */
+    padding-top: 30px;
+    
+}
+
+.lead-generation p {
+    text-align: center;
+    color: #555; /* Slightly lighter text for body */
+    padding-bottom: 80px;
+    padding-top: 0px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.cta_btn {
+    display: block;
+    padding: 10px 20px;
+    margin: 10px auto;
+    margin-top: -70px;
+    background-color: #4CAF50; /* Green background for buttons */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+}
+
+.cta_btn:hover, .products_btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.card img {
+    border-top-left-radius: 8px; /* Rounded corners for images */
+    border-top-right-radius: 8px; /* Rounded corners for images */
+    max-height: 300px; /* Limit image height */
+    object-fit: cover; /* Cover the area without distortion */
+}
+
+.card-body {
+    padding: 20px; /* Padding inside card body */
+}
+
+.lead-generation-card-text {
+    font-size: 1.5rem; /* Adjust text size */
+    margin-top: 20px;
+}
+
+.row.g-0 {
+    margin: 0; /* Remove default margin */
+}
+
+.flex-row-reverse {
+    flex-direction: row-reverse; /* Reverse the order of columns */
+}
+
+@media (max-width: 768px) {
+    .card img {
+        max-height: 200px; /* Adjust image height for smaller screens */
+    }
+
+    .cta_btn, .products_btn {
+        width: 100%; /* Full width buttons on small screens */
+    }
+}
 /*SOLAR PANEL END*/
 
 /*WINDOWS DOORS START*/
