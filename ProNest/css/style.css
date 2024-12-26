@@ -13,6 +13,7 @@ body{
     padding: 20px 100px;
 }
 
+
 .margins-container{
     margin: 0;
 }
@@ -215,6 +216,22 @@ body{
     cursor: pointer;
 }
 
+.secondary-header .submenu-content{
+    display: none;
+}
+
+/* Show submenu when hovering over the parent .dropdown-submenu */
+.secondary-header .dropdown-submenu:hover .submenu-content {
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 100%; /* Position the submenu to the right of the parent */
+    top: 0;
+    background-color: #004aad;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
 
 
 /*header end*/
@@ -263,22 +280,60 @@ body{
 
 /*banner start*/
 
+
 .banner-carousel .carousel-item {
-    width: 100%;
-    height: 500px; /* Full height of the viewport */
-    position: relative;
+    width: 100%; /* Ensures the carousel item takes up the full width */
+    height: 500px; /* Height of each banner (adjustable as needed) */
+    position: relative; /* To position child elements like text over the image */
 }
 
 .banner-carousel .carousel-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Cover the container while maintaining the aspect ratio */
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 0;
-    padding: 0;
+    width: 100%; /* The image will stretch to cover the full width of the carousel */
+    height: 100%; /* The image will stretch to cover the full height of the carousel */
+    object-fit: cover; /* Ensures the image covers the area while maintaining its aspect ratio */
+    position: absolute; /* Absolutely position the image within the carousel item */
+    top: 0; /* Align the image to the top of the carousel item */
+    left: 0; /* Align the image to the left of the carousel item */
+    margin: 0; /* Ensures no margin around the image */
+    padding: 0; /* Ensures no padding around the image */
 }
+
+/* Styling for the Heading Elements inside Carousel */
+.banner-carousel .carousel-item h4,
+.banner-carousel .carousel-item h2 {
+    position: absolute; /* Position text over the image */
+    color: #004aad;
+    font-family: "Poppins",sans-serif; /* Font for both headings */
+    text-align: center; /* Centers the text */
+    width: 100%; /* Makes sure text spans the full width of the carousel item */
+    z-index: 1; /* Ensures the text appears above the image */
+    
+}
+
+/* Styling for h4 (Subheading) */
+.banner-carousel .carousel-item h4 {
+    top: 35%; /* Adjusts the vertical position of the subheading */
+    font-size: 24px; /* Font size for h4 */
+    text-transform: uppercase; /* Capitalizes the text */
+    letter-spacing: 0px; /* Adds space between the letters */
+    color: black;
+    text-align: left;
+    padding-left: 970px;
+}
+
+/* Styling for h2 (Main Heading) */
+.banner-carousel .carousel-item h2 {
+    top: 45%; /* Adjusts the vertical position of the main heading */
+    font-size: 40px; /* Font size for h2 */
+    font-weight: 700; /* Makes the main heading bold */
+    text-transform: uppercase; /* Capitalizes the text */
+    letter-spacing: 1px; /* Adds space between the letters */
+    opacity: 1; /* Full opacity for the main heading */
+    text-align: left;
+    padding-left: 970px;
+    font-size: 36px;
+}
+
 
 /*banner end*/
 
@@ -656,7 +711,7 @@ body{
 
 /*jumpto_fifth start*/
 #jumpto_fifth{
-padding: 50px;
+padding: 50px 100px;
 }
 
 #jumpto_fifth h2{
@@ -827,351 +882,14 @@ padding: 50px;
 
 /*contact us end*/
 
-/*footer strat*/
-footer .container-fluid{
-    background-color: #E5ECF3;
-    padding:100px 50px;
-}
 
-footer h2{
-    font-weight: 600;
-    margin: 0;
-}
 
-footer h4{
-    font-weight: 600;
-    margin-left: 20px;
-}
 
-footer ul{
-    
-}
 
-footer ul li{
-    list-style-type: none;
-    margin: 10px 0px;
-    font-size: 16px;
-    font-family: "Poppins", sans-serif;
-}
 
-.footer_end{
 
-}
 
-.footer_end h4{
-    margin: 0;
-    font-size: 18px;
-}
-
-.footer_end button{
-    margin-top: 50px;
-    padding: 10px;
-    background-color: black;
-    color: white;
-    font-size: 16px;
-}
-
-/*footer end*/
-
-/*footer_bottom start*/
-
-.footer_bottom {
-    background-color: white; /* Dark background for footer */
-    padding: 20px 0; /* Padding to create space inside the footer */
-}
-
-.footer_bottom .container-fluid {
-    display: flex;
-    justify-content: center; /* Center the content horizontally */
-}
-
-.footer_bottom ul {
-    list-style-type: none; /* Remove default list bullets */
-    padding: 0;
-    margin: 0;
-    display: flex; /* Display list items in a row */
-}
-
-.footer_bottom li {
-    margin: 0 20px; /* Add horizontal spacing between list items */
-    font-size: 16px; /* Set the font size */
-    color: #333; /* Text color */
-    font-family: "Poppins", sans-serif;
-}
-
-.footer_bottom li:hover {
-    text-decoration: underline; /* Add underline on hover for better interactivity */
-}
-
-/*footer_bottom end*/
-
-
-
-
-
-
-
-
-/* Laptop devices (1024px to 1366px) */
-@media (min-width: 1024px) and (max-width: 1366px) {
-
-    /*header start*/
-.top-header{
-    padding: 30px 50px;
-}
-
-.margins-container{
-    
-}
-
-.margins-container{
-    
-}
-
-.top-nav{
-    display: flex;
-    justify-content: space-between;
-}
-
-.top-nav ul{
-    list-style-type: none; 
-    display: flex;
-    justify-content: space-between;
-    justify-content: flex-end;
-    gap: 50px;
-}
-
-.top-nav li{
-    font-family: "Poppins", sans-serif;
-    text-align: center;
-    justify-content: center;
-}
-
-.top-nav button{
-    padding: 5px 10px;
-    background-color: #cddbf1;
-    border:none;
-    font-family: "Poppins", sans-serif;
-}
-
-.top-nav ul li i.fa-search {
-    font-size: 18px;      /* Set the font size of the icon */
-    margin-left: 5px;     /* Add some space between text and icon */
-    transition: color 0.3s; /* Smooth transition for color change */
-}
-
-.secondary-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px; /* Optional: adjust padding for spacing */
-    background-color: white; /* Dark background for header */
-}
-
-.margins-container {
-    display: flex;
-    align-items: center;
-    width: 100%;
-}
-
-.secondary-header ul{
-    list-style-type: none;
-    display: flex;
-    justify-content: flex-end;
-    gap: 10px; /* Space between menu items */
-    margin: 0px;
-    padding: 0;
-}
-
-.secondary-header li {
-    font-family: "Poppins", sans-serif;
-    text-align: center;
-}
-
-.secondary-header li a {
-    font-family: "Poppins", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    color: white;
-    text-decoration: none;
-}
-
-.secondary-header li i {
-    font-size: 12px;
-    margin: 0 5px;
-}
-
-.secondary-header li a:hover {
-    background-color: #cddbf1;
-    border: none;
-    cursor: pointer;
-}
-
-.secondary-header .dropdown {
-    position: relative; /* Important for positioning the dropdown content */
-    margin: auto 30px;
-}
-
-.secondary-header .dropbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: #333;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-    cursor: pointer;
-    font-family: "Poppins", sans-serif; /* Ensure Poppins font is applied */
-    font-size: 14px; /* Set font size to 10px */
-    display: flex;
-}
-
-.secondary-header .fa{
-    margin: 5px;
-}
-
-.secondary-header .dropdown:hover .dropdown-content{
-    display: block; /* Show the dropdown content on hover */
-}
-
-.secondary-header .dropdown-content {
-    display: none; /* Initially hidden */
-    position: absolute;
-    background-color: #004aad;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    top: 100%; /* Position dropdown below the button */
-    left: 0;
-}
-
-.secondary-header .dropdown-content a {
-    padding: 12px 0px;
-    color: black;
-    text-decoration: none;
-    display: block;
-    margin: 0px;
-}
-
-.secondary-header .dropdown-content a:hover {
-    background-color: #ddd;
-}
-
-.secondary-header a {
-    font-size: 24px;
-    font-weight: 700;
-    color: white;
-    margin: 0 30px;
-    padding: 0;
-}
-
-.secondary-header li button {
-    background-color: white;
-    border: none;
-    font-family: "Poppins", sans-serif;
-    
-}
-
-.secondary-header li button:hover {
-    background-color: #cddbf1;
-}
-
-/*header end*/
-
-/*margins-container start*/
-
-.third-bar{
-    display: flex;
-    justify-content: center;
-    background-color: #cddbf1;
-}
-
-.third-bar ul{
-    list-style-type: none; 
-    display: flex;
-    justify-content: space-between;
-    justify-content: flex-end;
-    gap: 50px;
-    margin: 20px 5px;
-}
-
-.third-bar ul li{
-    font-family: "Poppins", sans-serif;
-    text-align: center;
-    justify-content: center;
-}
-
-.third-bar ul li a{
-    text-decoration: none;
-    color:black;
-}
-
-.third-bar .btn{
-    background-color: #cddbf1;
-    border:none;
-    color:black;
-}
-
-.third-bar .btn:hover{
-    background-color: #cddbf1;
-    border:none;
-    color:black;
-}
-.third-bar .btn:active{
-    background-color: #cddbf1;
-    border:none;
-    color:black;
-}
-.third-bar .btn:focus{
-    background-color: #cddbf1;
-    border:none;
-    color:black;
-}
-
-#demo1{
-    background-color: #004aad;
-    padding: 40px 200px;
-}
-
-#demo1 a{
-    color: black;
-    font-size: 18px;
-    margin-bottom: 10px;
-    display: block; /* Ensure each <a> takes a new line */
-    text-decoration: none; 
-}
-
-#demo2{
-    background-color: #004aad;
-    padding: 40px 200px;
-}
-
-#demo2 a{
-    color: black;
-    font-size: 18px;
-    margin-bottom: 10px;
-    display: block; /* Ensure each <a> takes a new line */
-    text-decoration: none; 
-}
-
-#demo2 h4{
-    text-transform: uppercase;
-    color: black;
-    font-size: 14px;
-    font-weight: 600;
-    margin-bottom: 10px;
-    display: block; /* Ensure each <a> takes a new line */
-    text-decoration: none; 
-}
-
-#advice{
-    border-right: 2px solid black;
-}
-/*margins-container end*/
-
-    
-}
-
+/*RESPONSIVE START*/
 
 /* Tablet-Specific Styling (768px to 1024px) */
 @media (max-width: 1024px) and (min-width: 768px) {
@@ -1432,6 +1150,11 @@ footer ul li{
     
 }
 
+/*RESPONSIVE START*/
+
+
+
+
 
 /*ENERGY EFFICIENT DOORS PAGE START*/
 
@@ -1456,12 +1179,18 @@ footer ul li{
 /*product_overview start*/
 
 #product_overview{
-   margin: 0;
+   margin: 10px 0px;
    padding: 0;
 }
 
 #product_overview .container{
     padding: 0px 50px;
+}
+
+#product_overview .col-sm-2{
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 
 #product_overview img {
@@ -1472,7 +1201,7 @@ footer ul li{
 
 #product_overview .col-sm-10{
     position: relative;
-    top: 20px;
+    top: 0px;
     text-align: left;
 }
 
@@ -1559,12 +1288,14 @@ footer ul li{
 #image_area img{
     height: 500px;
     width: auto;
+    border-radius: 20px;
 }
 /*image_area end*/
 
 /*sub_faq start*/
 #sub_faq{
     font-family: "Poppins", sans-serif;
+    margin: 50px 0px;
 }
 
 #sub_faq .container{
@@ -1579,18 +1310,22 @@ footer ul li{
 /*ENERGY EFFICIENT DOORS PAGE END*/
 
 
+
+
+
+
 /*FOOTER START*/
 
 /*footer strat*/
 
 footer {
     background-color: #E5ECF3; /* Light blue background for the footer */
-    padding: 40px 0;           /* Space around footer content */
+    padding:50px;           /* Space around footer content */
     font-family: "Poppins", sans-serif; /* Set the font for the footer */
 }
 
 /* Container and row styles for footer */
-footer .container-fluid {
+footer .container {
     width: 100%;              /* Make the container full width */
     padding: 0 15px;          /* Add padding to container */
 }
@@ -1601,23 +1336,26 @@ footer .row {
     align-items: flex-start;  /* Align items at the top */
 }
 
+
 /* Column for logo */
 footer .col-sm-1 {
     display: flex;
     justify-content: center;  /* Center the logo horizontally */
     align-items: flex-start;  /* Align logo at the top */
-    padding-top: 10px;         /* Adjust top padding to give space */
+    padding-top: 0px 10px;         /* Adjust top padding to give space */
     
 }
 
 footer .logo img {
     height: 70px;             /* Set fixed height for logo */
     width: auto;              /* Maintain aspect ratio */
+    padding: 0;
+    margin: 0;
 }
 
 /* Column for main content (About, Latest, Follow us) */
 footer .col-sm-9 {
-    
+    padding-left: 100px;
     
 }
 
@@ -1631,13 +1369,29 @@ footer .col-sm-4 {
     flex-direction: column;      /* Stack the content vertically */
 }
 
+
 /* Styling for the section titles in each column */
 footer h4 {
     font-weight: 600;
     font-size: 18px;
-    margin-bottom: 10px;         /* Space below heading */
+    margin: 0px 0px 20px 20px;
 }
 
+footer li{
+    list-style-type: none;
+    font-size: 16px;
+    padding: 5px 0px;
+}
+
+footer li a{
+    text-decoration: none;
+    color: #333;
+}
+
+footer li a:hover{
+    text-decoration: none;
+    color: #333;
+}
 
 /* Footer end section */
 footer .footer_end {
@@ -1686,19 +1440,32 @@ footer .footer_end button:hover {
 .footer_bottom ul {
     list-style-type: none; /* Remove default list bullets */
     padding: 0;
-    margin: 0;
+    margin: 10px;
     display: flex; /* Display list items in a row */
 }
 
 .footer_bottom li {
     margin: 0 20px; /* Add horizontal spacing between list items */
     font-size: 16px; /* Set the font size */
-    color: #333; /* Text color */
     font-family: "Poppins", sans-serif;
 }
 
 .footer_bottom li:hover {
     text-decoration: underline; /* Add underline on hover for better interactivity */
+}
+
+.footer_bottom a{
+    color:#333
+}
+
+.footer_bottom a{
+    color:#333;
+    text-decoration: none;
+}
+
+.footer_bottom a:hover{
+    color:#333;
+    text-decoration: none;
 }
 
 /*footer_bottom end*/
