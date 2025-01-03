@@ -14,461 +14,233 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
 
   <!--font awesome-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
   <!--jQuery include-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <!-- // new link  -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
 
   <!--bootstrap3 include-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+ <!-- Bootstrap 5 JS (Bundle with Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+ 
 </head>
+
+
+
 <body>
-   
-    <header>
-        <div class="top-header">
-            <div class="d-flex flex-row-reverse" class="margins-container">
-                <div class="top-nav" area-label="functional">
-                    <ul>
-                        <li>Contact</li>
-                        <li>Location:<a>All</a></li>
-                        <li>Search<i class="fa fa-search" aria-hidden="true"></i></li>
-                        <li><button>Get a Code</button></li>
-                    </ul>
-                </div>
+<!-- Header start -->
+<header>
+    <div class="top-header">
+        <div class="d-flex flex-row-reverse margins-container">
+            <div class="top-nav" aria-label="functional">
+                <ul>
+                    <li class="email">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <a href="#">support@pemlix.com</a>
+                    </li>
+                    <li class="call">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <a href="#">+91 856975425</a>
+                    </li>
+                    <li class="search">Search<i class="fa fa-search" aria-hidden="true"></i></li>
+                    <li><button>Get a Code</button></li>
+                </ul>
             </div>
         </div>
-        <div class="secondary-header">
-            <div class="margins-container">
-                <a>Logo</a>
-                <nav id="site-navigation-nav" area-label="main site">
-                    <ul>
-                        <li class="dropdown">
-                            <button class="dropbtn">
-                                About Us
-                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                            </botton class="dropdown">
-                            <div class="dropdown-content">
-                                <a href="#">Our Team</a>
-                                <a href="#">Server</a>
+    </div>
+    <div class="secondary-header">
+        <div class="margins-container">
+            <a href="index.html"><img src="images/pro logo.png" style="height: 70px; width: auto"></a>
+            <div class="menu-toggle" id="mobile-menu">
+                 <!-- Hamburger Icon -->
+            </div>
+            <nav id="site-navigation-nav" aria-label="main site">
+                <ul>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li class="dropdown">
+                        <button class="dropbtn">
+                            <a href="products.html" style="color: #333;">Products</a>
+                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="solar_panel.html">Solar Panel</a>
+                            <div class="dropdown-submenu">
+                                <a href="home_improvement.html">Home Improvement</a>
+                                <div class="submenu-content">
+                                    <a href="sub_energy_efficient_doors.html">Energy Efficient Doors</a>
+                                    <a href="sub_stylish_doors.html">Stylish Doors</a>
+                                    <a href="sub_modern_kitchens.html">Modern Kitchens</a>
+                                    <a href="sub_bathroom_renovations.html">Bathroom Renovations</a>
+                                    <a href="sub_outdoor_living_spaces.html">Outdoor Living Spaces</a>
+                                    <a href="sub_innovative_lighting_solutions.html">Innovative Lighting Solutions</a>
+                                    <a href="sub_basement_renovations.html">Basement Renovations</a>
+                                    <a href="sub_green_remodeling.html">Green Remodeling</a>
+                                    <a href="sub_home_restoration.html">Home Restoration</a>
+                                </div>
                             </div>
-                        </li>
-                        <li class="dropdown">
-                            <button class="dropbtn">
-                                Products
-                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                            </botton class="dropdown">
-                            <div class="dropdown-content">
-                                <a href="#">Solar Panel</a>
-                                <a href="#">Home Improvement</a>
+                            <div class="dropdown-submenu">
                                 <a href="home_insulation.html">Home Insulation</a>
-                                <a href="#">Windows & Doors Improvement</a>
+                                <div class="submenu-content">
+                                    <a href="sub_spray_foam_insulation.html">Spray foam insulation</a>
+                                    <a href="sub_fiberglass_insulation.html">Fiberglass insulation</a>
+                                    <a href="sub_rockwool_insulation.html">Rockwool insulation</a>
+                                    <a href="sub_mineral_Wool_insulation.html">Mineral Wool insulation</a>
+                                    <a href="sub_insulated_doors.html">Insulated Doors</a>
+                                    <a href="sub_sheep_wool_insulation.html">Sheep Wool insulation </a>
+                                    <a href="sub_lambs_wool_insulation.html">Lambs Wool insulation</a>
+                                    <a href="sub_cellulose_insulation.html">Cellulose insulation</a>
+                                    <a href="sub_silver_foil_insulation.html">Silver Foil  insulation</a>
+                                    <a href="sub_recycled_plastic_insulation.html">Recycled Plastic insulation</a>
+                                    <a href="sub_granular_insulation.html">Granular insulation</a>
+                                </div>
                             </div>
-                        </li>
-                        <li><a>Gallery</a></li>
-                        <li><a>Blogs</a></li>
-                        <li><a>Privacy Policy</a></li>
-                        <li><a>Contact Us</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
-    
-    <!--third nav area start -->
-    <div class="third-bar">
-        <ul>
-            <li>
-                <button type="button" class="btn" data-toggle="collapse" data-target="#demo1">
-                    I'm looking for...
-                    <i class="fa fa-caret-down" aria-hidden="true"></i>
-                </button>
-            </li>
-            <li>
-                <button type="button" class="btn" data-toggle="collapse" data-target="#demo2">
-                    Home energy advice
-                    <i class="fa fa-caret-down" aria-hidden="true"></i>
-                </button>
-            </li>
-            <li><a href="#">Heat pumps</a></li>
-            <li><a href="#">Financial support</a></li>
-            <li><a href="#">Energy tools and calculators</a></li>
-        </ul>
-        
-    </div>
-    <div id="demo1" class="collapse">
-        <a href="#">Quick tips to save energy</a>
-        <a href="#">Inspiration for my next home improvement project</a>
-        <a href="#">How to save money on my energy bills</a>
-        <a href="#">Help for my community</a>
-        <a href="#">Case studies</a>
-    </div>
-    <div id="demo2" class="collapse">
-        <div class="container">
-            <div class="row">
-                    <div class="col-sm-8">
-                        <div class="row" id="advice">
-                                <h4 class="dropdown-label">Practical advice</h4>
-                                <div class="col-sm-6">
-                                    <a>Heating your home</a>
-                                    <a>Reducing home heat loss</a>
-                                    <a>Renewable energy generation</a>
-                                    <a>Fixing damp and condensation</a>
+                            <div class="dropdown-submenu">
+                                <a href="windows_doors.html">Windows and Door improvement</a>
+                                <div class="submenu-content">
+                                    <a href="sub_doors.html">Doors</a>
+                                    <a href="sub_windows.html">Windows</a>
+                                    <a href="sub_conservatories.html">Conservatories</a>
+                                    <a href="sub_porches.html">Porches</a>
+                                    <a href="sub_patio.html">Patio</a>
+                                    <a href="sub_rppfline.html">Roofline</a>
+                                    <a href="sub_garden_rooms.html">Garden Rooms </a>
+                                    <a href="sub_orangeries.html">Orangeries</a>
                                 </div>
-                                <div class="col-sm-6">
-                                    <a>Buying energy efficient products</a>
-                                    <a>How to switch energy supplier</a>
-                                    <a>Saving water at home</a>
-                                    <a>Energy storage options explained</a>
-                                </div>
+                            </div>
                         </div>
-                    </div>
-                    
-                    <div class="col-sm-4">
-                        <h4 class="dropdown-label">Energy efficient guides</h4>
-                        <a>Energy performance certificates explained</a>
-                        <a>Smart meters explained</a>
-                    </div>
-            </div>
+                    </li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="privacy_policy.html">Privacy Policy</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
         </div>
     </div>
-   
-    <!--third nav area end-->
+</header>
+<!-- Header end -->
 
+<!--main_product_banner start-->
 
+<section class="main_product_banner" class="container-fluid">
 
+    <img src="images/main_solar panel_banner.webp">
 
-    <!--banner start-->
-    <div class="banner-carousel">
-        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-            <!-- Indicators (optional) -->
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3" aria-label="Slide 4"></button>
-            </div>
-            
-            <!-- Carousel items (the banner containers) -->
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="container-fluid">
-                        <div class="row banner1">
-                            <div class="col-sm-7 left">
-                                <p>Reducing home heat loss</p>
-                                <h2>Roof and loft insulation</h2>
-                                <nav class="breadcrumbs">
-                                    <ul>
-                                        <li><a href="#">Home</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
-                                        <li><a href="#">Energy at home</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
-                                        <li><a href="#">Reducing home heat loss</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
-                                        <li><a href="#">Roof and loft insulation</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                            <div class="col-sm-5 right">
-                                <img src="images/GettyImages.jpg" alt="bed" class="img-fluid">
-                                <div class="background-container">
-                                    <div class="box top-left"></div>
-                                    <div class="box middle"></div>
-                                    <div class="box bottom-left"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    
-                <!-- Second Banner -->
-                <div class="carousel-item">
-                    <div class="container-fluid">
-                        <div class="row banner2">
-                            <div class="col-sm-7 left">
-                                <p>Reducing home heat loss</p>
-                                <h2>Roof and loft insulation</h2>
-                                <nav class="breadcrumbs">
-                                    <ul>
-                                        <li><a href="#">Home</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
-                                        <li><a href="#">Energy at home</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
-                                        <li><a href="#">Reducing home heat loss</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
-                                        <li><a href="#">Roof and loft insulation</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                            <div class="col-sm-5 right">
-                                <img src="images/GettyImages.jpg" alt="bed">
-                                <div class="background-container">
-                                    <div class="box top-left"></div>
-                                    <div class="box middle"></div>
-                                    <div class="box bottom-left"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    
-                <!-- Third Banner -->
-                <div class="carousel-item">
-                    <div class="container-fluid">
-                        <div class="row banner3">
-                            <div class="col-sm-7 left">
-                                <p>Reducing home heat loss</p>
-                                <h2>Roof and loft insulation</h2>
-                                <nav class="breadcrumbs">
-                                    <ul>
-                                        <li><a href="#">Home</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
-                                        <li><a href="#">Energy at home</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
-                                        <li><a href="#">Reducing home heat loss</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
-                                        <li><a href="#">Roof and loft insulation</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                            <div class="col-sm-5 right">
-                                <img src="images/GettyImages.jpg" alt="bed">
-                                <div class="background-container">
-                                    <div class="box top-left"></div>
-                                    <div class="box middle"></div>
-                                    <div class="box bottom-left"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    
-                <!-- Fourth Banner -->
-                <div class="carousel-item">
-                    <div class="container-fluid">
-                        <div class="row banner4">
-                            <div class="col-sm-7 left">
-                                <p>Reducing home heat loss</p>
-                                <h2>Roof and loft insulation</h2>
-                                <nav class="breadcrumbs">
-                                    <ul>
-                                        <li><a href="#">Home</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
-                                        <li><a href="#">Energy at home</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
-                                        <li><a href="#">Reducing home heat loss</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
-                                        <li><a href="#">Roof and loft insulation</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                            <div class="col-sm-5 right">
-                                <img src="images/GettyImages.jpg" alt="bed">
-                                <div class="background-container">
-                                    <div class="box top-left"></div>
-                                    <div class="box middle"></div>
-                                    <div class="box bottom-left"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <!-- Left and Right Controls -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+        <div class="product_name_background">
+            <h1>Solar Panel</h1>
         </div>
+
+</section>
+
+<!--main_product_banner end-->
+
+
+<!--main_product_section_one start-->
+
+<section class="main_product_section_one container-fluid">
+    <div class="product_desc">
+        <h2>Why we use Solar panels?</h2>
+        <p>Solar panels harness sunlight, a renewable and inexhaustible energy source, 
+            to generate electricity, reducing reliance on finite fossil fuels like coal 
+            and natural gas. This clean energy solution lowers greenhouse gas emissions, combats 
+            climate change, and minimizes air pollution. By producing your own electricity, solar 
+            panels significantly reduce or eliminate monthly bills, offering long-term cost savings 
+            and protection against rising energy prices. Additionally, they enhance energy independence 
+            by empowering individuals and communities to rely less on centralized power grids and foreign 
+            energy sources, bolstering energy security and resilience.</p>
     </div>
+</section>
+
+<!--main_product_section_one end-->
+
+
+
+<!--main_product_section_two start-->
+<section class="solar_products">
     
-    <!--banner end-->
+</section>
+<!--main_product_section_two end-->
 
 
-    <!--lead generation start-->
-<div class="lead-generation">
+
+
+<!--footer start-->
+<footer>
     <div class="container">
         <div class="row">
-            <div class="col-sm-12">
-                <h1>Transform Your Home with Solar Energy</h1>
-                <p>Discover the benefits of installing solar panels in your home and join the renewable energy revolution!</p>
-                <button class="cta_btn">Get Your Free Consultation</button>
+            <div class="col-sm-1 logo">
+                <div>
+                    <a href="#"><img src="images/pro logo.png" alt="prp"></a>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12">
-                <h2>Why Choose Solar Energy?</h2>
-                <p>Installing solar panels offers numerous advantages that can enhance your home, save you money, and contribute to a sustainable future.</p>
-            </div>
-        </div>
-        
-        <!-- Zig-zag layout starts here -->
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="card mb-4">
-                    <div class="row g-0">
-                        <div class="col-md-6">
-                            <img src="images/energy-savings.jpg" alt="Significant Energy Savings" class="img-fluid rounded-start" height="20vh" width="1000vh">
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card-body">
-                                <h3 class="card-title">Significant Energy Savings</h3>
-                                <p class="lead-generation-card-text">Reduce your electricity bills by up to 50% or more. Solar panels generate free energy from the sun, allowing you to save money every month.</p>
-                            </div>
-                        </div>
+            <div class="col-sm-9">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h4>About</h4>
+                        <ul class="pages">
+                            <li><a href="#">Compliance</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">The Foundation</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <h4>Latest</h4>
+                        <ul class="pages">
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Campaigns</a></li>
+                            <li><a href="#">Case studies</a></li>
+                            <li><a href="#">Collections</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <h4>Follow us</h4>
+                        <ul class="pages">
+                            <li><a href="#">LinkedIn</a></li>
+                            <li><a href="#">X (Twitter)</a></li>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Instagram</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-12">
-                <div class="card mb-4">
-                    <div class="row g-0 flex-row-reverse">
-                        <div class="col-md-6">
-                            <img src="images/property-value.jpg" alt="Increase Your Property Value" class="img-fluid rounded-end" height="20vh" width="1000vh">
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card-body">
-                                <h3 class="card-title">Increase Your Property Value</h3>
-                                <p class="lead-generation-card-text">Homes with solar installations often sell for more than those without. Investing in solar can enhance your property’s market value.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-sm-2 footer_end">
+                <h4>Energywire newsletter</h4>
+                <button>Subscribe to newsletter</button>
             </div>
         </div>
-        
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="card mb-4">
-                    <div class="row g-0">
-                        <div class="col-md-6">
-                            <img src="images/environmental-impact.jpg" alt="Environmental Impact" class="img-fluid rounded-start" height="20vh" width="1000vh">
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card-body">
-                                <h3 class="card-title">Environmental Impact</h3>
-                                <p class="lead-generation-card-text">Reduce your carbon footprint and contribute to a cleaner environment. Solar energy is a renewable resource that helps combat climate change.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12">
-                <div class="card mb-4">
-                    <div class="row g-0 flex-row-reverse">
-                        <div class="col-md-6">
-                            <img src="images/energy-independence.jpg" alt="Energy Independence" class="img-fluid rounded-end" height="20vh" width="1000vh">
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card-body">
-                                <h3 class="card-title">Energy Independence</h3>
-                                <p class="lead-generation-card-text">Gain control over your energy production and reduce reliance on traditional energy sources. Solar panels provide a sustainable energy solution.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    </div>
+</footer>
+<!--footer end-->
 
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="card mb-4">
-                    <div class="row g-0">
-                        <div class="col-md-6">
-                            <img src="images/government-incentives.jpg" alt="Government Incentives" class="img-fluid rounded-start" height="20vh" width="1000vh">
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card-body">
-                                <h3 class="card-title">Government Incentives</h3>
-                                <p class="lead-generation-card-text">Take advantage of available incentives, such as the Smart Export Guarantee (SEG) in the UK , which allows you to sell excess energy back to the grid.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12">
-                <div class="card mb-4">
-                    <div class="row g-0 flex-row-reverse">
-                        <div class="col-md-6">
-                            <img src="images/low-maintenance.jpg" alt="Low Maintenance Costs" class="img-fluid rounded-end" height="20vh" width="1000vh">
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card-body">
-                                <h3 class="card-title">Low Maintenance Costs</h3>
-                                <p class="lead-generation-card-text">Solar panels require minimal maintenance, allowing you to enjoy the benefits of renewable energy without the hassle of frequent upkeep.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-sm-12">
-                <h2>Ready to Make the Switch?</h2>
-                <p>Join thousands of satisfied homeowners who have made the switch to solar energy. Contact us today to learn more about our solar panel installation services and how you can benefit from renewable energy.</p>
-                <button class="cta_btn">Request a Free Quote</button>
-            </div>
-        </div>
+<!--footer_bottom start-->
+<div class="footer_bottom">
+    <div class="container-fluid">
+        <ul>
+            <li><a href="#">Terms and conditions</a></li>
+            <li><a href="#">Privacy policy</a> </li>
+            <li><a href="#">Cookie policy</a>
     </div>
 </div>
-<!--lead generation end-->
+<!--footer_bottom end-->
 
-    <!--footer start-->
-    <footer>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-1 logo">
-                    <h2>Logo</h2>
-                </div>
-                <div class="col-sm-9">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <h4>About</h4>
-                            <ul class="pages">
-                                <li>Compliance</li>
-                                <li>Careers</li>
-                                <li>The Foundation</li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-4">
-                            <h4>Latest</h4>
-                            <ul class="pages">
-                                <li>News</li>
-                                <li>Blog</li>
-                                <li>Campaigns</li>
-                                <li>Case studies</li>
-                                <li>Collections</li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-4">
-                            <h4>Follow us</h4>
-                            <ul class="pages">
-                                <li>LinkedIn</li>
-                                <li>X (Twitter)</li>
-                                <li>Facebook</li>
-                                <li>Instagram</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-2 footer_end">
-                    <h4>Energywire newsletter</h4>
-                    <button>Subscribe to newsletter</button>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!--footer end-->
+<script src="js/myScript.js"></script><!--js file included-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 
-    <!--footer_bottom start-->
-    <div class="footer_bottom">
-        <div class="container-fluid">
-            <ul>
-                <li>Terms and conditions</li>
-                <li>Privacy policy </li>
-                <li>Cookie policy</li>
-            </ul>
-        </div>
-    </div>
-    <!--footer_bottom start-->
-
-    <script src="js/myScript.js"></script><!--js file included-->
     
     
 </body>

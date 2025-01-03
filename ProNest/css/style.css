@@ -1624,10 +1624,52 @@ padding: 50px 100px;
 
 /*ABOUT US PAGE END*/
 
+
+
 /*PRODUCTS PAGE START*/
+
+
+/*all_product_banner start*/
+
+#all_product_banner{
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+#all_product_banner img{
+    width: 100%;
+    height: auto; /* Maintains aspect ratio */
+}
+
+#all_product_banner h1 {
+    position: absolute; /* Allows precise positioning over the image */
+    top: 50%; /* Centers the text vertically */
+    left: 15%; /* Adjust horizontal position */
+    transform: translateY(-50%); /* Perfectly center the text vertically */
+    font-size: 48px; /* Adjust the size of the heading */
+    color: #004aad;
+    margin: 0; /* Remove default margin */
+    z-index: 2; /* Ensure the text is above the image */
+    font-weight: bold; /* Emphasize the heading */
+}
+
+/*all_product_banner end*/
+
+/*products start*/
+
 #products {
     background-color: #E8F0FE;
-    padding: 40px 0px;
+    padding: 60px 0px;
+}
+
+#products h2{
+    color: #333;
+    font-weight: 600;
+}
+
+#products .row{
+    margin: 40px 0px;
 }
 
 #products .pro_head {
@@ -1640,6 +1682,17 @@ padding: 50px 100px;
     flex-direction: column;
     justify-content: space-between; /* Ensures consistent spacing between elements */
     height: 100%; /* Ensures all cards have equal height */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */
+}
+
+
+#products .card:hover {
+    transform: scale(1.05); /* Scales the card to 105% of its size */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for emphasis */
+}
+
+#products .card-title{
+    color: #004aad;
 }
 
 #products .card-body {
@@ -1647,6 +1700,11 @@ padding: 50px 100px;
     flex-direction: column;
     justify-content: space-between; /* Aligns content within the card body */
     flex-grow: 1; /* Makes the card-body stretch to fill the available space */
+}
+
+#products .card-text{
+    text-align: justify;
+    margin: 10px 0;
 }
 
 #products h5 {
@@ -1663,12 +1721,110 @@ padding: 50px 100px;
     align-self: flex-start; /* Aligns the button to the left */
 }
 
+/*products end*/
 
+/*let_us_chat start*/
 
+#let_us_chat{
+    text-align: center;
+    padding: 40px 0px;
+}
 
+#let_us_chat .content{
+    text-align: center;
+    margin: 50px 400px;
+}
+
+#let_us_chat button{
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+}
+
+/*let_us_chat end*/
 
 
 /*PRODUCTS PAGE END*/
+
+
+/*MAIN PRODUCTS PAGES START*/
+
+/*main_product_banner start*/
+
+.main_product_banner {
+    position: relative; /* Establish positioning context for child elements */
+    padding: 0;
+    margin: 0;
+}
+
+.main_product_banner img {
+    width: 100%; /* Ensure the image spans the full width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.main_product_banner .product_name_background {
+    position: absolute; /* Allows positioning relative to the .main_product_banner */
+    top: 90%; /* Centers the background vertically */
+    left: 25%; /* Centers the background horizontally */
+    transform: translate(-50%, -50%); /* Perfectly center the background */
+    height: 400px;
+    width: 600px;
+    background-color: rgba(255,255,255, 0.6); /* Semi-transparent black for contrast */
+    border-radius: 20px;
+    display: flex;
+    justify-content: center; /* Center the text horizontally */
+    align-items: center; /* Center the text vertically */
+    text-align: center; /* Center-align text inside */
+    border: 1px solid #004aad;
+}
+
+.main_product_banner .product_name_background h1 {
+    color: #004aad;
+    font-size: 48px; /* Adjust text size */
+    font-weight: bold; /* Emphasize the heading */
+    margin: 0; /* Remove default margin */
+}
+
+/*main_product_banner end*/
+
+/*main_product_section_one strat*/
+
+.main_product_section_one {
+    display: flex; /* Establish a flexbox layout */
+    justify-content: flex-end; /* Align content to the right */
+    align-items: center; /* Vertically center the content */
+    padding: 20px; /* Add some spacing inside the section */
+    background-color: #ddd;
+    height: 100%; /* Adjust based on content or requirements */
+}
+
+.main_product_section_one .product_desc {
+    max-width: 600px; /* Limit the width of the description area */
+    text-align: left; /* Align text to the left */
+    margin-right: 100px; /* Add some spacing from the right edge */
+    padding: 20px; /* Add padding inside the description box */
+}
+
+.main_product_section_one h2 {
+    font-size: 32px; /* Adjust heading size */
+    margin-bottom: 10px; /* Add spacing below the heading */
+    color: #004aad; /* Optional text color */
+}
+
+.main_product_section_one p {
+    font-size: 16px; /* Adjust paragraph size */
+    text-align: justify;
+    line-height: 1.6; /* Improve readability */
+    color: black;
+}
+
+
+/*main_product_section_one end*/
+
+
+/*MAIN PRODUCTS PAGES END*/
 
 
 
