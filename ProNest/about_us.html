@@ -14,359 +14,349 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
 
   <!--font awesome-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
   <!--jQuery include-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <!-- // new link  -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
 
   <!--bootstrap3 include-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  
+
+ <!-- Bootstrap 5 JS (Bundle with Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+ 
 </head>
+
+
+
 <body>
-   
-    <header>
-        <div class="top-header">
-            <div class="d-flex flex-row-reverse" class="margins-container">
-                <div class="top-nav" area-label="functional">
-                    <ul>
-                        <li>Contact</li>
-                        <li>Location:<a>All</a></li>
-                        <li>Search<i class="fa fa-search" aria-hidden="true"></i></li>
-                        <li><button>Get a Code</button></li>
-                    </ul>
-                </div>
+<!-- Header start -->
+<header>
+    <div class="top-header">
+        <div class="d-flex flex-row-reverse margins-container">
+            <div class="top-nav" aria-label="functional">
+                <ul>
+                    <li class="email">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <a href="#">support@pemlix.com</a>
+                    </li>
+                    <li class="call">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <a href="#">+91 856975425</a>
+                    </li>
+                    <li class="search">Search<i class="fa fa-search" aria-hidden="true"></i></li>
+                    <li><button>Get a Code</button></li>
+                </ul>
             </div>
         </div>
-        <div class="secondary-header">
-            <div class="margins-container">
-                <a>Logo</a>
-                <nav id="site-navigation-nav" area-label="main site">
-                    <ul>
-                        <li class="dropdown">
-                            <button class="dropbtn">
-                                About Us
-                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                            </botton class="dropdown">
-                            <div class="dropdown-content">
-                                <a href="#">Our Team</a>
-                                <a href="#">Server</a>
-                            </div>
-                        </li>
-                        <li class="dropdown">
-                            <button class="dropbtn">
-                                Products
-                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                            </botton class="dropdown">
-                            <div class="dropdown-content">
-                                <a href="#">Solar Panel</a>
-                                <a href="#">Home Improvement</a>
-                                <a href="#">Home Insulation</a>
-                                <a href="#">Windows & Doors Improvement</a>
-                            </div>
-                        </li>
-                        <li><a>Gallery</a></li>
-                        <li><a>Blogs</a></li>
-                        <li><a>Privacy Policy</a></li>
-                        <li><a>Contact Us</a></li>
-                    </ul>
-                </nav>
+    </div>
+    <div class="secondary-header">
+        <div class="margins-container">
+            <a href="index.html"><img src="images/pro logo.png" style="height: 70px; width: auto"></a>
+            <div class="menu-toggle" id="mobile-menu">
+                 <!-- Hamburger Icon -->
             </div>
-        </div>
-    </header>
-    
-    <!--third nav area start -->
-    <div class="third-bar">
-        <ul>
-            <li>
-                <button type="button" class="btn" data-toggle="collapse" data-target="#demo1">
-                    I'm looking for...
-                    <i class="fa fa-caret-down" aria-hidden="true"></i>
-                </button>
-            </li>
-            <li>
-                <button type="button" class="btn" data-toggle="collapse" data-target="#demo2">
-                    Home energy advice
-                    <i class="fa fa-caret-down" aria-hidden="true"></i>
-                </button>
-            </li>
-            <li><a href="#">Heat pumps</a></li>
-            <li><a href="#">Financial support</a></li>
-            <li><a href="#">Energy tools and calculators</a></li>
-        </ul>
-        
-    </div>
-    <div id="demo1" class="collapse">
-        <a href="#">Quick tips to save energy</a>
-        <a href="#">Inspiration for my next home improvement project</a>
-        <a href="#">How to save money on my energy bills</a>
-        <a href="#">Help for my community</a>
-        <a href="#">Case studies</a>
-    </div>
-    <div id="demo2" class="collapse">
-        <div class="container">
-            <div class="row">
-                    <div class="col-sm-8">
-                        <div class="row" id="advice">
-                                <h4 class="dropdown-label">Practical advice</h4>
-                                <div class="col-sm-6">
-                                    <a>Heating your home</a>
-                                    <a>Reducing home heat loss</a>
-                                    <a>Renewable energy generation</a>
-                                    <a>Fixing damp and condensation</a>
+            <nav id="site-navigation-nav" aria-label="main site">
+                <ul>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li class="dropdown">
+                        <button class="dropbtn">
+                            <a href="products.html" style="color: #333;">Products</a>
+                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="solar_panel.html">Solar Panel</a>
+                            <div class="dropdown-submenu">
+                                <a href="home_improvement.html">Home Improvement</a>
+                                <div class="submenu-content">
+                                    <a href="sub_energy_efficient_doors.html">Energy Efficient Doors</a>
+                                    <a href="sub_stylish_doors.html">Stylish Doors</a>
+                                    <a href="sub_modern_kitchens.html">Modern Kitchens</a>
+                                    <a href="sub_bathroom_renovations.html">Bathroom Renovations</a>
+                                    <a href="sub_outdoor_living_spaces.html">Outdoor Living Spaces</a>
+                                    <a href="sub_innovative_lighting_solutions.html">Innovative Lighting Solutions</a>
+                                    <a href="sub_basement_renovations.html">Basement Renovations</a>
+                                    <a href="sub_green_remodeling.html">Green Remodeling</a>
+                                    <a href="sub_home_restoration.html">Home Restoration</a>
                                 </div>
-                                <div class="col-sm-6">
-                                    <a>Buying energy efficient products</a>
-                                    <a>How to switch energy supplier</a>
-                                    <a>Saving water at home</a>
-                                    <a>Energy storage options explained</a>
+                            </div>
+                            <div class="dropdown-submenu">
+                                <a href="home_insulation.html">Home Insulation</a>
+                                <div class="submenu-content">
+                                    <a href="sub_spray_foam_insulation.html">Spray foam insulation</a>
+                                    <a href="sub_fiberglass_insulation.html">Fiberglass insulation</a>
+                                    <a href="sub_rockwool_insulation.html">Rockwool insulation</a>
+                                    <a href="sub_mineral_Wool_insulation.html">Mineral Wool insulation</a>
+                                    <a href="sub_insulated_doors.html">Insulated Doors</a>
+                                    <a href="sub_sheep_wool_insulation.html">Sheep Wool insulation </a>
+                                    <a href="sub_lambs_wool_insulation.html">Lambs Wool insulation</a>
+                                    <a href="sub_cellulose_insulation.html">Cellulose insulation</a>
+                                    <a href="sub_silver_foil_insulation.html">Silver Foil  insulation</a>
+                                    <a href="sub_recycled_plastic_insulation.html">Recycled Plastic insulation</a>
+                                    <a href="sub_granular_insulation.html">Granular insulation</a>
                                 </div>
+                            </div>
+                            <div class="dropdown-submenu">
+                                <a href="windows_doors.html">Windows and Door improvement</a>
+                                <div class="submenu-content">
+                                    <a href="sub_doors.html">Doors</a>
+                                    <a href="sub_windows.html">Windows</a>
+                                    <a href="sub_conservatories.html">Conservatories</a>
+                                    <a href="sub_porches.html">Porches</a>
+                                    <a href="sub_patio.html">Patio</a>
+                                    <a href="sub_rppfline.html">Roofline</a>
+                                    <a href="sub_garden_rooms.html">Garden Rooms </a>
+                                    <a href="sub_orangeries.html">Orangeries</a>
+                                </div>
+                            </div>
                         </div>
+                    </li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="privacy_policy.html">Privacy Policy</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<!-- Header end -->
+        
+   
+<!-- About_us_banner start -->
+<section id="About_us_banner" class="container-fluid">
+    <div class="banner_area">
+        <h2>About Us</h2>
+        <p>ProNest is a home improvement company as well as an insulation provider that offers renovation to customer properties the way customer wants. 
+            It is a multifaceted home improvement company specializing in both renovation services and insulation solutions. We cater to the unique needs 
+            and preferences of each customer, offering a personalized approach to transforming their properties. Whether it's a complete kitchen overhaul, 
+            a bathroom remodel, or an energy-efficient insulation upgrade, ProNest strives to deliver high-quality craftsmanship and exceptional customer service. 
+            Our commitment to client satisfaction ensures that every project aligns with individual visions and budgetary constraints, resulting in homes that are 
+            not only aesthetically pleasing but also comfortable and energy-efficient.</p>
+        <img src="images/about_us_banner.jpg">
+    </div>
+</section>
+<!-- About_us_banner end -->
+
+<!-- our_goals start -->
+
+<section id="our_goals">
+    <h2>Our Goals</h2>
+    <div class="row">
+        <div class="col-sm-4">
+            <img src="images/our_mission.jpg">
+        </div>
+        <div class="col-sm-4" style="background-color: white;">
+            <h3>Our Values</h3>
+            <p>Our vision is to be the most customer-centric company, where people can find and discover 
+                anything they want, delivered with exceptional service and care.</p>
+        </div>
+        <div class="col-sm-4">
+            <img src="images/our_vision.jpg">
+        </div>
+        <div class="col-sm-4" style="background-color: black; color: white;">
+            <h3>Our Mission</h3>
+            <p>Our mission is to help customers make sustainable choices by providing eco-friendly, 
+                high-performance products that contribute to a healthier planet without compromising quality or affordability.</p>
+        </div>
+        <div class="col-sm-4">
+            <img src="images/our_values.jpg">
+        </div>
+        <div class="col-sm-4" style="background-color: orangered; color: white;">
+            <h3>Our Vision</h3>
+            <p>Our vision is to be the most customer-centric company, 
+                where people can find and discover anything they want, 
+                delivered with exceptional service and care.</p>
+        </div>
+    </div>
+</section>
+
+<!-- our_goals end -->
+
+<!-- our_team start -->
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+<section id="our_team" class="section bg-gray-100">
+    <div class="container">
+        <div class="row section-heading justify-content-center text-center wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.3s" style="visibility: visible; animation-duration: 0.3s; animation-delay: 0.3s; animation-name: fadeInUp;">
+            <div class="col-lg-8 col-xl-6">
+                <h2 class="h3 bg-primary-after after-50px pb-3 mb-3">Meet Our Team</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-sm-6 my-3 wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.3s" style="visibility: visible; animation-duration: 0.3s; animation-delay: 0.3s; animation-name: fadeInUp;">
+                <div class="hover-top-in text-center">
+                    <div class="overflow-hidden z-index-1 position-relative px-5"><img class="rounded-circle border border-5 border-white shadow" src="images/User-Profile-PNG.png" title="" alt=""></div>
+                    <div class="mx-2 mx-xl-3 shadow rounded-3 position-relative mt-n4 bg-white p-4 pt-6 mx-4 text-center hover-top--in">
+                        <h6 class="fw-700 dark-color mb-1">Nancy Bayers</h6><small>Co-Founder</small>
+                        <div class="pt-2"><a class="icon-sm bg-primary rounded-circle me-1 text-white" href="#"><i class="bi bi-facebook"></i></a> <a class="icon-sm bg-primary rounded-circle me-1 text-white" href="#"><i class="bi bi-twitter"></i></a> <a class="icon-sm bg-primary rounded-circle me-1 text-white"
+                                href="#"><i class="bi bi-linkedin"></i></a> <a class="icon-sm bg-primary rounded-circle me-1 text-white" href="#"><i class="bi bi-instagram"></i></a></div>
                     </div>
-                    
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 my-3 wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.3s" style="visibility: visible; animation-duration: 0.3s; animation-delay: 0.3s; animation-name: fadeInUp;">
+                <div class="hover-top-in text-center">
+                    <div class="overflow-hidden z-index-1 position-relative px-5"><img class="rounded-circle border border-5 border-white shadow" src="images/User-Profile-PNG.png" title="" alt=""></div>
+                    <div class="mx-2 mx-xl-3 shadow rounded-3 position-relative mt-n4 bg-white p-4 pt-6 mx-4 text-center hover-top--in">
+                        <h6 class="fw-700 dark-color mb-1">Nancy Bayers</h6><small>Co-Founder</small>
+                        <div class="pt-2"><a class="icon-sm bg-primary rounded-circle me-1 text-white" href="#"><i class="bi bi-facebook"></i></a> <a class="icon-sm bg-primary rounded-circle me-1 text-white" href="#"><i class="bi bi-twitter"></i></a> <a class="icon-sm bg-primary rounded-circle me-1 text-white"
+                                href="#"><i class="bi bi-linkedin"></i></a> <a class="icon-sm bg-primary rounded-circle me-1 text-white" href="#"><i class="bi bi-instagram"></i></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 my-3 wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.3s" style="visibility: visible; animation-duration: 0.3s; animation-delay: 0.3s; animation-name: fadeInUp;">
+                <div class="hover-top-in text-center">
+                    <div class="overflow-hidden z-index-1 position-relative px-5"><img class="rounded-circle border border-5 border-white shadow" src="images/User-Profile-PNG.png" title="" alt=""></div>
+                    <div class="mx-2 mx-xl-3 shadow rounded-3 position-relative mt-n4 bg-white p-4 pt-6 mx-4 text-center hover-top--in">
+                        <h6 class="fw-700 dark-color mb-1">Nancy Bayers</h6><small>Co-Founder</small>
+                        <div class="pt-2"><a class="icon-sm bg-primary rounded-circle me-1 text-white" href="#"><i class="bi bi-facebook"></i></a> <a class="icon-sm bg-primary rounded-circle me-1 text-white" href="#"><i class="bi bi-twitter"></i></a> <a class="icon-sm bg-primary rounded-circle me-1 text-white"
+                                href="#"><i class="bi bi-linkedin"></i></a> <a class="icon-sm bg-primary rounded-circle me-1 text-white" href="#"><i class="bi bi-instagram"></i></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 my-3 wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.4s" style="visibility: visible; animation-duration: 0.3s; animation-delay: 0.4s; animation-name: fadeInUp;">
+                <div class="hover-top-in text-center">
+                    <div class="overflow-hidden z-index-1 position-relative px-5"><img class="rounded-circle border border-5 border-white shadow" src="images/User-Profile-PNG.png" title="" alt=""></div>
+                    <div class="mx-2 mx-xl-3 shadow rounded-3 position-relative mt-n4 bg-white p-4 pt-6 mx-4 text-center hover-top--in">
+                        <h6 class="fw-700 dark-color mb-1">Nancy Bayers</h6><small>Co-Founder</small>
+                        <div class="pt-2"><a class="icon-sm bg-primary rounded-circle me-1 text-white" href="#"><i class="bi bi-facebook"></i></a> <a class="icon-sm bg-primary rounded-circle me-1 text-white" href="#"><i class="bi bi-twitter"></i></a> <a class="icon-sm bg-primary rounded-circle me-1 text-white"
+                                href="#"><i class="bi bi-linkedin"></i></a> <a class="icon-sm bg-primary rounded-circle me-1 text-white" href="#"><i class="bi bi-instagram"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- our_team end -->
+
+<!-- about_img start -->
+<section id="about_img">
+    <h1>ProNest</h1>
+    <h6>"The ultimate solutions provider"</h6>
+    <img src="images/about_img.webp">
+</section>
+<!-- about_img end -->
+
+<!-- cus_review start -->
+
+<section id="cus_review">
+    <h2>Customer Review</h2>
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+    
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/User-Profile-PNG.png" alt="Reviewer 1" class="d-block">
+                <p>"ProNest transformed my kitchen! The team was professional and exceeded my expectations."</p>
+            </div>
+            <div class="carousel-item">
+                <img src="images/User-Profile-PNG.png" alt="Reviewer 2" class="d-block">
+                <p>"Thanks to ProNest, my home is now more energy-efficient and comfortable. Highly recommended!"</p>
+            </div>
+            <div class="carousel-item">
+                <img src="images/User-Profile-PNG.png" alt="Reviewer 3" class="d-block">
+                <p>"Excellent craftsmanship and great customer service. I love my new bathroom!"</p>
+            </div>
+        </div>
+    
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+</section>
+
+<!-- cus_review end -->
+
+ <!--footer start-->
+ <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-1 logo">
+                <div>
+                    <a href="#"><img src="images/pro logo.png" alt="prp"></a>
+                </div>
+            </div>
+            <div class="col-sm-9">
+                <div class="row">
                     <div class="col-sm-4">
-                        <h4 class="dropdown-label">Energy efficient guides</h4>
-                        <a>Energy performance certificates explained</a>
-                        <a>Smart meters explained</a>
+                        <h4>About</h4>
+                        <ul class="pages">
+                            <li><a href="#">Compliance</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">The Foundation</a></li>
+                        </ul>
                     </div>
-            </div>
-        </div>
-    </div>
-   
-    <!--third nav area end-->
-
-
-
-
-    
-
-    
-   
-  <div class="container content-section">
-   <div class="row">
-    <div class="col-12 text-center">
-     <h1 class="section-title">
-      About Us
-     </h1>
-     <p class="section-subtitle">
-      ProNest is a home improvement company as well as an insulation provider that offers renovation to customer properties the way customer wants. It is a multifaceted home improvement company specializing in both renovation services and insulation solutions. We cater to the unique needs and preferences of each customer, offering a personalized approach to transforming their properties. Whether it's a complete kitchen overhaul, a bathroom remodel, or an energy-efficient insulation upgrade, ProNest strives to deliver high-quality craftsmanship and exceptional customer service. Our commitment to client satisfaction ensures that every project aligns with individual visions and budgetary constraints, resulting in homes that are not only aesthetically pleasing but also comfortable and energy-efficient.
-     </p>
-    </div>
-   </div>
-   <div class="row mt-5">
-    <div class="col-md-6">
-     <img alt="Group of people working on a home renovation project" height="100" src="https://storage.googleapis.com/a1aa/image/aXl0Gfwle8mckU7ygYesEITBEXHSAySRvSdMfjDe7pYTZajfE.jpg" width="500"/>
-    </div>
-    <div class="col-md-6">
-     <h2 class="section-title">
-      Our Mission
-     </h2>
-     <p class="sub">
-      “Our mission is to help customers make sustainable choices by providing eco-friendly, high-performance products that contribute to a healthier planet without compromising quality or affordability."
-     </p>
-    </div>
-   </div>
-   <div class="row mt-5">
-    <div class="col-md-6">
-     <h2 class="section-title">
-      Our Vision
-     </h2>
-     <p class="sub">
-      “Our vision is to be the most customer-centric company, where people can find and discover anything they want, delivered with exceptional service and care.”
-     </p>
-    </div>
-    <div class="col-md-6">
-     <img alt="Team discussing a project in a modern office setting" height="100" src="https://storage.googleapis.com/a1aa/image/NnGzVMkDfJRGLSKGfNiWhFeutHjiSKeRYqxAruGI9fgOZajfE.jpg" width="500"/>
-    </div>
-   </div>
-   <div class="row mt-5">
-    <div class="col-md-6">
-     <img alt="Team working together on a renovation project" height="100" src="https://storage.googleapis.com/a1aa/image/hfJIV1t1floAGU5Gc4Vi7qa3p6dwLDeGPb9ROIFq3APYm24nA.jpg" width="500"/>
-    </div>
-    <div class="col-md-6">
-     <h2 class="section-title">
-      Our Values
-     </h2>
-     <p class="sub">
-      “Our values are dedicated to provide equitable access to our products and services, ensuring every customer feels valued and included."
-     </p>
-    </div>
-   </div>
-   <div class="row mt-5">
-    <div class="col-12">
-     <h2 class="section-title text-center">
-      Team Section
-     </h2>
-     <div class="row">
-      <div class="col-md-4 team-member">
-       <img alt="Team member 1" height="150" src="https://storage.googleapis.com/a1aa/image/nlZjqnp6j1I7Ahqo5mLufn5F1sxrOw6mjsvMzIzCR01csNeTA.jpg" width="150"/>
-       <h5>
-        John Doe
-       </h5>
-       <p>
-        CEO
-       </p>
-      </div>
-      <div class="col-md-4 team-member">
-       <img alt="Team member 2" height="150" src="https://storage.googleapis.com/a1aa/image/5h0TUnvEGvrBJhv7z63rWc9qnJf86a38TfJDX9fSuS02x24nA.jpg" width="150"/>
-       <h5>
-        Jane Smith
-       </h5>
-       <p>
-        CTO
-       </p>
-      </div>
-      <div class="col-md-4 team-member">
-       <img alt="Team member 3" height="150" src="https://storage.googleapis.com/a1aa/image/tDr7NjnUBk4mNttyHDmhBdkOOx3T5pEPgROAPmKghlIO2GfJA.jpg" width="150"/>
-       <h5>
-        Emily Johnson
-       </h5>
-       <p>
-        COO
-       </p>
-      </div>
-     </div>
-    </div>
-   </div>
-   <div class="row mt-5">
-    <div class="col-12">
-        <h2 class="section-title text-center">Customer Reviews</h2>
-        <div id="carouselReviews" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="review">
-                        <p>
-                            “After the inspection was carried out in my loft, the surveyor discovered that it was both outdated and subpar. To enhance energy efficiency and thermal performance, the team replaced the existing material with cutting-edge insulation and I can already feel the difference. The immediate impact is evident in increased interior warmth and decreased heating system workload. The entire process was characterized by professionalism and efficiency.”
-                        </p>
-                        <span>– James K., Eco-Conscious Homeowner in Leeds</span>
+                    <div class="col-sm-4">
+                        <h4>Latest</h4>
+                        <ul class="pages">
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Campaigns</a></li>
+                            <li><a href="#">Case studies</a></li>
+                            <li><a href="#">Collections</a></li>
+                        </ul>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="review">
-                        <p>
-                            “Despite initial reservations, a loft inspection revealed significant thermal performance deficiencies. The identification and rectification of heat loss areas through insulation installation has resulted in a substantial decrease in energy consumption. This investment in energy efficiency is highly recommended.”
-                        </p>
-                        <span>– Susan L., Homeowner in Manchester</span>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="review">
-                        <p>
-                            "The inspection team demonstrated punctuality, courtesy, and thoroughness throughout the process. They provided a detailed assessment of the loft's insulation deficiencies and outlined potential solutions. Post-installation, the work area was left immaculate. The service provided was of the highest quality.”
-                        </p>
-                        <span>– David R., Property Owner in Birmingham</span>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="review">
-                        <p>
-                            “Following a comprehensive loft inspection, I made the decision to invest in eco-friendly insulation materials. This choice has not only enhanced my home's energy efficiency but has also positively impacted my environmental consciousness. The team's expertise was invaluable in helping me select the most suitable insulation option for my specific needs.”
-                        </p>
-                        <span>– Maria T., Landlord in London</span>
+                    <div class="col-sm-4">
+                        <h4>Follow us</h4>
+                        <ul class="pages">
+                            <li><a href="#">LinkedIn</a></li>
+                            <li><a href="#">X (Twitter)</a></li>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Instagram</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselReviews" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselReviews" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            <div class="col-sm-2 footer_end">
+                <h4>Energywire newsletter</h4>
+                <button>Subscribe to newsletter</button>
+            </div>
         </div>
+    </div>
+</footer>
+<!--footer end-->
+
+<!--footer_bottom start-->
+<div class="footer_bottom">
+    <div class="container-fluid">
+        <ul>
+            <li><a href="#">Terms and conditions</a></li>
+            <li><a href="#">Privacy policy</a> </li>
+            <li><a href="#">Cookie policy</a>
     </div>
 </div>
-   <div class="row mt-5">
-    <div class="col-12">
-     <h2 class="section-title text-center">
-      Contacts
-     </h2>
-     <p class="text-center">
-      Kolkata Office: WEBEL IT Park, P-1, Taratala Road, Taratala, Kolkata, West Bengal 700088
-     </p>
-     <p class="text-center">
-      Email: sales@pemlix.com
-     </p>
-     <p class="text-center">
-      Call Us: +91-9073150150
-     </p>
-    </div>
-   </div>
-  </div>
-  <script crossorigin="anonymous" integrity="sha384-oBqDVmMz4fnFO9gybBogGzOg6tv6Wz7YtLr6x8my5pA1d5nld4x8LdP0kVG8aTYl" src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js">
-  </script>
-  <script crossorigin="anonymous" integrity="sha384-pprn3073KE6tl6/7mW1sMEIYpgnb5z5e3gq4k5/5p6bY1d5nld4x8LdP0kVG8aTYl" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js">
-  </script>
+<!--footer_bottom end-->
+
+<script src="js/myScript.js"></script><!--js file included-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 
 
-     
-
-    <!--footer start-->
-    <footer>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-1 logo">
-                    <h2>Logo</h2>
-                </div>
-                <div class="col-sm-9">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <h4>About</h4>
-                            <ul class="pages">
-                                <li>Compliance</li>
-                                <li>Careers</li>
-                                <li>The Foundation</li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-4">
-                            <h4>Latest</h4>
-                            <ul class="pages">
-                                <li>News</li>
-                                <li>Blog</li>
-                                <li>Campaigns</li>
-                                <li>Case studies</li>
-                                <li>Collections</li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-4">
-                            <h4>Follow us</h4>
-                            <ul class="pages">
-                                <li>LinkedIn</li>
-                                <li>X (Twitter)</li>
-                                <li>Facebook</li>
-                                <li>Instagram</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-2 footer_end">
-                    <h4>Energywire newsletter</h4>
-                    <button>Subscribe to newsletter</button>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!--footer end-->
-
-    <!--footer_bottom start-->
-    <div class="footer_bottom">
-        <div class="container-fluid">
-            <ul>
-                <li>Terms and conditions</li>
-                <li>Privacy policy </li>
-                <li>Cookie policy</li>
-            </ul>
-        </div>
-    </div>
-    <!--footer_bottom start-->
-
-    <script src="js/myScript.js"></script><!--js file included-->
-    
     
 </body>
 </html>
