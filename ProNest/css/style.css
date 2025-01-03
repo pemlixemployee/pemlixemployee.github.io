@@ -1796,7 +1796,7 @@ padding: 50px 100px;
     justify-content: flex-end; /* Align content to the right */
     align-items: center; /* Vertically center the content */
     padding: 20px; /* Add some spacing inside the section */
-    background-color: #ddd;
+    background-color: #f2f3f4;
     height: 100%; /* Adjust based on content or requirements */
 }
 
@@ -1810,7 +1810,7 @@ padding: 50px 100px;
 .main_product_section_one h2 {
     font-size: 32px; /* Adjust heading size */
     margin-bottom: 10px; /* Add spacing below the heading */
-    color: #004aad; /* Optional text color */
+    color: black; /* Optional text color */
 }
 
 .main_product_section_one p {
@@ -1820,8 +1820,60 @@ padding: 50px 100px;
     color: black;
 }
 
-
 /*main_product_section_one end*/
+
+/*con_details start*/
+.con_details {
+    text-align: center;
+}
+
+.con_details h3{
+    font-weight: 600;
+    margin-top: 50px;
+}
+
+.con_details span{
+    color: #004aad;
+}
+
+.con_details .row {
+    display: flex;
+    justify-content: center; /* Align items horizontally */
+    align-items: stretch;    /* Ensure all items are the same height */
+    text-align: center;
+    flex-wrap: nowrap;       /* Prevent wrapping */
+    gap: 20px;               /* Adds space between items */
+    margin: 50px;
+    padding: 100px;
+    background-color: #E8F0FE;
+    border-radius: 10px;
+}
+
+.con_details .con {
+    background-color: white;
+    margin: 10px;
+    padding: 50px;           /* Consistent inner padding */
+    border-radius: 20px;
+    flex: 1;                 /* Makes all items grow/shrink evenly */
+    max-width: 300px;        /* Sets a consistent maximum width */
+    min-width: 300px;        /* Prevents shrinking below a certain size */
+    display: flex;           /* Allows for vertical alignment inside */
+    flex-direction: column;  /* Stacks content vertically */
+    justify-content: center; /* Centers content vertically */
+    align-items: center;     /* Centers content horizontally */
+}
+
+.con_details .fa {
+    font-size: 42px;
+    color: #004aad;
+    margin-bottom: 20px;
+}
+
+.con_details h5 {
+    color: black;
+}
+
+/*con_details end*/
 
 
 /*MAIN PRODUCTS PAGES END*/
