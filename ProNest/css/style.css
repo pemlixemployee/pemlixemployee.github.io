@@ -465,14 +465,10 @@ body{
 /*jumpto_first end*/
 
 /*jumpto_second start*/
-
-
 #jumpto_second {
     background-color: #F0F4F9;
     padding: 40px;
 }
-
-#jumpto_second .row {}
 
 #jumpto_second .fours {
     margin: 20px 0px;
@@ -481,91 +477,80 @@ body{
 #jumpto_second h3 {
     color: #333; /* Dark gray color */
     font-weight: 600;
-    margin-bottom: 20px; /* Add space below the heading */
+    margin-bottom: 20px; /* Space below the heading */
 }
 
 #jumpto_second p {
     color: #555; /* Light gray color */
     max-width: 500px; /* Limit the width of the paragraph */
-    /*margin: 0 auto 30px auto; /* Center the text and add space below */*/
+    margin: 0 ; /* Center the text and add space below */
 }
 
 #jumpto_second .card {
-    width: 250px;
-    height: auto;
+    width: 250px; /* Fixed card width */
+    height: 380px; /* Fixed card height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures even distribution */
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    margin: 10px; /* Consistent spacing between cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional for better appearance */
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+#jumpto_second .card-img-top {
+    width: 100%;
+    height: 180px; /* Fixed height for uniform image sizes */
+    object-fit: cover; /* Prevent image distortion */
+    border-radius: 8px 8px 0 0;
 }
 
 #jumpto_second .card-body {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1; /* Ensures the body takes remaining space */
+    padding: 10px;
 }
 
-#jumpto_second h4 {}
+#jumpto_second .card-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin: 10px 0; /* Consistent spacing around title */
+}
 
 #jumpto_second h5 {
     color: #004aad;
     font-weight: 600;
+    margin: 10px 0; /* Consistent spacing below subtitle */
 }
-
-#jumpto_second .card-img-top {}
 
 #jumpto_second .btn {
     background-color: #E8F0FE;
-    border-radius: 50px;
+    border-radius: 50%;
     color: #004aad;
     width: 35px;
-    margin-left: 85%;
-}
-
-#jumpto_second h4 {
+    height: 35px;
+    display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: auto; /* Pushes button to bottom */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#jumpto_second .btn:hover {
+    background-color: #004aad;
+    color: #fff;
+    transform: scale(1.1); /* Slight scale on hover */
 }
 
 #jumpto_second .col-sm-3 {
     transition: transform 0.3s ease; /* Smooth transition for scaling */
-}
-
-#jumpto_second #show-more-btn{
-    width: 100px;
-    height: 50px;
-    border: none;
-    border-bottom: 2px solid #004aad;
-    border-radius: 0;
-    margin: 0;
-    background-color: #F0F4F9;
-}
-
-#jumpto_second #show-more-btn:hover{
-    width: 100px;
-    height: 50px;
-    border: none;
-    border-bottom: 2px solid #004aad;
-    border-radius: 0;
-    margin: 0;
-    background-color: #F0F4F9;
-    color: #004aad;
-}
-
-#jumpto_second #show-less-btn{
-    width: 100px;
-    height: 50px;
-    border: none;
-    border-bottom: 2px solid #004aad;
-    border-radius: 0;
-    margin: 0;
-    background-color: #F0F4F9;
-}
-
-#jumpto_second #show-less-btn:hover{
-    width: 100px;
-    height: 50px;
-    border: none;
-    border-bottom: 2px solid #004aad;
-    border-radius: 0;
-    margin: 0;
-    background-color: #F0F4F9;
-    color: #004aad;
 }
 
 #jumpto_second .col-sm-3:hover {
@@ -573,10 +558,34 @@ body{
     z-index: 10; /* Ensure the hovered element stays on top */
 }
 
-/* Hide additional cards initially */
-#jumpto_second .additional-cards {
-    display: none;
+#jumpto_second #show-more-btn,
+#jumpto_second #show-less-btn {
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-bottom: 2px solid #004aad;
+    border-radius: 0;
+    background-color: #F0F4F9;
+    margin: 20px auto; /* Center align buttons */
+    display: block;
+    color: #004aad;
+    font-weight: 600;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+#jumpto_second #show-more-btn:hover,
+#jumpto_second #show-less-btn:hover {
+    background-color: #004aad;
+    color: #fff;
+}
+
+#jumpto_second .additional-cards {
+    display: none; /* Hidden by default */
+}
+
+
+
 /*jumpto_second end*/
 
 
@@ -1877,6 +1886,154 @@ padding: 50px 100px;
 
 
 /*MAIN PRODUCTS PAGES END*/
+
+
+/*GALLERY PAGE START*/
+
+.gal-container{
+	padding: 12px;
+}
+.gal-item{
+	overflow: hidden;
+	padding: 3px;
+}
+.gal-item .box{
+	height: 350px;
+	overflow: hidden;
+}
+.box img{
+	height: 100%;
+	width: 100%;
+	object-fit:cover;
+	-o-object-fit:cover;
+}
+.gal-item a:focus{
+	outline: none;
+}
+.gal-item a:after{
+	content:"\e003";
+	font-family: 'Glyphicons Halflings';
+	opacity: 0;
+	background-color: rgba(0, 0, 0, 0.75);
+	position: absolute;
+	right: 3px;
+	left: 3px;
+	top: 3px;
+	bottom: 3px;
+	text-align: center;
+    line-height: 350px;
+    font-size: 30px;
+    color: #fff;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+}
+.gal-item a:hover:after{
+	opacity: 1;
+}
+.modal-open .gal-container .modal{
+	background-color: rgba(0,0,0,0.4);
+}
+.modal-open .gal-item .modal-body{
+	padding: 0px;
+}
+.modal-open .gal-item button.close{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #000;
+    opacity: 1;
+    color: #fff;
+    z-index: 999;
+    right: -12px;
+    top: -12px;
+    border-radius: 50%;
+    font-size: 15px;
+    border: 2px solid #fff;
+    line-height: 25px;
+    -webkit-box-shadow: 0 0 1px 1px rgba(0,0,0,0.35);
+	box-shadow: 0 0 1px 1px rgba(0,0,0,0.35);
+}
+.modal-open .gal-item button.close:focus{
+	outline: none;
+}
+.modal-open .gal-item button.close span{
+	position: relative;
+	top: -3px;
+	font-weight: lighter;
+	text-shadow:none;
+}
+.gal-container .modal-dialogue{
+	width: 80%;
+}
+.gal-container .description{
+	position: relative;
+	height: 40px;
+	top: -40px;
+	padding: 10px 25px;
+	background-color: rgba(0,0,0,0.5);
+	color: #fff;
+	text-align: left;
+}
+.gal-container .description h4{
+	margin:0px;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 20px;
+}
+.gal-container .modal.fade .modal-dialog {
+    -webkit-transform: scale(0.1);
+    -moz-transform: scale(0.1);
+    -ms-transform: scale(0.1);
+    transform: scale(0.1);
+    top: 100px;
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.gal-container .modal.fade.in .modal-dialog {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform: translate3d(0, -100px, 0);
+    transform: translate3d(0, -100px, 0);
+    opacity: 1;
+}
+@media (min-width: 768px) {
+.gal-container .modal-dialog {
+    width: 55%;
+    margin: 50 auto;
+}
+}
+@media (max-width: 768px) {
+    .gal-container .modal-content{
+        height:250px;
+    }
+}
+/* Footer Style */
+i.red{
+    color:#BC0213;
+}
+.gal-container{
+    padding-top :75px;
+    padding-bottom:75px;
+}
+
+.gallery h1{
+    font-family: "Dancing Script", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    text-align: center;
+    font-size: 48px;
+    margin-top: 50px;
+}
+
+
+/*GALLERY PAGE END*/
+
 
 
 

@@ -14,443 +14,768 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
 
   <!--font awesome-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
   <!--jQuery include-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <!-- // new link  -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
 
   <!--bootstrap3 include-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
-  <script src="https://cdn.tailwindcss.com"></script>
+
+ <!-- Bootstrap 5 JS (Bundle with Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+ 
 </head>
+
+
+
 <body>
-   
-    <header>
-        <div class="top-header">
-            <div class="d-flex flex-row-reverse" class="margins-container">
-                <div class="top-nav" area-label="functional">
-                    <ul>
-                        <li>Contact</li>
-                        <li>Location:<a>All</a></li>
-                        <li>Search<i class="fa fa-search" aria-hidden="true"></i></li>
-                        <li><button>Get a Code</button></li>
-                    </ul>
-                </div>
+<!-- Header start -->
+<header>
+    <div class="top-header">
+        <div class="d-flex flex-row-reverse margins-container">
+            <div class="top-nav" aria-label="functional">
+                <ul>
+                    <li class="email">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <a href="#">support@pemlix.com</a>
+                    </li>
+                    <li class="call">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <a href="#">+91 856975425</a>
+                    </li>
+                    <li class="search">Search<i class="fa fa-search" aria-hidden="true"></i></li>
+                    <li><button>Get a Code</button></li>
+                </ul>
             </div>
         </div>
-        <div class="secondary-header">
-            <div class="margins-container">
-                <a>Logo</a>
-                <nav id="site-navigation-nav" area-label="main site">
-                    <ul>
-                        <li class="dropdown">
-                            <button class="dropbtn">
-                                About Us
-                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                            </botton class="dropdown">
-                            <div class="dropdown-content">
-                                <a href="#">Our Team</a>
-                                <a href="#">Server</a>
+    </div>
+    <div class="secondary-header">
+        <div class="margins-container">
+            <a href="index.html"><img src="images/pro logo.png" style="height: 70px; width: auto"></a>
+            <div class="menu-toggle" id="mobile-menu">
+                 <!-- Hamburger Icon -->
+            </div>
+            <nav id="site-navigation-nav" aria-label="main site">
+                <ul>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li class="dropdown">
+                        <button class="dropbtn">
+                            <a href="products.html" style="color: #333;">Products</a>
+                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="solar_panel.html">Solar Panel</a>
+                            <div class="dropdown-submenu">
+                                <a href="home_improvement.html">Home Improvement</a>
+                                <div class="submenu-content">
+                                    <a href="sub_energy_efficient_doors.html">Energy Efficient Doors</a>
+                                    <a href="sub_stylish_doors.html">Stylish Doors</a>
+                                    <a href="sub_modern_kitchens.html">Modern Kitchens</a>
+                                    <a href="sub_bathroom_renovations.html">Bathroom Renovations</a>
+                                    <a href="sub_outdoor_living_spaces.html">Outdoor Living Spaces</a>
+                                    <a href="sub_innovative_lighting_solutions.html">Innovative Lighting Solutions</a>
+                                    <a href="sub_basement_renovations.html">Basement Renovations</a>
+                                    <a href="sub_green_remodeling.html">Green Remodeling</a>
+                                    <a href="sub_home_restoration.html">Home Restoration</a>
+                                </div>
                             </div>
-                        </li>
-                        <li class="dropdown">
-                            <button class="dropbtn">
-                                Products
-                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                            </botton class="dropdown">
-                            <div class="dropdown-content">
-                                <a href="#">Solar Panel</a>
-                                <a href="#">Home Improvement</a>
+                            <div class="dropdown-submenu">
                                 <a href="home_insulation.html">Home Insulation</a>
-                                <a href="#">Windows & Doors Improvement</a>
+                                <div class="submenu-content">
+                                    <a href="sub_spray_foam_insulation.html">Spray foam insulation</a>
+                                    <a href="sub_fiberglass_insulation.html">Fiberglass insulation</a>
+                                    <a href="sub_rockwool_insulation.html">Rockwool insulation</a>
+                                    <a href="sub_mineral_Wool_insulation.html">Mineral Wool insulation</a>
+                                    <a href="sub_insulated_doors.html">Insulated Doors</a>
+                                    <a href="sub_sheep_wool_insulation.html">Sheep Wool insulation </a>
+                                    <a href="sub_lambs_wool_insulation.html">Lambs Wool insulation</a>
+                                    <a href="sub_cellulose_insulation.html">Cellulose insulation</a>
+                                    <a href="sub_silver_foil_insulation.html">Silver Foil  insulation</a>
+                                    <a href="sub_recycled_plastic_insulation.html">Recycled Plastic insulation</a>
+                                    <a href="sub_granular_insulation.html">Granular insulation</a>
+                                </div>
                             </div>
-                        </li>
-                        <li><a>Gallery</a></li>
-                        <li><a>Blogs</a></li>
-                        <li><a>Privacy Policy</a></li>
-                        <li><a>Contact Us</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
-    
-    <!--third nav area start -->
-    <div class="third-bar">
-        <ul>
-            <li>
-                <button type="button" class="btn" data-toggle="collapse" data-target="#demo1">
-                    I'm looking for...
-                    <i class="fa fa-caret-down" aria-hidden="true"></i>
-                </button>
-            </li>
-            <li>
-                <button type="button" class="btn" data-toggle="collapse" data-target="#demo2">
-                    Home energy advice
-                    <i class="fa fa-caret-down" aria-hidden="true"></i>
-                </button>
-            </li>
-            <li><a href="#">Heat pumps</a></li>
-            <li><a href="#">Financial support</a></li>
-            <li><a href="#">Energy tools and calculators</a></li>
-        </ul>
-        
-    </div>
-    <div id="demo1" class="collapse">
-        <a href="#">Quick tips to save energy</a>
-        <a href="#">Inspiration for my next home improvement project</a>
-        <a href="#">How to save money on my energy bills</a>
-        <a href="#">Help for my community</a>
-        <a href="#">Case studies</a>
-    </div>
-    <div id="demo2" class="collapse">
-        <div class="container">
-            <div class="row">
-                    <div class="col-sm-8">
-                        <div class="row" id="advice">
-                                <h4 class="dropdown-label">Practical advice</h4>
-                                <div class="col-sm-6">
-                                    <a>Heating your home</a>
-                                    <a>Reducing home heat loss</a>
-                                    <a>Renewable energy generation</a>
-                                    <a>Fixing damp and condensation</a>
+                            <div class="dropdown-submenu">
+                                <a href="windows_doors.html">Windows and Door improvement</a>
+                                <div class="submenu-content">
+                                    <a href="sub_doors.html">Doors</a>
+                                    <a href="sub_windows.html">Windows</a>
+                                    <a href="sub_conservatories.html">Conservatories</a>
+                                    <a href="sub_porches.html">Porches</a>
+                                    <a href="sub_patio.html">Patio</a>
+                                    <a href="sub_rppfline.html">Roofline</a>
+                                    <a href="sub_garden_rooms.html">Garden Rooms </a>
+                                    <a href="sub_orangeries.html">Orangeries</a>
                                 </div>
-                                <div class="col-sm-6">
-                                    <a>Buying energy efficient products</a>
-                                    <a>How to switch energy supplier</a>
-                                    <a>Saving water at home</a>
-                                    <a>Energy storage options explained</a>
-                                </div>
+                            </div>
                         </div>
-                    </div>
-                    
+                    </li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="privacy_policy.html">Privacy Policy</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<!-- Header end -->
+
+<!-- Gallery Start -->
+<section class="gallery">
+<h1>Our Gallery</h1>
+  <div class="container gal-container">
+    <div class="col-md-8 col-sm-12 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#1">
+          <img src="images/gal_Solar Panels.webp">
+        </a>
+        <div class="modal fade" id="1" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <div class="modal-body">
+                <img src="images/gal_Solar Panels.webp">
+              </div>
+                <div class="col-md-12 description">
+                  <h4>Solar Panels</h4>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#2">
+          <img src="images/gal_Energy Efficient Doorsl.jpg">
+        </a>
+        <div class="modal fade" id="2" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <div class="modal-body">
+                <img src="images/gal_Energy Efficient Doorsl.jpg">
+              </div>
+                <div class="col-md-12 description">
+                  <h4>Energy Efficient Doors</h4>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#3">
+          <img src="images/gal_Stylish Doors.jpg">
+        </a>
+        <div class="modal fade" id="3" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <div class="modal-body">
+                <img src="http://nabeel.co.in/files/bootsnipp/gallery/3.jpg">
+              </div>
+                <div class="col-md-12 description">
+                  <h4>Stylish Doors</h4>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#4">
+          <img src="images/gal_Modern Kitchens.jpg">
+        </a>
+        <div class="modal fade" id="4" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <div class="modal-body">
+                <img src="http://nabeel.co.in/files/bootsnipp/gallery/4.jpg">
+              </div>
+                <div class="col-md-12 description">
+                  <h4>Modern Kitchens</h4>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#5">
+          <img src="images/gal_Bathroom Renovations.jpg">
+        </a>
+        <div class="modal fade" id="5" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <div class="modal-body">
+                <img src="images/gal_Bathroom Renovations.jpg">
+              </div>
+                <div class="col-md-12 description">
+                  <h4>Bathroom Renovations</h4>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#6">
+          <img src="images/gal_Outdoor living spaces.jpg">
+        </a>
+        <div class="modal fade" id="6" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <div class="modal-body">
+                <img src="images/gal_Outdoor living spaces.jpg">
+              </div>
+                <div class="col-md-12 description">
+                  <h4>Outdoor living spaces</h4>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#7">
+          <img src="images/gal_Innovative lighting solutions.jpg">
+        </a>
+        <div class="modal fade" id="7" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <div class="modal-body">
+                <img src="images/gal_Innovative lighting solutions.jpg">
+              </div>
+                <div class="col-md-12 description">
+                  <h4>Innovative lighting solutions</h4>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#8">
+          <img src="images/gal_Basement renovations.jpg">
+        </a>
+        <div class="modal fade" id="8" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <div class="modal-body">
+                <img src="images/gal_Basement renovations.jpg">
+              </div>
+                <div class="col-md-12 description">
+                  <h4>Basement renovations</h4>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#9">
+          <img src="images/gal_Green Remodeling.jpg">
+        </a>
+        <div class="modal fade" id="9" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <div class="modal-body">
+                <img src="images/gal_Green Remodeling.jpg">
+              </div>
+                <div class="col-md-12 description">
+                  <h4>Green Remodeling</h4>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-8 col-sm-12 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#10">
+          <img src="images/gal_Home Restoration.jpg">
+        </a>
+        <div class="modal fade" id="10" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <div class="modal-body">
+                <img src="images/gal_Home Restoration.jpg">
+              </div>
+                <div class="col-md-12 description">
+                  <h4>Home Restoration</h4>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#11">
+          <img src="images/gal_Spray foam insulation.webp">
+        </a>
+        <div class="modal fade" id="11" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <div class="modal-body">
+                <img src="images/gal_Spray foam insulation.webp">
+              </div>
+                <div class="col-md-12 description">
+                  <h4>Spray foam insulation</h4>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#12">
+          <img src="images/gal_Fiberglass insulation.jpg">
+        </a>
+        <div class="modal fade" id="12" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <div class="modal-body">
+                <img src="images/gal_Fiberglass insulation.jpg">
+              </div>
+                <div class="col-md-12 description">
+                  <h4>Fiberglass insulation</h4>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#13">
+          <img src="images/gal_Rockwool insulation.jpg">
+        </a>
+        <div class="modal fade" id="13" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <div class="modal-body">
+                <img src="images/gal_Rockwool insulation.jpg">
+              </div>
+                <div class="col-md-12 description">
+                  <h4>Rockwool insulation</h4>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#14">
+          <img src="images/gal_Mineral Wool insulation.webp">
+        </a>
+        <div class="modal fade" id="14" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <div class="modal-body">
+                <img src="images/gal_Mineral Wool insulation.webp">
+              </div>
+                <div class="col-md-12 description">
+                  <h4>Mineral Wool insulation</h4>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#15">
+          <img src="images/gal_Reflective insulation.jpg">
+        </a>
+        <div class="modal fade" id="15" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <div class="modal-body">
+                <img src="images/gal_Reflective insulation.jpg">
+              </div>
+                <div class="col-md-12 description">
+                  <h4>Reflective insulation</h4>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#16">
+          <img src="images/gal_Insulated Doors.jpg">
+        </a>
+        <div class="modal fade" id="16" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <div class="modal-body">
+                <img src="images/gal_Insulated Doors.jpg">
+              </div>
+                <div class="col-md-12 description">
+                  <h4>Insulated Doors</h4>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+        <div class="box">
+          <a href="#" data-toggle="modal" data-target="#16">
+            <img src="images/gal_Sheep Wool insulation.jpg">
+          </a>
+          <div class="modal fade" id="16" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <div class="modal-body">
+                  <img src="images/gal_Sheep Wool insulation.jpg">
+                </div>
+                  <div class="col-md-12 description">
+                    <h4>Sheep Wool insulation</h4>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+        <div class="box">
+          <a href="#" data-toggle="modal" data-target="#16">
+            <img src="images/gal_Lambs Wool insulation.webp">
+          </a>
+          <div class="modal fade" id="16" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <div class="modal-body">
+                  <img src="images/gal_Lambs Wool insulation.webp">
+                </div>
+                  <div class="col-md-12 description">
+                    <h4>Lambs Wool insulation</h4>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+        <div class="box">
+          <a href="#" data-toggle="modal" data-target="#16">
+            <img src="images/gal_Cellulose insulation.jpg">
+          </a>
+          <div class="modal fade" id="16" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <div class="modal-body">
+                  <img src="images/gal_Cellulose insulation.jpg">
+                </div>
+                  <div class="col-md-12 description">
+                    <h4>Cellulose insulation</h4>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+        <div class="box">
+          <a href="#" data-toggle="modal" data-target="#16">
+            <img src="images/gal_Silver Foil  insulation.webp">
+          </a>
+          <div class="modal fade" id="16" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <div class="modal-body">
+                  <img src="images/gal_Silver Foil  insulation.webp">
+                </div>
+                  <div class="col-md-12 description">
+                    <h4>Silver Foil  insulation</h4>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+        <div class="box">
+          <a href="#" data-toggle="modal" data-target="#16">
+            <img src="images/gal_Recycled Plastic insulation.webp">
+          </a>
+          <div class="modal fade" id="16" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <div class="modal-body">
+                  <img src="images/gal_Recycled Plastic insulation.webp">
+                </div>
+                  <div class="col-md-12 description">
+                    <h4>Recycled Plastic insulation</h4>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+        <div class="box">
+          <a href="#" data-toggle="modal" data-target="#16">
+            <img src="images/gal_Granular insulation.jpg">
+          </a>
+          <div class="modal fade" id="16" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <div class="modal-body">
+                  <img src="images/gal_Granular insulation.jpg">
+                </div>
+                  <div class="col-md-12 description">
+                    <h4>Granular insulation</h4>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+        <div class="box">
+          <a href="#" data-toggle="modal" data-target="#16">
+            <img src="images/gal_Doors.jpeg">
+          </a>
+          <div class="modal fade" id="16" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <div class="modal-body">
+                  <img src="images/gal_Doors.jpeg">
+                </div>
+                  <div class="col-md-12 description">
+                    <h4>Doors</h4>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+        <div class="box">
+          <a href="#" data-toggle="modal" data-target="#16">
+            <img src="images/gal_Windows.jpg">
+          </a>
+          <div class="modal fade" id="16" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <div class="modal-body">
+                  <img src="images/gal_Windows.jpg">
+                </div>
+                  <div class="col-md-12 description">
+                    <h4>Windows</h4>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+        <div class="box">
+          <a href="#" data-toggle="modal" data-target="#16">
+            <img src="images/gal_Conservatories.jpg">
+          </a>
+          <div class="modal fade" id="16" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <div class="modal-body">
+                  <img src="images/gal_Conservatories.jpg">
+                </div>
+                  <div class="col-md-12 description">
+                    <h4>Conservatories</h4>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+        <div class="box">
+          <a href="#" data-toggle="modal" data-target="#16">
+            <img src="images/gal_Porches.jpg">
+          </a>
+          <div class="modal fade" id="16" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <div class="modal-body">
+                  <img src="images/gal_Porches.jpg">
+                </div>
+                  <div class="col-md-12 description">
+                    <h4>Porches</h4>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+        <div class="box">
+          <a href="#" data-toggle="modal" data-target="#16">
+            <img src="images/gal_Patio.jpg">
+          </a>
+          <div class="modal fade" id="16" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <div class="modal-body">
+                  <img src="images/gal_Patio.jpg">
+                </div>
+                  <div class="col-md-12 description">
+                    <h4>Patio</h4>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+        <div class="box">
+          <a href="#" data-toggle="modal" data-target="#16">
+            <img src="images/gal_Roofline.jpg">
+          </a>
+          <div class="modal fade" id="16" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <div class="modal-body">
+                  <img src="images/gal_Roofline.jpg">
+                </div>
+                  <div class="col-md-12 description">
+                    <h4>Roofline</h4>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+
+  </div>
+</section>
+<!-- Gallery End -->
+
+
+
+
+
+
+
+
+
+<!--footer start-->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-1 logo">
+                <div>
+                    <a href="#"><img src="images/pro logo.png" alt="prp"></a>
+                </div>
+            </div>
+            <div class="col-sm-9">
+                <div class="row">
                     <div class="col-sm-4">
-                        <h4 class="dropdown-label">Energy efficient guides</h4>
-                        <a>Energy performance certificates explained</a>
-                        <a>Smart meters explained</a>
+                        <h4>About</h4>
+                        <ul class="pages">
+                            <li><a href="#">Compliance</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">The Foundation</a></li>
+                        </ul>
                     </div>
+                    <div class="col-sm-4">
+                        <h4>Latest</h4>
+                        <ul class="pages">
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Campaigns</a></li>
+                            <li><a href="#">Case studies</a></li>
+                            <li><a href="#">Collections</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <h4>Follow us</h4>
+                        <ul class="pages">
+                            <li><a href="#">LinkedIn</a></li>
+                            <li><a href="#">X (Twitter)</a></li>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2 footer_end">
+                <h4>Energywire newsletter</h4>
+                <button>Subscribe to newsletter</button>
             </div>
         </div>
     </div>
-   
-    <!--third nav area end-->
+</footer>
+<!--footer end-->
 
-
-
-
-    <!--banner start-->
-    <div class="banner-carousel">
-        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-            <!-- Indicators (optional) -->
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3" aria-label="Slide 4"></button>
-            </div>
-            
-            <!-- Carousel items (the banner containers) -->
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="container-fluid">
-                        <div class="row banner1">
-                            <div class="col-sm-7 left">
-                                <p>Reducing home heat loss</p>
-                                <h2>Roof and loft insulation</h2>
-                                <nav class="breadcrumbs">
-                                    <ul>
-                                        <li><a href="#">Home</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
-                                        <li><a href="#">Energy at home</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
-                                        <li><a href="#">Reducing home heat loss</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
-                                        <li><a href="#">Roof and loft insulation</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                            <div class="col-sm-5 right">
-                                <img src="images/GettyImages.jpg" alt="bed" class="img-fluid">
-                                <div class="background-container">
-                                    <div class="box top-left"></div>
-                                    <div class="box middle"></div>
-                                    <div class="box bottom-left"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    
-                <!-- Second Banner -->
-                <div class="carousel-item">
-                    <div class="container-fluid">
-                        <div class="row banner2">
-                            <div class="col-sm-7 left">
-                                <p>Reducing home heat loss</p>
-                                <h2>Roof and loft insulation</h2>
-                                <nav class="breadcrumbs">
-                                    <ul>
-                                        <li><a href="#">Home</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
-                                        <li><a href="#">Energy at home</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
-                                        <li><a href="#">Reducing home heat loss</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
-                                        <li><a href="#">Roof and loft insulation</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                            <div class="col-sm-5 right">
-                                <img src="images/GettyImages.jpg" alt="bed">
-                                <div class="background-container">
-                                    <div class="box top-left"></div>
-                                    <div class="box middle"></div>
-                                    <div class="box bottom-left"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    
-                <!-- Third Banner -->
-                <div class="carousel-item">
-                    <div class="container-fluid">
-                        <div class="row banner3">
-                            <div class="col-sm-7 left">
-                                <p>Reducing home heat loss</p>
-                                <h2>Roof and loft insulation</h2>
-                                <nav class="breadcrumbs">
-                                    <ul>
-                                        <li><a href="#">Home</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
-                                        <li><a href="#">Energy at home</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
-                                        <li><a href="#">Reducing home heat loss</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
-                                        <li><a href="#">Roof and loft insulation</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                            <div class="col-sm-5 right">
-                                <img src="images/GettyImages.jpg" alt="bed">
-                                <div class="background-container">
-                                    <div class="box top-left"></div>
-                                    <div class="box middle"></div>
-                                    <div class="box bottom-left"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    
-                <!-- Fourth Banner -->
-                <div class="carousel-item">
-                    <div class="container-fluid">
-                        <div class="row banner4">
-                            <div class="col-sm-7 left">
-                                <p>Reducing home heat loss</p>
-                                <h2>Roof and loft insulation</h2>
-                                <nav class="breadcrumbs">
-                                    <ul>
-                                        <li><a href="#">Home</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
-                                        <li><a href="#">Energy at home</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
-                                        <li><a href="#">Reducing home heat loss</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
-                                        <li><a href="#">Roof and loft insulation</a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                            <div class="col-sm-5 right">
-                                <img src="images/GettyImages.jpg" alt="bed">
-                                <div class="background-container">
-                                    <div class="box top-left"></div>
-                                    <div class="box middle"></div>
-                                    <div class="box bottom-left"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <!-- Left and Right Controls -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
+<!--footer_bottom start-->
+<div class="footer_bottom">
+    <div class="container-fluid">
+        <ul>
+            <li><a href="#">Terms and conditions</a></li>
+            <li><a href="#">Privacy policy</a> </li>
+            <li><a href="#">Cookie policy</a>
     </div>
-    
-    <!--banner end-->
+</div>
+<!--footer_bottom end-->
 
+<script src="js/myScript.js"></script><!--js file included-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 
-    
-    <!--gallery start-->
-    
-    <div class="container mx-auto p-4 gallery-container">
-        <h2 class="font-bold mb-4 text-center gallery-main-title"></h2>
-    
-        <!-- Solar Panels Section -->
-        <div class="mb-12"> <!-- Increased margin bottom -->
-            <h3 class="gallery-title">Solar Panels</h3>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4"> <!-- Changed to 3 columns -->
-                <div>
-                    <div class="gallery-image" style="height: 250px;">
-                        <img alt="A close-up of solar panels on a roof" class="w-full h-full object-cover rounded-lg shadow-lg" src="https://storage.googleapis.com/a1aa/image/JTsCSfUKPlTLQCoZuPFLGFugnCtnDSEF8mjqywEJLcTmn39JA.jpg" />
-                        <p class="gallery-caption">Solar Panels Installation: Harnessing renewable energy for a sustainable home.</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="gallery-image" style="height: 250px;">
-                        <img alt="Solar panels in a residential area" class="w-full h-full object-cover rounded-lg shadow-lg" src="images/solar_panel_example_1.jpg" />
-                        <p class="gallery-caption">Residential Solar Panels: Efficient energy solutions for homes.</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="gallery-image" style="height: 250px;">
-                        <img alt="Solar panels on a commercial building" class="w-full h-full object-cover rounded-lg shadow-lg" src="images/solar_panel_example_2.jpg" />
-                        <p class="gallery-caption">Commercial Solar Panels: Powering businesses sustainably.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        <!-- Home and Loft Insulation Section -->
-        <div class="mb-12"> <!-- Increased margin bottom -->
-            <h3 class="gallery-title">Home and Loft Insulation</h3>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4"> <!-- Changed to 3 columns -->
-                <div>
-                    <div class="gallery-image" style="height: 250px;">
-                        <img alt="A person installing home insulation in the attic" class="w-full h-full object-cover rounded-lg shadow-lg" src="https://storage.googleapis.com/a1aa/image/I2kkNDgWWkJpKRjEBV5BR9xp7iWTFjJ1ByNFDTTN6bDyz7eJA.jpg" />
-                        <p class="gallery-caption">Attic Insulation Installation: Improving energy efficiency and comfort.</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="gallery-image" style="height: 250px;">
-                        <img alt="Loft insulation being installed" class="w-full h-full object-cover rounded-lg shadow-lg" src="images/loft_insulation_example_1.jpg" />
-                        <p class="gallery-caption">Loft Insulation: Essential for maintaining temperature and reducing energy costs.</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="gallery-image" style="height: 250px;">
-                        <img alt="Insulation materials stacked" class="w-full h-full object-cover rounded-lg shadow-lg" src="images/insulation_materials_example.jpg" />
-                        <p class="gallery-caption">Insulation Materials: Key to energy efficiency in homes.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        <!-- Home Improvement Section -->
-        <div class="mb-12"> <!-- Increased margin bottom -->
-            <h3 class="gallery-title">Home Improvement</h3>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4"> <!-- Changed to 3 columns -->
-                <div>
-                    <div class="gallery-image" style="height: 250px;">
-                        <img alt="A modern loft interior with large windows and stylish furniture" class="w-full h-full object-cover rounded-lg shadow-lg" src="images/outdoor-living.jpg" />
-                        <p class="gallery-caption">Stylish Loft Interior: A blend of modern design and natural light.</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="gallery-image" style="height: 250px;">
-                        <img alt="A person painting a wall in a home" class="w-full h-full object-cover rounded-lg shadow-lg" src="https://storage.googleapis.com/a1aa/image/4bpmZqj6syK6CZrketPWL7FwllLkjJdjmk9hUa8B0zSdn39JA.jpg" />
-                        <p class="gallery-caption">Home Painting: Refreshing interiors with a new coat of paint.</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="gallery-image" style="height: 250px;">
-                        <img alt="A renovated kitchen with modern appliances" class="w-full h-full object-cover rounded-lg shadow-lg" src="images/renovated_kitchen_example.jpg" />
-                        <p class="gallery-caption">Renovated Kitchen: Modern upgrades for a functional space.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        <!-- Windows and Doors Section -->
-        <div class="mb-12"> <!-- Increased margin bottom -->
-            <h3 class="gallery-title">Windows and Doors</h3>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4"> <!-- Changed to 3 columns -->
-                <div>
-                    <div class="gallery-image" style="height: 250px;">
-                        <img alt="A close-up of a person installing a new window" class="w-full h-full object-cover rounded-lg shadow-lg" src="https://storage.googleapis.com/a1aa/image/mTz2GDMHnobbGxOHi34JTs78GSzxquhD1iHppeuhEXOin39JA.jpg" />
-                        <p class="gallery-caption">Window Installation: Enhancing natural light and energy efficiency.</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="gallery-image" style="height: 250px;">
-                        <img alt="A person installing a new door" class="w-full h-full object-cover rounded-lg shadow-lg" src="https://storage.googleapis.com/a1aa/image/ezfojrLGz0gyF0np5smbN91JFMR6rl9dIG0PNQI5VDI7Ov7TA.jpg" />
-                        <p class="gallery-caption">New Door Installation: Enhancing security and aesthetics.</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="gallery-image" style="height: 250px;">
-                        <img alt="A variety of window styles displayed" class="w-full h-full object-cover rounded-lg shadow-lg" src="images/window_styles_example.jpg" />
-                        <p class="gallery-caption">Window Styles: A range of options for every home.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-
-    <!--footer start-->
-    <footer>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-1 logo">
-                    <h2>Logo</h2>
-                </div>
-                <div class="col-sm-9">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <h4>About</h4>
-                            <ul class="pages">
-                                <li>Compliance</li>
-                                <li>Careers</li>
-                                <li>The Foundation</li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-4">
-                            <h4>Latest</h4>
-                            <ul class="pages">
-                                <li>News</li>
-                                <li>Blog</li>
-                                <li>Campaigns</li>
-                                <li>Case studies</li>
-                                <li>Collections</li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-4">
-                            <h4>Follow us</h4>
-                            <ul class="pages">
-                                <li>LinkedIn</li>
-                                <li>X (Twitter)</li>
-                                <li>Facebook</li>
-                                <li>Instagram</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-2 footer_end">
-                    <h4>Energywire newsletter</h4>
-                    <button>Subscribe to newsletter</button>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!--footer end-->
-
-    <!--footer_bottom start-->
-    <div class="footer_bottom">
-        <div class="container-fluid">
-            <ul>
-                <li>Terms and conditions</li>
-                <li>Privacy policy </li>
-                <li>Cookie policy</li>
-            </ul>
-        </div>
-    </div>
-    <!--footer_bottom start-->
-
-    <script src="js/myScript.js"></script><!--js file included-->
     
     
 </body>
