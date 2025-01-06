@@ -55,8 +55,8 @@ body{
     font-weight: 600;
     color: #004aad;
     text-decoration: none;
-    margin: 0;
     padding: 0;
+    margin: 0 5px;
 }
 
 .top-nav .email .fa,
@@ -128,7 +128,6 @@ body{
     border: none;
     cursor: pointer;
 }
-
 
 
  .secondary-header .dropdown {
@@ -306,7 +305,7 @@ body{
     font-family: "Poppins",sans-serif; /* Font for both headings */
     text-align: center; /* Centers the text */
     width: 100%; /* Makes sure text spans the full width of the carousel item */
-    z-index: 1; /* Ensures the text appears above the image */
+    z-index: 1;  /*Ensures the text appears above the image */
     
 }
 
@@ -890,279 +889,6 @@ padding: 50px 100px;
 }
 
 /*contact us end*/
-
-
-
-
-
-
-
-
-/*RESPONSIVE START*/
-
-/* Tablet-Specific Styling (768px to 1024px) */
-@media (max-width: 1024px) and (min-width: 768px) {
-    
-}
-
-/* Mobile-specific styles */
-@media (max-width: 768px) {
-
-    .top-header{
-        padding: 20px 10px 0px 10px;
-    }
-
-    .top-nav{
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    .top-nav ul{
-        list-style-type: none; 
-        display: flex;
-        justify-content: space-between;
-        justify-content: flex-end;
-        gap: 25px;
-    }
-
-    .top-nav li{
-        font-family: "Poppins", sans-serif;
-        text-align: center;
-        justify-content: center;
-        margin: 0;
-        font-size: 12px;
-    }
-
-    .top-header .search{
-        display: flex;
-    }
-
-    .secondary-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0px; /* Optional: adjust padding for spacing */
-    }
-
-    .secondary-header .menu-toggle{
-       margin-left: 100px;
-    }
-
-    .margins-container {
-        display: flex;
-        align-items: center;
-        width: 100%;
-    }
-
-    /* Initially hide the navigation links */
-    .secondary-header ul {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: #F0F4F9;
-        position: absolute;
-        top: 150px; /* Adjust based on header height */
-        left: 0;
-        z-index: 1;
-    }
-
-    /* Show the menu when the active class is added */
-    .secondary-header ul.active {
-        display: flex;
-    }
-
-    /* Hamburger icon (toggle button) */
-    .menu-toggle {
-        display: block;
-        font-size: 30px;
-        color: #333;
-        cursor: pointer;
-        background-color: transparent;
-        border: none;
-    }
-
-    /* Hamburger icon using Unicode character for three horizontal lines */
-    .menu-toggle:before {
-        content: "\2630"; /* Unicode for hamburger icon */
-        font-size: 30px;
-        color: #333;
-    }
-
-    /* Style nav items when they are shown in mobile */
-    .secondary-header ul li {
-        width: 100%;
-        padding: 0;
-        text-align: left;
-        border-top: 1px solid black;
-    }
-
-    /* Style links in mobile */
-    .secondary-header ul li a {
-        font-size: 18px;
-        color: white;
-        padding: 0px 50px;
-        width: 100%;
-        display: block;
-    }
-
-    /* Hover effect for links */
-    .secondary-header ul li a:hover {
-        background-color: #E8F0FE;
-        cursor: pointer;
-    }
-
-    .secondary-header .dropdown{
-        padding: 0;
-        margin: 0;    
-    }
-
-
-    /* Dropdown content */
-    .secondary-header .dropdown-content {
-        display: none; /* Initially hide the dropdown content */
-        position: absolute;
-        background-color: #6B98D6;
-        width: 100%;
-        z-index: 1;
-        left: 0;
-    }
-
-    /* Style for the dropdown button */
-    .secondary-header .dropbtn {
-        background: none;
-        border: none;
-        font-size: 18px;
-        padding: 0 80px;
-        cursor: pointer;
-        width: 100%;
-        text-align: left;
-    }
-
-
-    /* Show the dropdown when the parent is active */
-    .secondary-header .dropdown.active .dropdown-content {
-        display: block; /* Show dropdown */
-    }
-
-    /* Styling for dropdown links */
-    .secondary-header .dropdown-content a {
-        padding: 10px;
-        color: white;
-        text-decoration: none;
-        display: block;
-        width: 100%;
-        border-top: 1px solid white;
-    }
-
-    /* Hover effect for dropdown items */
-    .secondary-header .dropdown-content a:hover {
-        background-color: #E8F0FE;
-        cursor: pointer;
-    }
-
-    /*third nav area start*/
-        /* Style for third-bar (mobile version) */
-    .third-bar {
-        display: flex;
-        flex-direction: column;
-        align-items: left;
-        background-color: #E8F0FE;
-        padding: 0 30px;
-    }
-
-    /* Flex layout for menu */
-    .third-bar ul {
-        list-style-type: none;
-        display: none; /* Hide the menu on mobile by default */
-        flex-direction: column; /* Stack menu items vertically */
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        background-color: #E8F0FE;
-        text-align: center;
-    }
-
-    /* Show the menu when the 'active' class is added */
-    .third-bar ul.active {
-        display: flex;
-    }
-
-    /* Style for each list item */
-    .third-bar ul li {
-        font-family: "Poppins", sans-serif;
-        padding: 5px 0;
-        text-align: center;
-    }
-
-    .third-bar ul li a {
-        text-decoration: none;
-        color: black;
-        font-size: 16px;
-        display: block;
-    }
-
-    /* Style the dropdown button */
-    .third-bar .btn {
-        background-color: #E8F0FE;
-        border: none;
-        color: black;
-        padding: 10px 15px;
-        font-size: 16px;
-        text-align: left;
-        width: 100%;
-        cursor: pointer;
-    }
-
-    .third-bar .btn:hover,
-    .third-bar .btn:focus {
-        background-color: #E8F0FE;
-        color: black;
-    }
-
-    /* Style the dropdown arrows */
-    .third-bar .fa-caret-down {
-        float: right;
-    }
-
-    /* Initially hide the collapsible content */
-    #demo1, #demo2 {
-        display: none;
-        background-color: #004aad;
-        padding: 20px;
-        margin-top: 10px;
-    }
-
-    /* Show the collapsible content when expanded */
-    .third-bar .collapse.show {
-        display: block;
-    }
-
-    /* Hamburger icon for mobile menu toggle */
-    .third-menu-toggle {
-        display: block;
-        font-size: 30px;
-        cursor: pointer;
-        margin-top: 10px;
-        background: none;
-        border: none;
-        color: black;
-    }
-
-    /* Use a hamburger icon (Unicode character for three horizontal lines) */
-    .third-menu-toggle:before {
-        content: "\2630"; /* Hamburger icon */
-        font-size: 30px;
-        color: black;
-    }
-    
-    /*third nav area end*/
-    
-}
-
-/*RESPONSIVE START*/
-
-
-
 
 
 /*ENERGY EFFICIENT DOORS PAGE START*/
@@ -2196,4 +1922,473 @@ footer .footer_end button:hover {
 /*footer_bottom end*/
 
 /*FOOTER END*/
+
+
+
+/*RESPONSIVE START*/
+
+/* Tablet-Specific Styling (768px to 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+    
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+
+    .top-header{
+        padding: 20px 10px 0px 10px;
+    }
+
+    .top-nav{
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .top-nav ul{
+        list-style-type: none; 
+        display: flex;
+        justify-content: space-between;
+        justify-content: flex-end;
+        gap: 15px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .top-nav li{
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        justify-content: center;
+        margin: 0;
+        font-size: 12px;
+    }
+
+    .top-nav .email,
+    .top-nav .call,
+    .top-nav .search{
+    display: flex;               /* Make the container a flexbox */
+    align-items: center;         /* Vertically center the content */
+    justify-content: center;     /* Horizontally center the content */
+    white-space: nowrap; /* Prevent text from wrapping to the next line */
+    overflow: hidden; /* Hide any overflow text */
+    text-overflow: ellipsis; /* Optional: Adds ellipsis (…) if the text overflows */
+    margin: 0;
+    padding: 0;
+    }
+
+    .top-nav .email a,
+    .top-nav .call a{
+    font-size: 8px;;
+    font-weight: 600;
+    color: #004aad;
+    text-decoration: none;
+    padding: 0;
+    margin: 0 5px;
+    }
+
+    .top-nav .email .fa,
+    .top-nav .call .fa{
+    font-weight: 600;
+    color: #004aad;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    }
+
+    .top-nav .search .fa{
+        font-weight: 500;
+        color: #333;
+        text-decoration: none;
+        font-size: 10px;
+        margin: 0px 5px;
+        padding: 0;
+    }
+
+    .top-header .search{
+        display: flex;
+        font-size: 8px;
+    }
+
+    .top-nav button {
+        font-size: 8px;
+        padding: 5px 15px;
+        background-color: #E8F0FE;
+        border: none;
+        font-family: "Poppins", sans-serif;
+        white-space: nowrap; /* Prevent text from wrapping to the next line */
+        overflow: hidden; /* Hide any overflow text */
+        text-overflow: ellipsis; /* Optional: Adds ellipsis (…) if the text overflows */
+    }
+
+    .secondary-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px; /* Optional: adjust padding for spacing */
+    }
+
+    .secondary-header .menu-toggle{
+       margin-left: 100px;
+    }
+
+    .margins-container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    /* Initially hide the navigation links */
+    .secondary-header ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #F0F4F9;
+        position: absolute;
+        top: 110px; /* Adjust based on header height */
+        gap: 0px; /* Space between menu items */
+        left: 0;
+        z-index: 4;
+    }
+
+    /* Show the menu when the active class is added */
+    .secondary-header ul.active {
+        display: flex;
+    }
+
+    /* Hamburger icon (toggle button) */
+    .menu-toggle{
+        display: block;
+        font-size: 30px;
+        color: #333;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+    }
+
+    /* Hamburger icon using Unicode character for three horizontal lines */
+    .menu-toggle:before {
+        content: "\2630"; /* Unicode for hamburger icon */
+        font-size: 30px;
+        color: #333;
+    }
+
+    /* Style nav items when they are shown in mobile */
+    .secondary-header ul li {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        text-align: left;
+    }
+    
+
+    /* Style links in mobile */
+    .secondary-header ul li a {
+        font-size: 14px;
+        color: black;
+        padding: 0px 50px;
+        width: 100%;
+        display: block;
+        padding: 10px;
+    }
+
+    /* Hover effect for links */
+    .secondary-header ul li a:hover {
+        background-color: #E8F0FE;
+        cursor: pointer;
+    }
+
+    .secondary-header .dropdown{
+        padding: 0;
+        margin: 0;    
+    }
+
+
+    /* Dropdown content */
+    .secondary-header .dropdown-content {
+        display: none; /* Initially hide the dropdown content */
+        position: absolute;
+        background-color: #6B98D6;
+        width: 100%;
+        z-index: 2;
+        left: 0;
+    }
+
+    /* Style for the dropdown button */
+    .secondary-header .dropbtn {
+        background: none;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        width: 100%;
+        text-align: left;
+    }
+
+    .secondary-header .dropbtn a{
+        font-size: 14px;
+        color: black;
+    }
+
+    .secondary-header .dropbtn .fa{
+        margin-right: 250px;
+    }
+
+
+    /* Show the dropdown when the parent is active */
+    .secondary-header .dropdown.active .dropdown-content {
+        /*display: block;  Show dropdown */    
+    }
+
+    /* Styling for dropdown links */
+    .secondary-header .dropdown-content a {
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        border-top: 1px solid white;
+    }
+
+    /* Hover effect for dropdown items */
+    .secondary-header .dropdown-content a:hover {
+        background-color: #E8F0FE;
+        cursor: pointer;
+    }
+
+    /*third nav area start*/
+    .third-bar {
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
+
+    .third-bar ul {
+        padding: 0;
+        margin: 10px 0px;
+        gap:20px;
+    }
+
+    
+    .third-bar ul li {
+        padding: 0;
+        margin: 0;
+    }
+
+    .third-bar ul li a {
+    font-weight: 600;
+    font-size: 8px;
+    }
+    
+    /*third nav area end*/
+
+    /*banner start*/
+    .banner-carousel .carousel-item {
+        width: 100%; /* Ensures the carousel item takes up the full width */
+        height: 150px; /* Height of each banner (adjustable as needed) */
+        position: relative; /* To position child elements like text over the image */
+    } 
+
+    /* Styling for h4 (Subheading) */
+    .banner-carousel .carousel-item h4 {
+        top: 35%; /* Adjusts the vertical position of the subheading */
+        font-size: 10px; /* Font size for h4 */
+        text-transform: uppercase; /* Capitalizes the text */
+        letter-spacing: 0px; /* Adds space between the letters */
+        color: black;
+        text-align: left;
+        padding-left: 270px;
+    }
+
+    /* Styling for h2 (Main Heading) */
+    .banner-carousel .carousel-item h2 {
+        top: 45%; /* Adjusts the vertical position of the main heading */
+        font-size: 40px; /* Font size for h2 */
+        font-weight: 700; /* Makes the main heading bold */
+        text-transform: uppercase; /* Capitalizes the text */
+        letter-spacing: 1px; /* Adds space between the letters */
+        opacity: 1; /* Full opacity for the main heading */
+        text-align: left;
+        padding-left: 270px;
+        font-size: 14px;
+    }
+
+    .banner-carousel .carousel-indicators{
+        z-index: 3;
+    }
+
+    /*banner end*/
+
+    /*main area start*/
+
+    /*jumpto_first start*/
+    #jumpto_first{
+        padding: 0px;
+        margin: 0;
+        border-radius: 50px ;
+    }
+
+    #jumpto_first .row{
+        padding: 0px;
+        border-radius: 50px;
+    }
+
+    #jumpto_first .left{
+        padding: 0px 20px;
+    }
+
+    #jumpto_first .left h2{
+        font-size: 18px;
+        font-weight: 600;
+        
+    }
+
+    #jumpto_first .left p{
+        font-size: 12px;
+    }
+
+    #jumpto_first .left button{
+        margin: 20px 0px;
+        border:none;
+        border-bottom: 2px solid #004aad;
+        background-color: white;
+    }
+
+    #jumpto_first .right{
+        margin: 10px 0px;
+    }
+
+    #jumpto_first .right .row{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #jumpto_first .right .col-sm-6{
+        margin: 10px;
+    }
+
+    /*jumpto_first end*/
+
+
+    /*jumpto_second start*/
+    #jumpto_second h3 {
+        font-size: 18px;    
+    }
+
+    #jumpto_second p {
+        font-size: 12px;
+    }
+
+    #jumpto_second .btn {
+        margin: 0;
+        padding: 0;
+    }
+
+    #jumpto_second #show-more-btn,
+    #jumpto_second #show-less-btn {
+    height: 30px;
+}
+    /*jumpto_second end*/
+
+    /*jumpto_third start*/
+
+    #jumpto_third{
+    
+        padding: 20px 0px;
+    }
+
+    #jumpto_third .row{
+        margin: 10px;
+        padding: 0;    
+    }
+
+    #jumpto_third .benefit_points{
+        padding: 0px;
+    }
+
+    #jumpto_third .col-sm-4{
+        margin: 30px 0px;
+        padding: 20px 40px;
+        box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for a subtle effect */
+        border-radius: 20px;
+    }
+    
+    #jumpto_third p{
+        padding: 0;
+        margin: 0px;
+        font-size: 12px;
+        text-align: justify;
+    }
+
+    #jumpto_third h3{
+        font-size: 18px;    
+    }
+
+    /*jumpto_third end*/
+
+    /*jumpto_fourth start*/
+
+    #jumpto_fourth{
+        padding: 20px 0px;
+        margin: 0px;
+    }
+    #jumpto_fourth h3{
+        font-size: 18px;
+        margin: 0;
+    }
+
+    #jumpto_fourth .col-sm-2{
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    #jumpto_fourth .why_loft{
+        margin: 20px 0px 0px 0px;
+    }
+
+    #jumpto_fourth .col-sm-2{
+        border: none;
+    }
+
+    #jumpto_fourth .col-sm-2 h5{
+        white-space: nowrap; 
+        font-size: 14px; 
+        text-align: center; 
+        overflow: hidden; 
+        text-overflow: ellipsis; 
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .col-sm-2 h5 br {
+        display: none; 
+    }
+
+    #jumpto_fourth .hidden_box {
+        position: static; /* Default flow layout for mobile */
+        max-height: none; /* Remove height restrictions */
+        opacity: 1; /* Fully visible */
+        overflow: visible; /* Allow content to flow normally */
+        margin-left: 0; /* Reset margin for mobile view */
+        margin-top: 0px; /* Add spacing above the box */
+        padding: 10px; /* Ensure proper spacing */
+        display: block; /* Ensure the hidden box is displayed */
+    }
+
+
+    
+
+    /*jumpto_fourth end*/
+
+    /*main area end*/
+
+
+
+    
+}
+
+/*RESPONSIVE END*/
+
 
