@@ -2329,7 +2329,7 @@ footer .footer_end button:hover {
     /*jumpto_fourth start*/
 
     #jumpto_fourth{
-        padding: 20px 0px;
+        padding: 40px 0px;
         margin: 0px;
     }
     #jumpto_fourth h3{
@@ -2349,6 +2349,8 @@ footer .footer_end button:hover {
 
     #jumpto_fourth .col-sm-2{
         border: none;
+        margin: 0;
+        padding: 0;
     }
 
     #jumpto_fourth .col-sm-2 h5{
@@ -2358,8 +2360,9 @@ footer .footer_end button:hover {
         overflow: hidden; 
         text-overflow: ellipsis; 
         width: 100%;
-        margin: 0px;
-        padding: 0px;
+        margin-top: 10px; /* Decrease top margin to reduce the gap */
+        margin-bottom: 0px; /* Add a small bottom margin for spacing */
+        padding: 0px; /* Ensure no extra padding is added */
     }
 
     .col-sm-2 h5 br {
@@ -2372,15 +2375,50 @@ footer .footer_end button:hover {
         opacity: 1; /* Fully visible */
         overflow: visible; /* Allow content to flow normally */
         margin-left: 0; /* Reset margin for mobile view */
-        margin-top: 0px; /* Add spacing above the box */
+        margin-top: -20px; /* Reduce top margin to minimize gap */
+        margin-bottom: 20px; /* Reduce top margin to minimize gap */
         padding: 10px; /* Ensure proper spacing */
         display: block; /* Ensure the hidden box is displayed */
     }
 
-
-    
-
     /*jumpto_fourth end*/
+
+    /*jumpto_fifth start*/
+
+    #jumpto_fifth{
+        padding: 0;
+        margin: 10px 0px;
+        }
+    
+    #jumpto_fifth h2{
+        font-size: 18px;
+    }
+
+    #jumpto_fifth .how_we_work{
+        padding: 0px 20px;
+    }
+    /*jumpto_fifth end*/
+
+    /*jumpto_sixth start*/
+    #jumpto_sixth{
+        padding: 20px 0px;
+    }
+
+    #jumpto_sixth .row{
+        padding: 0px;
+    }
+
+    #jumpto_sixth .con{
+        text-align: left;
+        padding-left: 0px;
+    }
+
+    #jumpto_sixth .fa{
+        font-size: 60px;
+        color: white;
+    }
+
+    /*jumpto_sixth end*/
 
     /*main area end*/
 
