@@ -2108,16 +2108,13 @@ footer .footer_end button:hover {
         padding: 50px 0px;
     }
 
-    /*contact us end*/
-    
+    /*contact us end*/    
     
 }
 
-/* Mobile-specific styles */
-@media (max-width: 768px){
-
+@media (min-width: 576px) and (max-width: 767px) {
     .top-header{
-        padding: 20px 10px 0px 10px;
+        padding: 20px 20px 0px 10px;
     }
 
     .top-nav{
@@ -2160,7 +2157,7 @@ footer .footer_end button:hover {
 
     .top-nav .email a,
     .top-nav .call a{
-    font-size: 8px;;
+    font-size: 10px;;
     font-weight: 600;
     color: #004aad;
     text-decoration: none;
@@ -2189,11 +2186,11 @@ footer .footer_end button:hover {
 
     .top-header .search{
         display: flex;
-        font-size: 8px;
+        font-size: 10px;
     }
 
     .top-nav button {
-        font-size: 8px;
+        font-size: 10px;
         padding: 5px 15px;
         background-color: #E8F0FE;
         border: none;
@@ -2203,16 +2200,22 @@ footer .footer_end button:hover {
         text-overflow: ellipsis; /* Optional: Adds ellipsis (…) if the text overflows */
     }
 
-    .secondary-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0px; /* Optional: adjust padding for spacing */
+    .secondary-header .margins-container {
+        display: flex;               /* Enable flexbox layout */
+        justify-content: space-between; /* Distribute space between items */
+        align-items: center;         /* Vertically align the items */
+        width: 100%;                 /* Ensure the container takes full width */
     }
-
-    .secondary-header .menu-toggle{
-       margin-left: 100px;
+    
+    .secondary-header .margins-container a {
+        /* Existing styles */
+        margin-left: 10px;              /* Align it to the left */
     }
+    
+    .secondary-header .menu-toggle {
+        margin-right: -200px;             /* Align to the right */
+    }
+    
 
     .margins-container {
         display: flex;
@@ -2309,17 +2312,19 @@ footer .footer_end button:hover {
     .secondary-header .dropbtn a{
         font-size: 14px;
         color: black;
+        font-weight: 500;
     }
 
     .secondary-header .dropbtn .fa{
-        margin-right: 250px;
+        margin-right: 450px;
     }
 
 
-    /* Show the dropdown when the parent is active */
     .secondary-header .dropdown.active .dropdown-content {
-        /*display: block;  Show dropdown */    
+           
     }
+
+    
 
     /* Styling for dropdown links */
     .secondary-header .dropdown-content a {
@@ -2358,7 +2363,7 @@ footer .footer_end button:hover {
 
     .third-bar ul li a {
     font-weight: 600;
-    font-size: 8px;
+    font-size: 12px;
     }
     
     /*third nav area end*/
@@ -2378,7 +2383,7 @@ footer .footer_end button:hover {
         letter-spacing: 0px; /* Adds space between the letters */
         color: black;
         text-align: left;
-        padding-left: 270px;
+        padding-left: 400px;
     }
 
     /* Styling for h2 (Main Heading) */
@@ -2390,7 +2395,7 @@ footer .footer_end button:hover {
         letter-spacing: 1px; /* Adds space between the letters */
         opacity: 1; /* Full opacity for the main heading */
         text-align: left;
-        padding-left: 270px;
+        padding-left: 400px;
         font-size: 14px;
     }
 
@@ -2412,10 +2417,17 @@ footer .footer_end button:hover {
     #jumpto_first .row{
         padding: 0px;
         border-radius: 50px;
+        display: flex;
+        flex-direction: column;
+        
     }
 
+
     #jumpto_first .left{
-        padding: 0px 20px;
+        padding: 0px 50px;
+        width: 100%;
+
+        
     }
 
     #jumpto_first .left h2{
@@ -2436,16 +2448,18 @@ footer .footer_end button:hover {
     }
 
     #jumpto_first .right{
+        width: 100%;
         margin: 10px 0px;
     }
 
     #jumpto_first .right .row{
         margin: 0px;
         padding: 0px;
+        
     }
 
     #jumpto_first .right .col-sm-6{
-        margin: 10px;
+        margin: 10px auto;
     }
 
     /*jumpto_first end*/
@@ -2453,11 +2467,28 @@ footer .footer_end button:hover {
 
     /*jumpto_second start*/
     #jumpto_second h3 {
-        font-size: 18px;    
+        font-size: 18px;
+        text-align: center;    
     }
 
     #jumpto_second p {
         font-size: 12px;
+        text-align: center;
+    }
+
+    #jumpto_second .fours{
+        
+    }
+
+    #jumpto_second .col-sm-3{
+        margin-left: 100px;
+        padding: 0;
+        
+    }
+
+    #jumpto_second .card{
+        margin: 10px auto;
+        
     }
 
     #jumpto_second .btn {
@@ -2487,18 +2518,26 @@ footer .footer_end button:hover {
         padding: 0px;
     }
 
+    #jumpto_third .row{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 100px;
+    }
+
     #jumpto_third .col-sm-4{
+        width: 100%;
         margin: 30px 0px;
-        padding: 20px 40px;
+        padding: 20px 0px;
         box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for a subtle effect */
         border-radius: 20px;
     }
     
     #jumpto_third p{
         padding: 0;
-        margin: 0px;
+        margin: 20px;
         font-size: 12px;
         text-align: justify;
+        text-align: center;
     }
 
     #jumpto_third h3{
@@ -2518,21 +2557,21 @@ footer .footer_end button:hover {
         margin: 0;
     }
 
-    #jumpto_fourth .col-sm-2{
-        margin: 0;
-        padding: 0;
-        
-    }
-
     #jumpto_fourth .why_loft{
-        margin: 20px 0px 0px 0px;
+        margin: 20px 10px;
+        display: flex;
+        flex-direction: column;
     }
 
     #jumpto_fourth .col-sm-2{
-        border: none;
         margin: 0;
-        padding: 0;
+        padding: 10px;
+        text-align: center;
+        border: none;
+        width: 100%;
     }
+
+    
 
     #jumpto_fourth .col-sm-2 h5{
         white-space: nowrap; 
@@ -2613,7 +2652,7 @@ footer .footer_end button:hover {
 
     #jumpto_sixth .col-sm-3{
         margin: 0px;
-        padding-right: 160px;
+        padding: 10px;
         padding-top: 10px;
         
     }
@@ -2650,17 +2689,21 @@ footer .footer_end button:hover {
         padding: 5px 10px;
     }
 
+
     .contact_us h2{
         font-size: 18px;
     }
 
     .contact_us .left{
         margin: 0px;
-        padding: 0px;
+        padding: 20px;
+        width: 100%;
     }
 
     .contact_us .row{
         text-align: center;
+        display: flex;
+        flex-direction: column;
     }
 
     .contact_us .col-sm-3{
@@ -2669,7 +2712,7 @@ footer .footer_end button:hover {
     }
 
     .contact_us .col-sm-9{
-        
+        margin: 0 auto;
     }
 
     .contact_us .col-sm-9 h4{
@@ -2679,13 +2722,37 @@ footer .footer_end button:hover {
     .contact_us .col-sm-9 p{
         font-size: 12px;    
     }
+
+    .contact_us .right{
+        padding: 0;
+        margin: 0;
+    }
+
+    .contact_us .col-sm-6{
+        width: 100%;
+    }
+
+    .contact_us form{
+        padding: 10px;
+    }
+
+    .contact_us .right .text-left{
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .contact_us .right .col-md-6{
+       width: 100%;
+    }
+
     
     /*contact us end*/
 
     /*footer strat*/
     footer {
-        padding:0;
+        padding:20px 0px;
         margin: 0; 
+        
     }
 
     footer .container{
@@ -2696,7 +2763,7 @@ footer .footer_end button:hover {
 
     footer .row{
         padding: 0;
-        margin: 0;
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
         
@@ -2704,18 +2771,28 @@ footer .footer_end button:hover {
 
     footer .col-sm-1{
         padding: 0;
-        margin: 0;
+        margin: 0 auto;
     }
 
     footer .col-sm-9{
         padding: 0;
-        margin: 0;
+        margin: 0 auto;
         text-align: center;
     }
 
-    footer .footer_end {
-        padding: 20px;
+    footer .col-sm-9 .row{
+        padding: 0;
         margin: 0;
+        margin-left: 150px;
+    }
+
+    footer .col-sm-4{
+        margin: 0 auto;
+    }
+
+    footer .footer_end {
+        padding: 20px 0;
+        margin: 0 auto;
         display: flex; /* Enables flexbox */
         flex-direction: column; /* Aligns items vertically */
         justify-content: center; /* Centers items vertically */
@@ -2774,6 +2851,8 @@ footer .footer_end button:hover {
     /*footer_bottom end*/
     
 }
+
+
 
 /*RESPONSIVE END*/
 
