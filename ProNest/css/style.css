@@ -438,11 +438,6 @@ body{
     
 }
 
-#jumpto_first .right img{
-    height: 50px;
-    width: auto;
-}
-
 #jumpto_first .right p{
     font-size: 10px;
     text-align: justify;
@@ -455,11 +450,36 @@ body{
 }
 
 
-#jumpto_first .right .points{
+#jumpto_first .right .points {
     background-color: #F0F4F9;
-    padding: 20px 20px;
+    padding: 20px;
     border-radius: 20px;
+    text-align: left;
+    height: 250px; /* Fixed height for uniformity */
+    box-sizing: border-box; /* Ensures padding is included in the height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures content is spaced within the box */
 }
+
+#jumpto_first .right .points img {
+    height: 50px;
+    width: 50px;
+}
+
+#jumpto_first .right .points h5 {
+    font-size: 14px;
+    margin: 10px 0;
+    text-align: left;
+}
+
+#jumpto_first .right .points p {
+    font-size: 10px;
+    text-align: justify;
+    padding-right: 20px;
+    flex-grow: 1; /* Makes sure the paragraph takes up remaining space */
+}
+
 
 /*jumpto_first end*/
 
@@ -1927,13 +1947,174 @@ footer .footer_end button:hover {
 
 /*RESPONSIVE START*/
 
-/* Tablet-Specific Styling (768px to 1024px) */
-@media (max-width: 1024px) and (min-width: 768px) {
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    /*header start*/
+
+    .top-nav ul{
+        gap: 20px;
+    }
+
+    .secondary-header {
+        
+        padding: 10px 20px; /* Optional: adjust padding for spacing */
+        
+    }
+
+    .secondary-header ul{
+        gap: 0px; /* Space between menu items */    
+    }
+
+    .secondary-header li a {
+        
+        font-size: 14px;
+        
+    }
+
+    /*header end*/
+
+    /*Third Nav start*/
+
+    .third-bar ul{
+        
+        gap: 90px;
+        
+    }
+
+    /*Third Nav end*/
+
+    /*banner start*/
+
+    .banner-carousel .carousel-item {
+        width: 100%; /* Ensures the carousel item takes up the full width */
+        height: 400px; /* Height of each banner (adjustable as needed) */
+    }
+
+    /* Styling for h4 (Subheading) */
+    .banner-carousel .carousel-item h4 {
+        font-size: 18px; /* Font size for h4 */
+        padding-left: 800px;
+    }
+
+    /* Styling for h2 (Main Heading) */
+    .banner-carousel .carousel-item h2 {
+        font-size: 40px; /* Font size for h2 */
+        padding-left: 800px;
+        font-size: 24px;
+    }
+
+    /*banner end*/
+
+    /*main area start*/
+
+    /*jumpto_first start*/
+    #jumpto_first{
+        padding: 0px;
+    }
+
+    #jumpto_first .row{
+        padding: 20px;
+    }
+
+    #jumpto_first .left{
+        padding: 0px 40px;
+    }
+
+    #jumpto_first .left h2{
+        font-size: 24px;
+        
+    }
+
+    
+    /*jumpto_first end*/
+
+    /*jumpto_second start*/
+
+    #jumpto_second {
+        padding: 0px;
+    }
+
+    #jumpto_second .fours {
+        margin: 20px 0px;
+    }
+
+    #jumpto_second h3 {
+        font-size: 18px;
+    }
+
+    #jumpto_second .card {
+        width: 225px; /* Fixed card width */
+        height: 350px; /* Fixed card height */
+        padding: 15px;
+        margin: 0px; /* Consistent spacing between cards */
+    }
+
+    #jumpto_second .card-title {
+        font-size: 14px;
+        font-weight: 600;
+        margin: 10px 0; /* Consistent spacing around title */
+    }
+
+    #jumpto_second h5 {
+        font-size: 14px;
+    }
+
+    /*jumpto_second end*/
+
+    /*jumpto_fourth start*/
+
+    #jumpto_fourth{
+        padding: 10px 20px;
+    }
+
+    #jumpto_fourth .why_loft{
+        
+    }
+
+    #jumpto_fourth .col-sm-2{
+        padding: 0px 10px;
+    }
+
+    #jumpto_fourth h3{
+        font-size: 18px;
+    }
+
+    #jumpto_fourth .hidden_box p{
+        font-size: 10px;
+    }
+
+    /*jumpto_fourth end*/
+
+    /*jumpto_fifth start*/
+    #jumpto_fifth{
+        padding: 50px;
+    }
+
+    #jumpto_fifth h2{
+        font-size: 24px;
+    }
+
+    #jumpto_fifth .how_we_work{
+        padding: 50px 100px;
+    }
+    /*jumpto_fifth end*/
+
+    /*main area end*/
+
+    /*contact us start*/
+
+    .contact_us{
+        background-color: #E8F0FE;
+        padding: 50px 0px;
+    }
+
+    /*contact us end*/
+    
     
 }
 
 /* Mobile-specific styles */
-@media (max-width: 768px) {
+@media (max-width: 768px){
 
     .top-header{
         padding: 20px 10px 0px 10px;
