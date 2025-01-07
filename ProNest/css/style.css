@@ -2401,7 +2401,7 @@ footer .footer_end button:hover {
 
     /*jumpto_sixth start*/
     #jumpto_sixth{
-        padding: 20px 0px;
+        padding: 20px;
     }
 
     #jumpto_sixth .row{
@@ -2414,16 +2414,183 @@ footer .footer_end button:hover {
     }
 
     #jumpto_sixth .fa{
-        font-size: 60px;
+        font-size: 30px;
         color: white;
+    }
+
+    #jumpto_sixth .head{
+        font-size: 16px;
+        color: white;
+        margin: 0px 10px;
+    }
+
+    #jumpto_sixth p{
+        font-size: 12px;
+        color: white;
+        margin: 0px 10px;
+    }
+
+    #jumpto_sixth .col-sm-3{
+        margin: 0px;
+        padding-right: 160px;
+        padding-top: 10px;
+        
+    }
+
+    #jumpto_sixth button{
+        padding: 5px 10px;
+        font-size: 10px;
     }
 
     /*jumpto_sixth end*/
 
+    /*jumpto_seventh start*/
+    #jumpto_seventh{
+        padding: 30px 10px;
+        
+    }
+
+    #jumpto_seventh h1{
+        font-size: 24px;
+    }
+
+    #jumpto_seventh .accordion-button{
+        font-size: 14px;
+    }
+    /*jumpto_seventh end*/
+
     /*main area end*/
 
 
+    /*contact us start*/
 
+    .contact_us{
+        background-color: #E8F0FE;
+        padding: 5px 10px;
+    }
+
+    .contact_us h2{
+        font-size: 18px;
+    }
+
+    .contact_us .left{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .contact_us .row{
+        text-align: center;
+    }
+
+    .contact_us .col-sm-3{
+        margin:0 auto;
+        
+    }
+
+    .contact_us .col-sm-9{
+        
+    }
+
+    .contact_us .col-sm-9 h4{
+        font-size: 14px;    
+    }
+
+    .contact_us .col-sm-9 p{
+        font-size: 12px;    
+    }
+    
+    /*contact us end*/
+
+    /*footer strat*/
+    footer {
+        padding:0;
+        margin: 0; 
+    }
+
+    footer .container{
+        padding: 0;
+        margin: 0;
+        
+    }
+
+    footer .row{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    footer .col-sm-1{
+        padding: 0;
+        margin: 0;
+    }
+
+    footer .col-sm-9{
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    footer .footer_end {
+        padding: 20px;
+        margin: 0;
+        display: flex; /* Enables flexbox */
+        flex-direction: column; /* Aligns items vertically */
+        justify-content: center; /* Centers items vertically */
+        align-items: center; /* Centers items horizontally */
+        height: 100%; /* Ensure it takes up the full height */
+        text-align: center; /* For any inline text alignment */
+    }
+    
+    footer .footer_end h4,
+    footer .footer_end button {
+        margin: 5px; /* Remove any default margins */
+    }
+    
+
+    footer .logo img {
+        height: 60px;             /* Set fixed height for logo */
+        width: auto;              /* Maintain aspect ratio */
+    }
+
+    footer .col-sm-4 {
+        margin: 10px 0px;
+        padding: 0;
+    }
+
+    footer h4 {
+        font-size: 16px;
+        margin: 5px 0px;
+    }
+
+    footer li{
+        padding: 0px;
+        text-align: center;
+    }
+
+    footer li a{
+        font-size: 14px;
+        
+    }
+
+    /*footer end*/
+
+    /*footer_bottom start*/
+
+    .footer_bottom ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer_bottom li {
+        margin: 0 5px; /* Add horizontal spacing between list items */
+    }
+
+    .footer_bottom a{
+        font-size: 12px;
+    }
+    /*footer_bottom end*/
     
 }
 
