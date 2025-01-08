@@ -3461,7 +3461,815 @@ footer .footer_end{
 
 
 @media (min-width: 768px) and (max-width: 991px) {
-    /* Styles for tablets */
+    .top-header{
+        padding: 20px 20px 0px 10px;
+    }
+
+    .top-nav{
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .top-nav ul{
+        list-style-type: none; 
+        display: flex;
+        justify-content: space-between;
+        justify-content: flex-end;
+        gap: 15px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .top-nav li{
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        justify-content: center;
+        margin: 0;
+        font-size: 12px;
+    }
+
+    .top-nav .email,
+    .top-nav .call,
+    .top-nav .search{
+    display: flex;               /* Make the container a flexbox */
+    align-items: center;         /* Vertically center the content */
+    justify-content: center;     /* Horizontally center the content */
+    white-space: nowrap; /* Prevent text from wrapping to the next line */
+    overflow: hidden; /* Hide any overflow text */
+    text-overflow: ellipsis; /* Optional: Adds ellipsis (…) if the text overflows */
+    margin: 0;
+    padding: 0;
+    }
+
+    .top-nav .email a,
+    .top-nav .call a{
+    font-size: 10px;;
+    font-weight: 600;
+    color: #004aad;
+    text-decoration: none;
+    padding: 0;
+    margin: 0 5px;
+    }
+
+    .top-nav .email .fa,
+    .top-nav .call .fa{
+    font-weight: 600;
+    color: #004aad;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    }
+
+    .top-nav .search .fa{
+        font-weight: 500;
+        color: #333;
+        text-decoration: none;
+        font-size: 10px;
+        margin: 0px 5px;
+        padding: 0;
+    }
+
+    .top-header .search{
+        display: flex;
+        font-size: 10px;
+    }
+
+    .top-nav button {
+        font-size: 10px;
+        padding: 5px 15px;
+        background-color: #E8F0FE;
+        border: none;
+        font-family: "Poppins", sans-serif;
+        white-space: nowrap; /* Prevent text from wrapping to the next line */
+        overflow: hidden; /* Hide any overflow text */
+        text-overflow: ellipsis; /* Optional: Adds ellipsis (…) if the text overflows */
+    }
+
+    .secondary-header .margins-container {
+        display: flex;               /* Enable flexbox layout */
+        justify-content: space-between; /* Distribute space between items */
+        align-items: center;         /* Vertically align the items */
+        width: 100%;                 /* Ensure the container takes full width */
+    }
+    
+    .secondary-header .margins-container a {
+        /* Existing styles */
+        margin-left: 10px;              /* Align it to the left */
+    }
+    
+    .secondary-header .menu-toggle {
+        margin-right: -200px;             /* Align to the right */
+    }
+    
+
+    .margins-container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    /* Initially hide the navigation links */
+    .secondary-header ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #F0F4F9;
+        position: absolute;
+        top: 110px; /* Adjust based on header height */
+        gap: 0px; /* Space between menu items */
+        left: 0;
+        z-index: 4;
+    }
+
+    /* Show the menu when the active class is added */
+    .secondary-header ul.active {
+        display: flex;
+    }
+
+    /* Hamburger icon (toggle button) */
+    .menu-toggle{
+        display: block;
+        font-size: 30px;
+        color: #333;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+    }
+
+    /* Hamburger icon using Unicode character for three horizontal lines */
+    .menu-toggle:before {
+        content: "\2630"; /* Unicode for hamburger icon */
+        font-size: 30px;
+        color: #333;
+    }
+
+    /* Style nav items when they are shown in mobile */
+    .secondary-header ul li {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        text-align: left;
+    }
+    
+
+    /* Style links in mobile */
+    .secondary-header ul li a {
+        font-size: 14px;
+        color: black;
+        padding: 0px 50px;
+        width: 100%;
+        display: block;
+        padding: 10px;
+    }
+
+    /* Hover effect for links */
+    .secondary-header ul li a:hover {
+        background-color: #E8F0FE;
+        cursor: pointer;
+    }
+
+    .secondary-header .dropdown{
+        padding: 0;
+        margin: 0;    
+    }
+
+
+    /* Dropdown content */
+    .secondary-header .dropdown-content {
+        display: none; /* Initially hide the dropdown content */
+        position: absolute;
+        background-color: #6B98D6;
+        width: 100%;
+        z-index: 2;
+        left: 0;
+    }
+
+    /* Style for the dropdown button */
+    .secondary-header .dropbtn {
+        background: none;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        width: 100%;
+        text-align: left;
+    }
+
+    .secondary-header .dropbtn a{
+        font-size: 14px;
+        color: black;
+        font-weight: 500;
+    }
+
+    .secondary-header .dropbtn .fa{
+        margin-right: 450px;
+    }
+
+
+    .secondary-header .dropdown.active .dropdown-content {
+           
+    }
+
+    
+
+    /* Styling for dropdown links */
+    .secondary-header .dropdown-content a {
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        border-top: 1px solid white;
+    }
+
+    /* Hover effect for dropdown items */
+    .secondary-header .dropdown-content a:hover {
+        background-color: #E8F0FE;
+        cursor: pointer;
+    }
+
+    /*third nav area start*/
+    .third-bar {
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
+
+    .third-bar ul {
+        padding: 0;
+        margin: 10px 0px;
+        gap:20px;
+    }
+
+    
+    .third-bar ul li {
+        padding: 0;
+        margin: 0 10px;
+    }
+
+    .third-bar ul li a {
+    font-weight: 600;
+    font-size: 12px;
+    }
+    
+    /*third nav area end*/
+
+    /*banner start*/
+
+    .banner-carousel{
+		padding: 0;
+        margin: 0;
+	}
+
+    .banner-carousel .carousel-inner{
+        padding: 0;
+        margin: 0;
+    }
+
+    .banner-carousel img{
+        padding: 0;
+        margin: 0;
+    }
+
+
+    .banner-carousel .banner_content {
+		right: 20px; /* Align it to the right side of the banner */
+	}
+
+    
+    .banner-carousel .banner_content h4 {
+		font-size: 12px;
+		
+	}
+
+	.banner-carousel .banner_content h2 {
+		font-size: 18px;
+		
+	}
+
+    .banner-carousel .carousel-indicators{
+        z-index: 3;
+    }
+
+    /*banner end*/
+
+    /*main area start*/
+
+    /*jumpto_first start*/
+    #jumpto_first{
+        padding: 0px;
+        margin: 0;
+        border-radius: 50px ;
+    }
+
+    #jumpto_first .row{
+        padding: 0px;
+        border-radius: 50px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+
+    #jumpto_first .left{
+        padding: 0px 50px;
+        width: 100%;
+
+        
+    }
+
+    #jumpto_first .left h2{
+        font-size: 18px;
+        font-weight: 600;
+        
+    }
+
+    #jumpto_first .left p{
+        font-size: 12px;
+    }
+
+    #jumpto_first .left button{
+        margin: 20px 0px;
+        border:none;
+        border-bottom: 2px solid #004aad;
+        background-color: white;
+    }
+
+    #jumpto_first .left .know_more{
+        width: 200px;
+    }
+
+    #jumpto_first .right{
+        width: 100%;
+        margin: 10px 0px;
+    }
+
+    #jumpto_first .right .row{
+        margin: 0px;
+        padding: 0px;
+        
+    }
+
+    #jumpto_first .right .col-sm-6{
+        margin: 10px auto;
+    }
+
+    /*jumpto_first end*/
+
+
+    /*jumpto_second start*/
+
+    #jumpto_second{
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    #jumpto_second .container{
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    #jumpto_second h3 {
+        font-size: 18px;
+        text-align: center;    
+    }
+
+    #jumpto_second p {
+        font-size: 12px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #jumpto_second .fours{
+        
+    }
+
+    #jumpto_second .col-sm-3{
+        margin-left: 100px;
+        padding: 0;
+        
+    }
+
+    #jumpto_second .card{
+        margin: 10px auto;
+        
+    }
+
+    #jumpto_second .btn {
+        margin: 0;
+        padding: 0;
+    }
+
+    #jumpto_second #show-more-btn,
+    #jumpto_second #show-less-btn {
+    height: 30px;
+    }
+
+    #jumpto_second .row{
+        margin: 0 auto;
+        
+    }
+
+    #jumpto_second .fours{
+       
+        margin: 0 auto;
+    }
+    /*jumpto_second end*/
+
+    /*jumpto_third start*/
+
+    #jumpto_third{
+    
+        padding: 50px 0px;
+    }
+
+    #jumpto_third .row{
+        margin: 10px;
+        padding: 0;    
+    }
+
+    #jumpto_third .benefit_points{
+        padding: 0px;
+    }
+
+    #jumpto_third .row{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 100px;
+    }
+
+    #jumpto_third p{
+        padding: 0;
+        margin: 10px 50px;
+        font-size: 12px;
+        text-align: justify;
+        text-align: center;
+    }
+
+    #jumpto_third .col-sm-4{
+        width: 100%;
+        margin: 10px 20px;
+        padding: 20px;
+        box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for a subtle effect */
+        border-radius: 20px;
+    }
+    
+    #jumpto_third .col-sm-4 p{
+       
+    }
+
+    #jumpto_third h3{
+        font-size: 18px;    
+    }
+
+    /*jumpto_third end*/
+
+    /*jumpto_fourth start*/
+
+    #jumpto_fourth{
+        padding: 40px 0px;
+        margin: 0px;
+    }
+    #jumpto_fourth h3{
+        font-size: 18px;
+        margin: 0pxpx;
+    }
+
+    #jumpto_fourth .why_loft{
+        margin: 20px 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #jumpto_fourth .col-sm-2{
+        margin: 0;
+        padding: 10px;
+        text-align: center;
+        border: none;
+        width: 100%;
+    }
+
+    
+
+    #jumpto_fourth .col-sm-2 h5{
+        white-space: nowrap; 
+        font-size: 14px; 
+        text-align: center; 
+        overflow: hidden; 
+        text-overflow: ellipsis; 
+        width: 100%;
+        margin-top: 10px; /* Decrease top margin to reduce the gap */
+        margin-bottom: 0px; /* Add a small bottom margin for spacing */
+        padding: 0px; /* Ensure no extra padding is added */
+    }
+
+    .col-sm-2 h5 br {
+        display: none; 
+    }
+
+    #jumpto_fourth .hidden_box {
+        position: static; /* Default flow layout for mobile */
+        max-height: none; /* Remove height restrictions */
+        opacity: 1; /* Fully visible */
+        overflow: visible; /* Allow content to flow normally */
+        margin-left: 0; /* Reset margin for mobile view */
+        margin-top: -20px; /* Reduce top margin to minimize gap */
+        margin-bottom: 20px; /* Reduce top margin to minimize gap */
+        padding: 10px; /* Ensure proper spacing */
+        display: block; /* Ensure the hidden box is displayed */
+    }
+
+    /*jumpto_fourth end*/
+
+    /*jumpto_fifth start*/
+
+    #jumpto_fifth{
+        padding:20px;
+        margin: 0;
+        
+    }
+    
+    #jumpto_fifth h2{
+       font-size: 18px;
+
+    }
+    
+    #jumpto_fifth .image-center{
+        padding: 50px 50px;
+    }
+    
+    #jumpto_fifth img{
+        width: 100%;
+    }
+
+    #jumpto_fifth .why_loft{
+        
+    }
+
+    #jumpto_fifth .hidden_box{
+       
+    }
+    
+
+    /*jumpto_fifth end*/
+
+    /*jumpto_sixth start*/
+    #jumpto_sixth{
+        padding: 20px;
+    }
+
+    #jumpto_sixth .row{
+        padding: 0px;
+    }
+
+    #jumpto_sixth .con{
+        text-align: left;
+        padding-left: 0px;
+    }
+
+    #jumpto_sixth .fa{
+        font-size: 30px;
+        color: white;
+    }
+
+    #jumpto_sixth .head{
+        font-size: 16px;
+        color: white;
+        margin: 0px 10px;
+    }
+
+    #jumpto_sixth p{
+        font-size: 12px;
+        color: white;
+        margin: 0px 10px;
+    }
+
+    #jumpto_sixth .col-sm-3{
+        margin: 0px;
+        padding: 10px;
+        padding-top: 10px;
+        
+    }
+
+    #jumpto_sixth button{
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+
+    /*jumpto_sixth end*/
+
+    /*jumpto_seventh start*/
+    #jumpto_seventh{
+        padding: 30px 10px;
+        
+    }
+
+    #jumpto_seventh h1{
+        font-size: 24px;
+    }
+
+    #jumpto_seventh .accordion-button{
+        font-size: 14px;
+    }
+    /*jumpto_seventh end*/
+
+    /*main area end*/
+
+
+    /*contact us start*/
+
+    .contact_us{
+        background-color: #E8F0FE;
+        padding: 5px 10px;
+    }
+
+
+    .contact_us h2{
+        font-size: 18px;
+    }
+
+    .contact_us .left{
+        margin: 0px;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .contact_us .row{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact_us .col-sm-3{
+        margin:0 auto;
+        
+    }
+
+    .contact_us .col-sm-9{
+        margin: 0 auto;
+    }
+
+    .contact_us .col-sm-9 h4{
+        font-size: 14px;    
+    }
+
+    .contact_us .col-sm-9 p{
+        font-size: 12px;    
+    }
+
+    .contact_us .right{
+        padding: 0;
+        margin: 0;
+    }
+
+    .contact_us .col-sm-6{
+        width: 100%;
+    }
+
+    .contact_us form{
+        padding: 10px;
+    }
+
+    .contact_us .right .text-left{
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .contact_us .right .col-md-6{
+       width: 100%;
+    }
+
+    
+    /*contact us end*/
+
+    /*footer strat*/
+    footer {
+        padding: 20px 5px;
+        margin: 0;
+        text-align: center; /* Center all text inside the footer */
+    }
+    
+    footer .container {
+        padding: 0;
+        margin: 0 auto; /* Ensure container is centered */
+    }
+    
+    footer .row {
+        padding: 0;
+        margin: 0 auto; /* Center row */
+        display: flex;
+        flex-wrap: wrap; /* Allow wrapping on smaller screens */
+        justify-content: center; /* Center the content horizontally */
+    }
+
+    footer .logo{
+        margin: 0;
+        padding: 0;
+        width: 50%;
+    }
+    
+    footer .col-sm-1, 
+    footer .col-sm-9, 
+    footer .col-sm-4 {
+        padding: 0;
+        margin: 0;
+        text-align: center; /* Ensure content inside columns is centered */
+    }
+    
+    footer .col-sm-4 {
+        
+    }
+    
+    footer .pages,
+    footer h4 {
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    footer li {
+        padding: 0px;
+        text-align: center; /* Ensure list items are centered */
+    }
+    
+
+    footer .footer_end {
+        padding: 20px 0;
+        margin: 0 auto;
+        display: flex; /* Enables flexbox */
+        flex-direction: column; /* Aligns items vertically */
+        justify-content: center; /* Centers items vertically */
+        align-items: center; /* Centers items horizontally */
+        height: 100%; /* Ensure it takes up the full height */
+        text-align: center; /* For any inline text alignment */
+    }
+    
+    footer .footer_end h4,
+    footer .footer_end button {
+        margin: 5px; /* Remove any default margins */
+    }
+    
+
+    footer .logo img {
+        height: 60px;             /* Set fixed height for logo */
+        width: auto;              /* Maintain aspect ratio */
+    }
+
+    footer .col-sm-4 {
+        margin: 10px 0px;
+        padding: 0;
+    }
+
+    footer h4 {
+        font-size: 12px;
+        margin: 5px 0px;
+    }
+
+    footer li{
+        padding: 0px;
+        text-align: center;
+    }
+
+    footer li a{
+        font-size: 12px;
+        
+    }
+
+    footer .footer_end{
+       
+    }
+
+    footer .footer_end h4{
+       font-size: 12px;
+    }
+
+    footer .footer_end button{
+        font-size: 10px;
+    }
+
+
+    /*footer end*/
+
+    /*footer_bottom start*/
+
+    footer .footer_end{
+       
+    } 
+
+    .footer_bottom ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer_bottom li {
+        margin: 0 5px; /* Add horizontal spacing between list items */
+    }
+
+    .footer_bottom a{
+        font-size: 12px;
+    }
+    /*footer_bottom end*/
 }
 
 
