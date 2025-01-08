@@ -279,59 +279,44 @@ body{
 
 /*banner start*/
 
-
 .banner-carousel .carousel-item {
-    width: 100%; /* Ensures the carousel item takes up the full width */
-    height: 500px; /* Height of each banner (adjustable as needed) */
-    position: relative; /* To position child elements like text over the image */
+    position: relative; /* To position the content relative to the banner */
+}
+
+.banner-carousel .banner_content {
+    position: absolute; /* Allows precise placement */
+    top: 50%; /* Vertically center */
+    right: 10px; /* Align it to the right side of the banner */
+    width: 25%; /* Set the width of the banner_content to 25% */
+    transform: translateY(-50%); /* Adjust for proper vertical centering */
+    text-align: left; /* Left align the text inside the content */
+    padding: 20px; /* Add some padding around the content */
+    z-index: 1; /* Ensure it is above the image */
+}
+
+.banner-carousel .banner_content h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333; /* Adjust text color */
+    text-align: left; /* Explicit left alignment */
+}
+
+.banner-carousel .banner_content h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #004aad; /* Adjust text color */
+    text-align: left; /* Explicit left alignment */
+    margin: 0;
 }
 
 .banner-carousel .carousel-item img {
-    width: 100%; /* The image will stretch to cover the full width of the carousel */
-    height: 100%; /* The image will stretch to cover the full height of the carousel */
-    object-fit: cover; /* Ensures the image covers the area while maintaining its aspect ratio */
-    position: absolute; /* Absolutely position the image within the carousel item */
-    top: 0; /* Align the image to the top of the carousel item */
-    left: 0; /* Align the image to the left of the carousel item */
-    margin: 0; /* Ensures no margin around the image */
-    padding: 0; /* Ensures no padding around the image */
+    width: 100%;
+    height: auto; /* Maintain image proportions */
+    display: block;
 }
 
-/* Styling for the Heading Elements inside Carousel */
-.banner-carousel .carousel-item h4,
-.banner-carousel .carousel-item h2 {
-    position: absolute; /* Position text over the image */
-    color: #004aad;
-    font-family: "Poppins",sans-serif; /* Font for both headings */
-    text-align: center; /* Centers the text */
-    width: 100%; /* Makes sure text spans the full width of the carousel item */
-    z-index: 1;  /*Ensures the text appears above the image */
-    
-}
 
-/* Styling for h4 (Subheading) */
-.banner-carousel .carousel-item h4 {
-    top: 35%; /* Adjusts the vertical position of the subheading */
-    font-size: 24px; /* Font size for h4 */
-    text-transform: uppercase; /* Capitalizes the text */
-    letter-spacing: 0px; /* Adds space between the letters */
-    color: black;
-    text-align: left;
-    padding-left: 970px;
-}
 
-/* Styling for h2 (Main Heading) */
-.banner-carousel .carousel-item h2 {
-    top: 45%; /* Adjusts the vertical position of the main heading */
-    font-size: 40px; /* Font size for h2 */
-    font-weight: 700; /* Makes the main heading bold */
-    text-transform: uppercase; /* Capitalizes the text */
-    letter-spacing: 1px; /* Adds space between the letters */
-    opacity: 1; /* Full opacity for the main heading */
-    text-align: left;
-    padding-left: 970px;
-    font-size: 36px;
-}
 
 
 /*banner end*/
@@ -738,18 +723,26 @@ body{
 /*jumpto_fourth end*/
 
 /*jumpto_fifth start*/
+
 #jumpto_fifth{
-padding: 50px 100px;
+    padding:20px;
+    margin: 0;
 }
 
 #jumpto_fifth h2{
    text-align: center; 
    font-weight: 600;
+   font-family: "Poppins",sans-serif;
 }
 
-#jumpto_fifth .how_we_work{
-    padding: 50px 150px;
+#jumpto_fifth .image-center{
+    padding: 50px 250px;
 }
+
+#jumpto_fifth img{
+    width: 100%;
+}
+
 
 /*jumpto_fifth end*/
 
@@ -1947,170 +1940,749 @@ footer .footer_end button:hover {
 
 /*RESPONSIVE START*/
 
-@media (min-width: 992px) and (max-width: 1199px) {
+
+@media (max-width: 575px) {
 
     /*header start*/
 
-    .top-nav ul{
-        gap: 20px;
+    header .top-header{
+        padding: 0;
+        margin: 20px 0px 0px 0px;
     }
 
-    .secondary-header {
-        
-        padding: 10px 20px; /* Optional: adjust padding for spacing */
+    header .top-nav{
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    header .top-nav li{
+        margin: 0px;
+        padding: 10px 0px;
         
     }
 
-    .secondary-header ul{
-        gap: 0px; /* Space between menu items */    
+    .top-nav .email a,
+    .top-nav .call a{
+    
+        margin: 0px;
+        font-size: 10px;
     }
 
-    .secondary-header li a {
-        
+    .top-nav .email .fa,
+    .top-nav .call .fa{
+        font-size: 18px;
+        margin: 2px;
+    }
+
+    .top-nav button{
+        padding: 3px 5px;
+        font-size: 8px;
+    }
+
+    .secondary-header .margins-container {
+        display: flex;               /* Enable flexbox layout */
+        justify-content: space-between; /* Distribute space between items */
+        align-items: center;         /* Vertically align the items */
+        width: 100%;                 /* Ensure the container takes full width */
+    }
+    
+    .secondary-header .margins-container a {
+        /* Existing styles */
+        margin-left: 10px;              /* Align it to the left */
+    }
+    
+    .secondary-header .menu-toggle {
+        margin-right: -200px;             /* Align to the right */
+    }
+    
+
+    .margins-container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    /* Initially hide the navigation links */
+    .secondary-header ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #F0F4F9;
+        position: absolute;
+        top: 140px; /* Adjust based on header height */
+        gap: 0px; /* Space between menu items */
+        left: 0;
+        z-index: 4;
+    }
+
+    /* Show the menu when the active class is added */
+    .secondary-header ul.active {
+        display: flex;
+    }
+
+    /* Hamburger icon (toggle button) */
+    .menu-toggle{
+        display: block;
+        font-size: 30px;
+        color: #333;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+    }
+
+    /* Hamburger icon using Unicode character for three horizontal lines */
+    .menu-toggle:before {
+        content: "\2630"; /* Unicode for hamburger icon */
+        font-size: 30px;
+        color: #333;
+    }
+
+    /* Style nav items when they are shown in mobile */
+    .secondary-header ul li {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        text-align: left;
+    }
+    
+
+    /* Style links in mobile */
+    .secondary-header ul li a {
         font-size: 14px;
-        
+        color: black;
+        padding: 0px 50px;
+        width: 100%;
+        display: block;
+        padding: 10px;
+    }
+
+    /* Hover effect for links */
+    .secondary-header ul li a:hover {
+        background-color: #E8F0FE;
+        cursor: pointer;
+    }
+
+    .secondary-header .dropdown{
+        padding: 0;
+        margin: 0;    
+    }
+
+
+    /* Dropdown content */
+    .secondary-header .dropdown-content {
+        display: none; /* Initially hide the dropdown content */
+        position: absolute;
+        background-color: #6B98D6;
+        width: 100%;
+        z-index: 2;
+        left: 0;
+    }
+
+    /* Style for the dropdown button */
+    .secondary-header .dropbtn {
+        background: none;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        width: 100%;
+        text-align: left;
+    }
+
+    .secondary-header .dropbtn a{
+        font-size: 14px;
+        color: black;
+        font-weight: 500;
+    }
+
+    .secondary-header .dropbtn .fa{
+        margin-right: 450px;
+    }
+
+
+    .secondary-header .dropdown.active .dropdown-content {
+           
+    }
+
+    
+
+    /* Styling for dropdown links */
+    .secondary-header .dropdown-content a {
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        border-top: 1px solid white;
+    }
+
+    /* Hover effect for dropdown items */
+    .secondary-header .dropdown-content a:hover {
+        background-color: #E8F0FE;
+        cursor: pointer;
     }
 
     /*header end*/
 
-    /*Third Nav start*/
-
-    .third-bar ul{
-        
-        gap: 90px;
-        
-    }
-
-    /*Third Nav end*/
-
-    /*banner start*/
-
-    .banner-carousel .carousel-item {
-        width: 100%; /* Ensures the carousel item takes up the full width */
-        height: 400px; /* Height of each banner (adjustable as needed) */
-    }
-
-    /* Styling for h4 (Subheading) */
-    .banner-carousel .carousel-item h4 {
-        font-size: 18px; /* Font size for h4 */
-        padding-left: 800px;
-    }
-
-    /* Styling for h2 (Main Heading) */
-    .banner-carousel .carousel-item h2 {
-        font-size: 40px; /* Font size for h2 */
-        padding-left: 800px;
-        font-size: 24px;
-    }
-
-    /*banner end*/
-
-    /*main area start*/
-
-    /*jumpto_first start*/
-    #jumpto_first{
-        padding: 0px;
-    }
-
-    #jumpto_first .row{
-        padding: 20px;
-    }
-
-    #jumpto_first .left{
-        padding: 0px 40px;
-    }
-
-    #jumpto_first .left h2{
-        font-size: 24px;
-        
-    }
-
     
-    /*jumpto_first end*/
+/*third nav area start*/
+.third-bar {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
 
-    /*jumpto_second start*/
+.third-bar ul {
+    padding: 0;
+    margin: 10px 0px;
+    gap:20px;
+}
 
-    #jumpto_second {
-        padding: 0px;
-    }
 
-    #jumpto_second .fours {
-        margin: 20px 0px;
-    }
+.third-bar ul li {
+    padding: 0;
+    margin: 0;
+}
 
-    #jumpto_second h3 {
-        font-size: 18px;
-    }
+.third-bar ul li a {
+font-weight: 600;
+font-size: 12px;
+}
 
-    #jumpto_second .card {
-        width: 225px; /* Fixed card width */
-        height: 350px; /* Fixed card height */
-        padding: 15px;
-        margin: 0px; /* Consistent spacing between cards */
-    }
+/*third nav area end*/
 
-    #jumpto_second .card-title {
-        font-size: 14px;
-        font-weight: 600;
-        margin: 10px 0; /* Consistent spacing around title */
-    }
+/*banner start*/
 
-    #jumpto_second h5 {
-        font-size: 14px;
-    }
+.banner-carousel{
+    padding: 0;
+    margin: 0;
+}
 
-    /*jumpto_second end*/
+.banner-carousel .carousel-inner{
+    padding: 0;
+    margin: 0;
+}
 
-    /*jumpto_fourth start*/
+.banner-carousel img{
+    padding: 0;
+    margin: 0;
+}
 
-    #jumpto_fourth{
-        padding: 10px 20px;
-    }
 
-    #jumpto_fourth .why_loft{
-        
-    }
+.banner-carousel .banner_content {
+    right: 20px; /* Align it to the right side of the banner */
+}
 
-    #jumpto_fourth .col-sm-2{
-        padding: 0px 10px;
-    }
 
-    #jumpto_fourth h3{
-        font-size: 18px;
-    }
-
-    #jumpto_fourth .hidden_box p{
-        font-size: 10px;
-    }
-
-    /*jumpto_fourth end*/
-
-    /*jumpto_fifth start*/
-    #jumpto_fifth{
-        padding: 50px;
-    }
-
-    #jumpto_fifth h2{
-        font-size: 24px;
-    }
-
-    #jumpto_fifth .how_we_work{
-        padding: 50px 100px;
-    }
-    /*jumpto_fifth end*/
-
-    /*main area end*/
-
-    /*contact us start*/
-
-    .contact_us{
-        background-color: #E8F0FE;
-        padding: 50px 0px;
-    }
-
-    /*contact us end*/    
+.banner-carousel .banner_content h4 {
+    font-size: 12px;
     
 }
+
+.banner-carousel .banner_content h2 {
+    font-size: 18px;
+    
+}
+
+.banner-carousel .carousel-indicators{
+    z-index: 3;
+}
+
+/*banner end*/
+
+/*main area start*/
+
+/*jumpto_first start*/
+#jumpto_first{
+    padding: 0px;
+    margin: 0;
+    border-radius: 50px ;
+}
+
+#jumpto_first .row{
+    padding: 0px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+#jumpto_first .left{
+    padding: 0px 50px;
+    width: 100%;
+
+    
+}
+
+#jumpto_first .left h2{
+    font-size: 18px;
+    font-weight: 600;
+    
+}
+
+#jumpto_first .left p{
+    font-size: 12px;
+}
+
+#jumpto_first .left button{
+    margin: 20px 0px;
+    border:none;
+    border-bottom: 2px solid #004aad;
+    background-color: white;
+}
+
+#jumpto_first .know_more{
+    width: 200px;
+}
+
+#jumpto_first .right{
+    width: 60%;
+    margin: 0 auto;
+}
+
+#jumpto_first .right .row{
+    margin: 30px 0px;
+    padding: 0px;
+    
+}
+
+#jumpto_first .right .col-sm-6{
+    margin: 10px auto;
+}
+
+#jumpto_first .right .points {
+    padding: 20px;
+    height: 200px; /* Fixed height for uniformity */
+}
+
+
+
+/*jumpto_first end*/
+
+
+/*jumpto_second start*/
+#jumpto_second h3 {
+    font-size: 18px;
+    text-align: center;    
+}
+
+#jumpto_second p {
+    font-size: 12px;
+    text-align: center;
+}
+
+#jumpto_second .fours{
+    
+}
+
+#jumpto_second .col-sm-3{
+    margin: 0;
+    padding: 0;
+    
+}
+
+#jumpto_second .card{
+    margin: 10px auto;
+    
+}
+
+#jumpto_second .btn {
+    margin: 0;
+    padding: 0;
+}
+
+#jumpto_second #show-more-btn,
+#jumpto_second #show-less-btn {
+height: 30px;
+}
+/*jumpto_second end*/
+
+/*jumpto_third start*/
+
+#jumpto_third{
+    padding: 30px 0px;
+}
+
+#jumpto_third .row{
+    margin: 10px;
+    padding: 0;    
+}
+
+#jumpto_third .benefit_points{
+    padding: 0px;
+}
+
+#jumpto_third .row{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 100px;
+}
+
+#jumpto_third .col-sm-4{
+    width: 100%;
+    margin: 40px 0px;
+    padding: 20px 0px;
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for a subtle effect */
+    border-radius: 20px;
+}
+
+#jumpto_third p{
+    padding: 0;
+    margin: 0px 20px;
+    font-size: 12px;
+    text-align: justify;
+    text-align: center;
+}
+
+#jumpto_third h3{
+    font-size: 18px;    
+}
+
+/*jumpto_third end*/
+
+/*jumpto_fourth start*/
+
+#jumpto_fourth{
+    padding: 40px;
+    margin: 0px;
+}
+#jumpto_fourth h3{
+    font-size: 18px;
+    margin: 0 20px;
+}
+
+#jumpto_fourth .why_loft{
+    margin: 20px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#jumpto_fourth .col-sm-2{
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    width: 100%;
+}
+
+
+
+#jumpto_fourth .col-sm-2 h5{
+    white-space: nowrap; 
+    font-size: 14px; 
+    text-align: center; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    width: 100%;
+    margin-top: 10px; /* Decrease top margin to reduce the gap */
+    margin-bottom: 0px; /* Add a small bottom margin for spacing */
+    padding: 0px; /* Ensure no extra padding is added */
+}
+
+.col-sm-2 h5 br {
+    display: none; 
+}
+
+#jumpto_fourth .hidden_box {
+    position: static; /* Default flow layout for mobile */
+    max-height: none; /* Remove height restrictions */
+    opacity: 1; /* Fully visible */
+    overflow: visible; /* Allow content to flow normally */
+    margin-left: 0; /* Reset margin for mobile view */
+    margin-top: -20px; /* Reduce top margin to minimize gap */
+    margin-bottom: 20px; /* Reduce top margin to minimize gap */
+    padding: 10px; /* Ensure proper spacing */
+    display: block; /* Ensure the hidden box is displayed */
+}
+
+/*jumpto_fourth end*/
+
+/*jumpto_fifth start*/
+
+#jumpto_fifth{
+    padding:20px;
+    margin: 0;
+    
+}
+
+#jumpto_fifth h2{
+   font-size: 18px;
+
+}
+
+#jumpto_fifth .image-center{
+    padding: 50px 50px;
+}
+
+#jumpto_fifth img{
+    width: 100%;
+}
+
+
+/*jumpto_fifth end*/
+
+/*jumpto_sixth start*/
+#jumpto_sixth{
+    padding: 20px;
+}
+
+#jumpto_sixth .row{
+    padding: 0px;
+}
+
+#jumpto_sixth .con{
+    text-align: left;
+    padding-left: 0px;
+}
+
+#jumpto_sixth .fa{
+    font-size: 30px;
+    color: white;
+}
+
+#jumpto_sixth .head{
+    font-size: 16px;
+    color: white;
+    margin: 0px 10px;
+}
+
+#jumpto_sixth p{
+    font-size: 12px;
+    color: white;
+    margin: 0px 10px;
+}
+
+#jumpto_sixth .col-sm-3{
+    margin: 0px;
+    padding: 10px;
+    padding-top: 10px;
+    
+}
+
+#jumpto_sixth button{
+    padding: 5px 10px;
+    font-size: 10px;
+}
+
+/*jumpto_sixth end*/
+
+/*jumpto_seventh start*/
+#jumpto_seventh{
+    padding: 30px 10px;
+    
+}
+
+#jumpto_seventh h1{
+    font-size: 24px;
+}
+
+#jumpto_seventh .accordion-button{
+    font-size: 14px;
+}
+/*jumpto_seventh end*/
+
+/*main area end*/
+
+
+/*contact us start*/
+
+.contact_us{
+    background-color: #E8F0FE;
+    padding: 5px 10px;
+}
+
+
+.contact_us h2{
+    font-size: 18px;
+}
+
+.contact_us .left{
+    margin: 0px;
+    padding: 20px;
+    width: 100%;
+}
+
+.contact_us .row{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_us .col-sm-3{
+    margin:0 auto;
+    
+}
+
+.contact_us .col-sm-9{
+    margin: 0 auto;
+}
+
+.contact_us .col-sm-9 h4{
+    font-size: 14px;    
+}
+
+.contact_us .col-sm-9 p{
+    font-size: 12px;    
+}
+
+.contact_us .right{
+    padding: 0;
+    margin: 0;
+}
+
+.contact_us .col-sm-6{
+    width: 100%;
+}
+
+.contact_us form{
+    padding: 10px;
+}
+
+.contact_us .right .text-left{
+    text-align: center;
+    font-size: 18px;
+}
+
+.contact_us .right .col-md-6{
+   width: 100%;
+}
+
+
+/*contact us end*/
+
+/*footer strat*/
+footer {
+    padding: 20px 5px;
+    margin: 0;
+    text-align: center; /* Center all text inside the footer */
+}
+
+footer .container {
+    padding: 0;
+    margin: 0 auto; /* Ensure container is centered */
+}
+
+footer .row {
+    padding: 0;
+    margin: 0 auto; /* Center row */
+    display: flex;
+    flex-direction: column;
+}
+
+footer .logo{
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+
+footer .col-sm-1, 
+footer .col-sm-9, 
+footer .col-sm-4 {
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Ensure content inside columns is centered */
+}
+
+footer .col-sm-4 {
+    
+}
+
+footer .pages,
+footer h4 {
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer li {
+    padding: 0px;
+    text-align: center; /* Ensure list items are centered */
+}
+
+
+footer .footer_end {
+    padding: 20px 0;
+    margin: 0 auto;
+    display: flex; /* Enables flexbox */
+    flex-direction: column; /* Aligns items vertically */
+    justify-content: center; /* Centers items vertically */
+    align-items: center; /* Centers items horizontally */
+    height: 100%; /* Ensure it takes up the full height */
+    text-align: center; /* For any inline text alignment */
+}
+
+footer .footer_end h4,
+footer .footer_end button {
+    margin: 5px; /* Remove any default margins */
+}
+
+
+footer .logo img {
+    height: 60px;             /* Set fixed height for logo */
+    width: auto;              /* Maintain aspect ratio */
+}
+
+footer .col-sm-4 {
+    margin: 10px 0px;
+    padding: 0;
+}
+
+footer h4 {
+    font-size: 18px;
+    margin: 5px 0px;
+    text-align: center;
+}
+
+footer li{
+    padding: 0px;
+    text-align: center;
+}
+
+footer li a{
+    font-size: 14px;
+    
+}
+
+footer .footer_end{
+   
+}
+
+footer .footer_end h4{
+   font-size: 18px;
+}
+
+footer .footer_end button{
+    font-size: 14px;
+}
+
+
+/*footer end*/
+
+/*footer_bottom start*/
+
+footer .footer_end{
+   
+} 
+
+.footer_bottom ul {
+    padding: 0;
+    margin: 0;
+}
+
+.footer_bottom li {
+    margin: 0 5px; /* Add horizontal spacing between list items */
+}
+
+.footer_bottom a{
+    font-size: 12px;
+}
+/*footer_bottom end*/
+
+    
+
+}
+
+
+
 
 @media (min-width: 576px) and (max-width: 767px) {
     .top-header{
@@ -2369,35 +2941,37 @@ footer .footer_end button:hover {
     /*third nav area end*/
 
     /*banner start*/
-    .banner-carousel .carousel-item {
-        width: 100%; /* Ensures the carousel item takes up the full width */
-        height: 150px; /* Height of each banner (adjustable as needed) */
-        position: relative; /* To position child elements like text over the image */
-    } 
 
-    /* Styling for h4 (Subheading) */
-    .banner-carousel .carousel-item h4 {
-        top: 35%; /* Adjusts the vertical position of the subheading */
-        font-size: 10px; /* Font size for h4 */
-        text-transform: uppercase; /* Capitalizes the text */
-        letter-spacing: 0px; /* Adds space between the letters */
-        color: black;
-        text-align: left;
-        padding-left: 400px;
+    .banner-carousel{
+		padding: 0;
+        margin: 0;
+	}
+
+    .banner-carousel .carousel-inner{
+        padding: 0;
+        margin: 0;
     }
 
-    /* Styling for h2 (Main Heading) */
-    .banner-carousel .carousel-item h2 {
-        top: 45%; /* Adjusts the vertical position of the main heading */
-        font-size: 40px; /* Font size for h2 */
-        font-weight: 700; /* Makes the main heading bold */
-        text-transform: uppercase; /* Capitalizes the text */
-        letter-spacing: 1px; /* Adds space between the letters */
-        opacity: 1; /* Full opacity for the main heading */
-        text-align: left;
-        padding-left: 400px;
-        font-size: 14px;
+    .banner-carousel img{
+        padding: 0;
+        margin: 0;
     }
+
+
+    .banner-carousel .banner_content {
+		right: 20px; /* Align it to the right side of the banner */
+	}
+
+    
+    .banner-carousel .banner_content h4 {
+		font-size: 12px;
+		
+	}
+
+	.banner-carousel .banner_content h2 {
+		font-size: 18px;
+		
+	}
 
     .banner-carousel .carousel-indicators{
         z-index: 3;
@@ -2606,17 +3180,25 @@ footer .footer_end button:hover {
     /*jumpto_fifth start*/
 
     #jumpto_fifth{
-        padding: 0;
-        margin: 10px 0px;
-        }
+        padding:20px;
+        margin: 0;
+        
+    }
     
     #jumpto_fifth h2{
-        font-size: 18px;
-    }
+       font-size: 18px;
 
-    #jumpto_fifth .how_we_work{
-        padding: 0px 20px;
     }
+    
+    #jumpto_fifth .image-center{
+        padding: 50px 50px;
+    }
+    
+    #jumpto_fifth img{
+        width: 100%;
+    }
+    
+
     /*jumpto_fifth end*/
 
     /*jumpto_sixth start*/
@@ -2750,45 +3332,53 @@ footer .footer_end button:hover {
 
     /*footer strat*/
     footer {
-        padding:20px 0px;
-        margin: 0; 
-        
+        padding: 20px 5px;
+        margin: 0;
+        text-align: center; /* Center all text inside the footer */
+    }
+    
+    footer .container {
+        padding: 0;
+        margin: 0 auto; /* Ensure container is centered */
+    }
+    
+    footer .row {
+        padding: 0;
+        margin: 0 auto; /* Center row */
+        display: flex;
+        flex-wrap: wrap; /* Allow wrapping on smaller screens */
+        justify-content: center; /* Center the content horizontally */
     }
 
-    footer .container{
+    footer .logo{
+        margin: 0;
+        padding: 0;
+        width: 50%;
+    }
+    
+    footer .col-sm-1, 
+    footer .col-sm-9, 
+    footer .col-sm-4 {
         padding: 0;
         margin: 0;
+        text-align: center; /* Ensure content inside columns is centered */
+    }
+    
+    footer .col-sm-4 {
         
     }
-
-    footer .row{
-        padding: 0;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        
-    }
-
-    footer .col-sm-1{
-        padding: 0;
-        margin: 0 auto;
-    }
-
-    footer .col-sm-9{
-        padding: 0;
+    
+    footer .pages,
+    footer h4 {
         margin: 0 auto;
         text-align: center;
     }
-
-    footer .col-sm-9 .row{
-        padding: 0;
-        margin: 0;
-        margin-left: 150px;
+    
+    footer li {
+        padding: 0px;
+        text-align: center; /* Ensure list items are centered */
     }
-
-    footer .col-sm-4{
-        margin: 0 auto;
-    }
+    
 
     footer .footer_end {
         padding: 20px 0;
@@ -2818,7 +3408,7 @@ footer .footer_end button:hover {
     }
 
     footer h4 {
-        font-size: 16px;
+        font-size: 12px;
         margin: 5px 0px;
     }
 
@@ -2828,13 +3418,30 @@ footer .footer_end button:hover {
     }
 
     footer li a{
-        font-size: 14px;
+        font-size: 12px;
         
     }
+
+    footer .footer_end{
+       
+    }
+
+    footer .footer_end h4{
+       font-size: 12px;
+    }
+
+    footer .footer_end button{
+        font-size: 10px;
+    }
+
 
     /*footer end*/
 
     /*footer_bottom start*/
+
+    footer .footer_end{
+       
+    } 
 
     .footer_bottom ul {
         padding: 0;
@@ -2850,6 +3457,209 @@ footer .footer_end button:hover {
     }
     /*footer_bottom end*/
     
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Styles for tablets */
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    /*header start*/
+
+    .top-nav ul{
+        gap: 20px;
+    }
+
+    .secondary-header {
+        
+        padding: 10px 20px; /* Optional: adjust padding for spacing */
+        
+    }
+
+    .secondary-header ul{
+        gap: 0px; /* Space between menu items */    
+    }
+
+    .secondary-header li a {
+        
+        font-size: 14px;
+        
+    }
+
+    /*header end*/
+
+    /*Third Nav start*/
+
+    .third-bar ul{
+        
+        gap: 90px;
+        
+    }
+
+    /*Third Nav end*/
+
+    /*banner start*/
+
+    .banner-carousel .carousel-item {
+        width: 100%; /* Ensures the carousel item takes up the full width */
+        height: 400px; /* Height of each banner (adjustable as needed) */
+    }
+
+    /* Styling for h4 (Subheading) */
+    .banner-carousel .carousel-item h4 {
+        font-size: 18px; /* Font size for h4 */
+        padding-left: 800px;
+    }
+
+    /* Styling for h2 (Main Heading) */
+    .banner-carousel .carousel-item h2 {
+        font-size: 40px; /* Font size for h2 */
+        padding-left: 800px;
+        font-size: 24px;
+    }
+
+    /*banner end*/
+
+    /*main area start*/
+
+    /*jumpto_first start*/
+    #jumpto_first{
+        padding: 0px;
+    }
+
+    #jumpto_first .row{
+        padding: 20px;
+    }
+
+    #jumpto_first .left{
+        padding: 0px 40px;
+    }
+
+    #jumpto_first .left h2{
+        font-size: 24px;
+        
+    }
+
+    
+    /*jumpto_first end*/
+
+    /*jumpto_second start*/
+
+    #jumpto_second {
+        padding: 0px;
+    }
+
+    #jumpto_second .fours {
+        margin: 20px 0px;
+    }
+
+    #jumpto_second h3 {
+        font-size: 18px;
+    }
+
+    #jumpto_second .card {
+        width: 225px; /* Fixed card width */
+        height: 350px; /* Fixed card height */
+        padding: 15px;
+        margin: 0px; /* Consistent spacing between cards */
+    }
+
+    #jumpto_second .card-title {
+        font-size: 14px;
+        font-weight: 600;
+        margin: 10px 0; /* Consistent spacing around title */
+    }
+
+    #jumpto_second h5 {
+        font-size: 14px;
+    }
+
+    /*jumpto_second end*/
+
+    /*jumpto_fourth start*/
+
+    #jumpto_fourth{
+        padding: 10px 20px;
+    }
+
+    #jumpto_fourth .why_loft{
+        
+    }
+
+    #jumpto_fourth .col-sm-2{
+        padding: 0px 10px;
+    }
+
+    #jumpto_fourth h3{
+        font-size: 18px;
+    }
+
+    #jumpto_fourth .hidden_box p{
+        font-size: 10px;
+    }
+
+    /*jumpto_fourth end*/
+
+    /*jumpto_fifth start*/
+    #jumpto_fifth{
+        padding: 50px;
+    }
+
+    #jumpto_fifth h2{
+        font-size: 24px;
+    }
+
+    #jumpto_fifth .how_we_work{
+        padding: 50px 100px;
+    }
+    /*jumpto_fifth end*/
+
+    /*main area end*/
+
+    /*contact us start*/
+
+    .contact_us{
+        background-color: #E8F0FE;
+        padding: 50px 0px;
+    }
+
+    /*contact us end*/  
+    
+}
+
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+    /*contact us start*/
+
+    .contact_us{
+        background-color: #E8F0FE;
+        padding:50px 0px;
+    }
+
+    /*contact us end*/ 
+}
+
+@media (min-width: 1441px) {
+    .secondary-header {
+        
+        
+    }
+
+    .margins-container {
+        margin: 0; 
+    }
+
+    .secondary-header ul{
+        
+    padding: 0; /* Removes default padding */
+    margin-left: 50px;
+    display: flex; /* Uses Flexbox for centering */
+    justify-content: center; /* Centers the items inside the ul */
+    width: 100%; /* Ensures it spans the full width */    
+    }
 }
 
 
