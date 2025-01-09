@@ -1955,10 +1955,14 @@ footer .footer_end button:hover {
         margin: 0 auto;
     }
 
+    header .top-nav ul{
+        gap: 20px;
+        
+    }
+
     header .top-nav li{
         margin: 0px;
         padding: 10px 0px;
-        
     }
 
     .top-nav .email a,
@@ -1970,8 +1974,12 @@ footer .footer_end button:hover {
 
     .top-nav .email .fa,
     .top-nav .call .fa{
-        font-size: 18px;
+        font-size: 14px;
         margin: 2px;
+    }
+
+    header .top-nav .search{
+        font-size: 10px;;
     }
 
     .top-nav button{
@@ -2044,16 +2052,19 @@ footer .footer_end button:hover {
         margin: 0;
         text-align: left;
     }
+
+    .secondary-header ul{
+        margin-top: 20px;
+    }
     
 
     /* Style links in mobile */
     .secondary-header ul li a {
         font-size: 14px;
         color: black;
-        padding: 0px 50px;
+        padding: 10px 5px;
         width: 100%;
         display: block;
-        padding: 10px;
     }
 
     /* Hover effect for links */
@@ -2064,7 +2075,7 @@ footer .footer_end button:hover {
 
     .secondary-header .dropdown{
         padding: 0;
-        margin: 0;    
+        margin: 0px 10px;    
     }
 
 
@@ -2083,6 +2094,7 @@ footer .footer_end button:hover {
         background: none;
         border: none;
         padding: 0;
+        margin: 0;
         cursor: pointer;
         width: 100%;
         text-align: left;
@@ -2092,10 +2104,14 @@ footer .footer_end button:hover {
         font-size: 14px;
         color: black;
         font-weight: 500;
+        padding: 0;
+        margin: 5px;
+        margin-left: 5px;
     }
 
     .secondary-header .dropbtn .fa{
         margin-right: 450px;
+        margin-left:5px;
     }
 
 
@@ -4298,25 +4314,50 @@ footer .footer_end{
 
     /*Third Nav end*/
 
-    /*banner start*/
+    
+/*banner start*/
 
-    .banner-carousel .carousel-item {
-        width: 100%; /* Ensures the carousel item takes up the full width */
-        height: 400px; /* Height of each banner (adjustable as needed) */
-    }
+.banner-carousel .carousel-item {
+    position: relative; /* To position the content relative to the banner */
+}
 
-    /* Styling for h4 (Subheading) */
-    .banner-carousel .carousel-item h4 {
-        font-size: 18px; /* Font size for h4 */
-        padding-left: 800px;
-    }
+.banner-carousel .banner_content {
+    position: absolute; /* Allows precise placement */
+    top: 50%; /* Vertically center */
+    right: 10px; /* Align it to the right side of the banner */
+    width: 25%; /* Set the width of the banner_content to 25% */
+    transform: translateY(-50%); /* Adjust for proper vertical centering */
+    text-align: left; /* Left align the text inside the content */
+    padding: 20px; /* Add some padding around the content */
+    z-index: 1; /* Ensure it is above the image */
+}
 
-    /* Styling for h2 (Main Heading) */
-    .banner-carousel .carousel-item h2 {
-        font-size: 40px; /* Font size for h2 */
-        padding-left: 800px;
-        font-size: 24px;
-    }
+.banner-carousel .banner_content h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333; /* Adjust text color */
+    text-align: left; /* Explicit left alignment */
+}
+
+.banner-carousel .banner_content h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #004aad; /* Adjust text color */
+    text-align: left; /* Explicit left alignment */
+    margin: 0;
+}
+
+.banner-carousel .carousel-item img {
+    width: 100%;
+    height: auto; /* Maintain image proportions */
+    display: block;
+}
+
+
+
+
+
+/*banner end*/
 
     /*banner end*/
 
