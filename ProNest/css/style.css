@@ -3939,8 +3939,6 @@ footer .footer_end{
         width: 100%;
     }
 
-    
-
     #jumpto_fourth .col-sm-2 h5{
         white-space: nowrap; 
         font-size: 14px; 
@@ -4459,6 +4457,48 @@ footer .footer_end{
     justify-content: center; /* Centers the items inside the ul */
     width: 100%; /* Ensures it spans the full width */    
     }
+
+    
+    /*banner start*/
+
+    .banner-carousel .carousel-item {
+        position: relative; /* To position the content relative to the banner */
+    }
+
+    .banner-carousel .banner_content {
+        position: absolute; /* Allows precise placement */
+        top: 50%; /* Vertically center */
+        right: 10px; /* Align it to the right side of the banner */
+        width: 25%; /* Set the width of the banner_content to 25% */
+        transform: translateY(-50%); /* Adjust for proper vertical centering */
+        text-align: left; /* Left align the text inside the content */
+        padding: 20px; /* Add some padding around the content */
+        z-index: 1; /* Ensure it is above the image */
+    }
+
+    .banner-carousel .banner_content h4 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: #333; /* Adjust text color */
+        text-align: left; /* Explicit left alignment */
+    }
+
+    .banner-carousel .banner_content h2 {
+        font-size: 36px;
+        font-weight: bold;
+        color: #004aad; /* Adjust text color */
+        text-align: left; /* Explicit left alignment */
+        margin: 0;
+    }
+
+    .banner-carousel .carousel-item img {
+        width: 100%;
+        height: auto; /* Maintain image proportions */
+        display: block;
+    }
+
+    /*banner end*/
+
 }
 
 
