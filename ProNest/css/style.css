@@ -3540,156 +3540,136 @@ footer .footer_end{
     .top-nav button {
         font-size: 10px;
         padding: 5px 15px;
-        background-color: #E8F0FE;
-        border: none;
-        font-family: "Poppins", sans-serif;
-        white-space: nowrap; /* Prevent text from wrapping to the next line */
-        overflow: hidden; /* Hide any overflow text */
-        text-overflow: ellipsis; /* Optional: Adds ellipsis (…) if the text overflows */
-    }
-
-    .secondary-header .margins-container {
-        display: flex;               /* Enable flexbox layout */
-        justify-content: space-between; /* Distribute space between items */
-        align-items: center;         /* Vertically align the items */
-        width: 100%;                 /* Ensure the container takes full width */
-    }
-    
-    .secondary-header .margins-container a {
-        /* Existing styles */
-        margin-left: 10px;              /* Align it to the left */
-    }
-    
-    .secondary-header .menu-toggle {
-        margin-right: -200px;             /* Align to the right */
-    }
-    
-
-    .margins-container {
-        display: flex;
-        align-items: center;
-        width: 100%;
-    }
-
-    /* Initially hide the navigation links */
-    .secondary-header ul {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: #F0F4F9;
-        position: absolute;
-        top: 110px; /* Adjust based on header height */
-        gap: 0px; /* Space between menu items */
-        left: 0;
-        z-index: 4;
-    }
-
-    /* Show the menu when the active class is added */
-    .secondary-header ul.active {
-        display: flex;
-    }
-
-    /* Hamburger icon (toggle button) */
-    .menu-toggle{
-        display: block;
-        font-size: 30px;
-        color: #333;
-        cursor: pointer;
-        background-color: transparent;
-        border: none;
-    }
-
-    /* Hamburger icon using Unicode character for three horizontal lines */
-    .menu-toggle:before {
-        content: "\2630"; /* Unicode for hamburger icon */
-        font-size: 30px;
-        color: #333;
-    }
-
-    /* Style nav items when they are shown in mobile */
-    .secondary-header ul li {
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        text-align: left;
-    }
-    
-
-    /* Style links in mobile */
-    .secondary-header ul li a {
-        font-size: 14px;
-        color: black;
-        padding: 0px 50px;
-        width: 100%;
-        display: block;
-        padding: 10px;
-    }
-
-    /* Hover effect for links */
-    .secondary-header ul li a:hover {
-        background-color: #E8F0FE;
-        cursor: pointer;
-    }
-
-    .secondary-header .dropdown{
-        padding: 0;
-        margin: 0;    
-    }
-
-
-    /* Dropdown content */
-    .secondary-header .dropdown-content {
-        display: none; /* Initially hide the dropdown content */
-        position: absolute;
-        background-color: #6B98D6;
-        width: 100%;
-        z-index: 2;
-        left: 0;
-    }
-
-    /* Style for the dropdown button */
-    .secondary-header .dropbtn {
-        background: none;
-        border: none;
-        padding: 0;
-        cursor: pointer;
-        width: 100%;
-        text-align: left;
-    }
-
-    .secondary-header .dropbtn a{
-        font-size: 14px;
-        color: black;
-        font-weight: 500;
-    }
-
-    .secondary-header .dropbtn .fa{
-        margin-right: 450px;
-    }
-
-
-    .secondary-header .dropdown.active .dropdown-content {
-           
     }
 
     
+.secondary-header {
+    
+    padding: 10px 0px; /* Optional: adjust padding for spacing */
+    
+}
 
-    /* Styling for dropdown links */
-    .secondary-header .dropdown-content a {
-        padding: 10px;
-        color: white;
-        text-decoration: none;
-        display: block;
-        width: 100%;
-        border-top: 1px solid white;
-    }
 
-    /* Hover effect for dropdown items */
-    .secondary-header .dropdown-content a:hover {
-        background-color: #E8F0FE;
-        cursor: pointer;
-    }
+.secondary-header ul{
+    gap: 0px; /* Space between menu items */
+}
 
+
+
+.secondary-header li a {
+    font-size: 12px;
+    margin: 10px; 
+      
+}
+
+.secondary-header li i {
+    font-size: 12px;
+    margin: 0 2px;
+}
+
+.secondary-header li a:hover {
+    background-color: #E8F0FE;
+    border: none;
+    cursor: pointer;
+}
+
+
+.secondary-header .dropdown { 
+    margin: auto 5px;
+}
+
+
+.secondary-header .dropbtn {
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+.secondary-header .dropbtn a {
+    text-decoration: none;
+    color: #333;           
+    display: inline-block;  
+    margin-right: 5px;
+    margin-top: 2px;
+    
+        
+}
+
+.secondary-header .dropbtn .fa {
+    display: inline-block;  
+    margin-left: 5px; 
+    margin-top: 0px;     
+}
+
+
+.secondary-header .dropdown:hover .dropdown-content {
+    display: block; 
+}
+
+.secondary-header .dropdown-content {
+    display: none; 
+    position: absolute;
+    background-color: #004aad;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%; 
+    left: 0;
+}
+
+.secondary-header .dropdown-content a {
+    padding: 12px 0px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 0px;
+}
+
+.secondary-header .dropdown-content a:hover {
+    background-color: #ddd;
+    color: #333;
+}
+
+.secondary-header a {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    margin: 0 30px;
+    padding: 0;
+}
+
+.secondary-header li button {
+    background-color: white;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    
+}
+
+.secondary-header li button:hover {
+    background-color: #E8F0FE;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.secondary-header .submenu-content{
+    display: none;
+}
+
+/* Show submenu when hovering over the parent .dropdown-submenu */
+.secondary-header .dropdown-submenu:hover .submenu-content {
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 100%; /* Position the submenu to the right of the parent */
+    top: 0;
+    background-color: #004aad;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
     /*third nav area start*/
     .third-bar {
         display: flex;
@@ -3706,12 +3686,12 @@ footer .footer_end{
     
     .third-bar ul li {
         padding: 0;
-        margin: 0 10px;
+        margin: 0 20px;
     }
 
     .third-bar ul li a {
     font-weight: 600;
-    font-size: 12px;
+    font-size: 10px;
     }
     
     /*third nav area end*/
@@ -3816,6 +3796,12 @@ footer .footer_end{
         margin: 10px auto;
     }
 
+    #jumpto_first .right .points {
+        
+        height: 180px; /* Fixed height for uniformity */
+        
+    }
+
     /*jumpto_first end*/
 
 
@@ -3829,6 +3815,7 @@ footer .footer_end{
     #jumpto_second .container{
         margin: 0 auto;
         padding: 0;
+        
     }
 
     #jumpto_second h3 {
@@ -3843,7 +3830,8 @@ footer .footer_end{
     }
 
     #jumpto_second .fours{
-        
+        margin: 0 auto;
+        padding: 0;
     }
 
     #jumpto_second .col-sm-3{
@@ -3917,7 +3905,7 @@ footer .footer_end{
     }
     
     #jumpto_third .col-sm-4 p{
-       
+       padding: 20px;
     }
 
     #jumpto_third h3{
@@ -3945,7 +3933,7 @@ footer .footer_end{
 
     #jumpto_fourth .col-sm-2{
         margin: 0;
-        padding: 10px;
+        padding: 10px 100px;
         text-align: center;
         border: none;
         width: 100%;
@@ -3981,6 +3969,10 @@ footer .footer_end{
         display: block; /* Ensure the hidden box is displayed */
     }
 
+    #jumpto_fourth .hidden_box p{
+       
+    }
+
     /*jumpto_fourth end*/
 
     /*jumpto_fifth start*/
@@ -3988,7 +3980,6 @@ footer .footer_end{
     #jumpto_fifth{
         padding:20px;
         margin: 0;
-        
     }
     
     #jumpto_fifth h2{
