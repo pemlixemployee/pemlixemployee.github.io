@@ -2693,7 +2693,14 @@ footer .footer_end{
 }
 /*footer_bottom end*/
 
-    
+/*GALLERY PAGE START*/
+
+.gallery h1{
+    font-size: 36px;
+    margin-top: 10px;
+}
+
+/*GALLERY PAGE END*/   
 
 }
 
@@ -3472,6 +3479,15 @@ footer .footer_end{
         font-size: 12px;
     }
     /*footer_bottom end*/
+
+    /*GALLERY PAGE START*/
+
+    .gallery h1{
+        font-size: 36px;
+        margin-top: 10px;
+    }
+
+    /*GALLERY PAGE END*/ 
     
 }
 
@@ -4275,6 +4291,15 @@ footer .footer_end{
         font-size: 12px;
     }
     /*footer_bottom end*/
+
+    /*GALLERY PAGE START*/
+
+    .gallery h1{
+        font-size: 36px;
+        margin-top: 10px;
+    }
+
+    /*GALLERY PAGE END*/ 
 }
 
 
@@ -4464,7 +4489,16 @@ footer .footer_end{
         padding: 50px 0px;
     }
 
-    /*contact us end*/  
+    /*contact us end*/ 
+    
+    /*GALLERY PAGE START*/
+
+    .gallery h1{
+        font-size: 42px;
+        margin-top: 10px;
+    }
+
+    /*GALLERY PAGE END*/
     
 }
 
@@ -4539,6 +4573,15 @@ footer .footer_end{
     }
 
     /*banner end*/
+
+    /*GALLERY PAGE START*/
+
+    .gallery h1{
+        font-size: 42px;
+        margin-top: 10px;
+    }
+
+    /*GALLERY PAGE END*/
 
 }
 
