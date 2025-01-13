@@ -1374,130 +1374,6 @@ body{
 /*ABOUT US PAGE END*/
 
 
-
-/*PRODUCTS PAGE START*/
-
-
-/*all_product_banner start*/
-
-#all_product_banner{
-    position: relative;
-    padding: 0;
-    margin: 0;
-}
-
-#all_product_banner img{
-    width: 100%;
-    height: auto; /* Maintains aspect ratio */
-}
-
-#all_product_banner h1 {
-    position: absolute; /* Allows precise positioning over the image */
-    top: 50%; /* Centers the text vertically */
-    left: 15%; /* Adjust horizontal position */
-    transform: translateY(-50%); /* Perfectly center the text vertically */
-    font-size: 48px; /* Adjust the size of the heading */
-    color: #004aad;
-    margin: 0; /* Remove default margin */
-    z-index: 2; /* Ensure the text is above the image */
-    font-weight: bold; /* Emphasize the heading */
-}
-
-/*all_product_banner end*/
-
-/*products start*/
-
-#products {
-    background-color: #E8F0FE;
-    padding: 60px 0px;
-}
-
-#products h2{
-    color: #333;
-    font-weight: 600;
-}
-
-#products .row{
-    margin: 40px 0px;
-}
-
-#products .pro_head {
-    text-align: center;
-    padding: 0px 200px;
-}
-
-#products .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Ensures consistent spacing between elements */
-    height: 100%; /* Ensures all cards have equal height */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */
-}
-
-
-#products .card:hover {
-    transform: scale(1.05); /* Scales the card to 105% of its size */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for emphasis */
-}
-
-#products .card-title{
-    color: #004aad;
-}
-
-#products .card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Aligns content within the card body */
-    flex-grow: 1; /* Makes the card-body stretch to fill the available space */
-}
-
-#products .card-text{
-    text-align: justify;
-    margin: 10px 0;
-}
-
-#products h5 {
-    font-weight: 600;
-}
-
-#products .btn {
-    background-color: #004aad;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin-top: auto; /* Pushes the button to the bottom of the card-body */
-    align-self: flex-start; /* Aligns the button to the left */
-}
-
-/*products end*/
-
-/*let_us_chat start*/
-
-#let_us_chat{
-    text-align: center;
-    padding: 40px 0px;
-}
-
-#let_us_chat .content{
-    text-align: center;
-    margin: 50px 400px;
-}
-
-#let_us_chat button{
-    background-color: black;
-    color: white;
-    padding: 10px 30px;
-    border: none;
-    border-radius: 5px;
-}
-
-/*let_us_chat end*/
-
-
-/*PRODUCTS PAGE END*/
-
-
 /*MAIN PRODUCTS PAGES START*/
 
 /*main_product_banner start*/
@@ -1626,6 +1502,133 @@ body{
 
 
 /*MAIN PRODUCTS PAGES END*/
+
+
+
+/*PRODUCTS PAGE START*/
+
+
+/*all_product_banner start*/
+
+.all_product_banner{
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.all_product_banner img{
+    width: 100%;
+    height: auto; /* Maintains aspect ratio */
+}
+
+.all_product_banner h1 {
+    position: absolute; /* Allows precise positioning over the image */
+    top: 50%; /* Centers the text vertically */
+    left: 15%; /* Adjust horizontal position */
+    transform: translateY(-50%); /* Perfectly center the text vertically */
+    font-size: 48px; /* Adjust the size of the heading */
+    color: #004aad;
+    margin: 0; /* Remove default margin */
+    z-index: 2; /* Ensure the text is above the image */
+    font-weight: bold; /* Emphasize the heading */
+}
+
+/*all_product_banner end*/
+
+/*products start*/
+
+.products {
+    background-color: #E8F0FE;
+    padding: 60px 0px;
+}
+
+.products h2{
+    color: #333;
+    font-weight: 600;
+}
+
+.products .row{
+    margin: 40px 0px;
+}
+
+.products .pro_head {
+    text-align: center;
+    padding: 0px 200px;
+}
+
+.products .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures consistent spacing between elements */
+    height: 100%; /* Ensures all cards have equal height */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */
+}
+
+
+.products .card:hover {
+    transform: scale(1.05); /* Scales the card to 105% of its size */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for emphasis */
+}
+
+.products .card-title{
+    color: #004aad;
+}
+
+.products .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Aligns content within the card body */
+    flex-grow: 1; /* Makes the card-body stretch to fill the available space */
+}
+
+.products .card-text{
+    text-align: justify;
+    margin: 10px 0;
+}
+
+.products h5 {
+    font-weight: 600;
+}
+
+.products .btn {
+    background-color: #004aad;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: auto; /* Pushes the button to the bottom of the card-body */
+    align-self: flex-start; /* Aligns the button to the left */
+}
+
+/*products end*/
+
+/*let_us_chat start*/
+
+.let_us_chat{
+    text-align: center;
+    padding: 40px 0px;
+}
+
+.let_us_chat .content{
+    text-align: center;
+    margin: 50px 400px;
+}
+
+.let_us_chat button{
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+}
+
+/*let_us_chat end*/
+
+
+/*PRODUCTS PAGE END*/
+
+
+
 
 
 /*GALLERY PAGE START*/
@@ -1770,7 +1773,6 @@ i.red{
     font-size: 48px;
     margin-top: 50px;
 }
-
 
 /*GALLERY PAGE END*/
 
@@ -2815,6 +2817,78 @@ footer .footer_end{
 /*ABOUT US PAGE END*/
 
 
+/*PRODUCTS PAGE START*/
+
+    /*all_product_banner start*/
+    .all_product_banner h1 {
+        
+        font-size: 24px; /* Adjust the size of the heading */
+        left: 13%; /* Adjust horizontal position */
+        
+    }
+
+     /*all_product_banner end*/
+
+    /*products start*/
+
+    .products {
+        background-color: #E8F0FE;
+        padding: 20px 0px;
+    }
+
+    .products h2{
+        font-size: 24px;
+    }
+
+    .products .row{
+        margin: 40px 0px;
+    }
+
+    .products .pro_head {
+        text-align: center;
+        padding: 0px 75px;
+    }
+
+    .products .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Ensures consistent spacing between elements */
+        height: 100%; /* Ensures all cards have equal height */
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */
+        margin: 0px 50px;
+    }
+    
+    /*products end*/
+
+    /*let_us_chat start*/
+
+    .let_us_chat h3{
+        font-size: 18px;
+    }
+
+    .let_us_chat{
+        text-align: center;
+        padding: 40px 0px;
+    }
+
+    .let_us_chat .content{
+        text-align: center;
+        margin: 20px 100px;
+    }
+
+    .let_us_chat button{
+        background-color: black;
+        color: white;
+        padding: 10px 30px;
+        border: none;
+        border-radius: 5px;
+    }
+
+/*let_us_chat end*/
+       
+
+/*PRODUCTS PAGE END*/
+
 
 /*GALLERY PAGE START*/
 
@@ -3711,6 +3785,79 @@ footer .footer_end{
 
     
     /*ABOUT US PAGE END*/
+
+
+    /*PRODUCTS PAGE START*/
+
+    /*all_product_banner start*/
+    .all_product_banner h1 {
+        
+        font-size: 24px; /* Adjust the size of the heading */
+        left: 13%; /* Adjust horizontal position */
+        
+    }
+
+     /*all_product_banner end*/
+
+    /*products start*/
+
+    .products {
+        background-color: #E8F0FE;
+        padding: 20px 0px;
+    }
+
+    .products h2{
+        font-size: 24px;
+    }
+
+    .products .row{
+        margin: 40px 0px;
+    }
+
+    .products .pro_head {
+        text-align: center;
+        padding: 0px 75px;
+    }
+
+    .products .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Ensures consistent spacing between elements */
+        height: 100%; /* Ensures all cards have equal height */
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */
+        margin: 0px 50px;
+    }
+    
+    /*products end*/
+
+    /*let_us_chat start*/
+
+    .let_us_chat h3{
+        font-size: 18px;
+    }
+
+    .let_us_chat{
+        text-align: center;
+        padding: 40px 0px;
+    }
+
+    .let_us_chat .content{
+        text-align: center;
+        margin: 20px 100px;
+    }
+
+    .let_us_chat button{
+        background-color: black;
+        color: white;
+        padding: 10px 30px;
+        border: none;
+        border-radius: 5px;
+    }
+
+/*let_us_chat end*/
+       
+
+    /*PRODUCTS PAGE END*/
 
 
 
@@ -4634,6 +4781,86 @@ footer .footer_end{
 
     /*ABOUT US PAGE END*/
 
+    /*PRODUCTS PAGE START*/
+
+    /*all_product_banner start*/
+    .all_product_banner h1 {
+        
+        left: 17%; /* Adjust horizontal position */
+        font-size: 24px; /* Adjust the size of the heading */
+        
+    }
+    /*all_product_banner end*/
+
+    /*products start*/
+
+    .products h2{
+        font-size: 24px;
+    }
+
+    .products .row{
+        margin: 10px 0px;
+    }
+
+    .products .pro_head {
+        text-align: center;
+        padding: 0px 100px;
+    }
+
+    .products .card-title{
+        color: #004aad;
+        text-align: center;
+    }
+
+    .products .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Aligns content within the card body */
+        flex-grow: 1; /* Makes the card-body stretch to fill the available space */
+        margin: 0 auto;
+    }
+
+    .products .card-text{
+        text-align: justify;
+        margin: 10px 0;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .products .btn {
+        background-color: #004aad;
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 20px;
+        margin: 0 auto;
+        border-radius: 5px;
+        margin-top: auto; /* Pushes the button to the bottom of the card-body */
+        align-self: flex-start; /* Aligns the button to the left */
+    }
+
+    /*products end*/
+
+    /*let_us_chat start*/
+
+    .let_us_chat h3{
+        font-size: 18px;
+    }
+
+    .let_us_chat{
+        text-align: center;
+        padding: 40px 0px;
+    }
+
+    .let_us_chat .content{
+        text-align: center;
+        margin: 30px 100px;
+    }
+
+    /*let_us_chat end*/
+
+    /*PRODUCTS PAGE END*/
+
+
 
     /*GALLERY PAGE START*/
 
@@ -4951,6 +5178,46 @@ footer .footer_end{
     
     /*ABOUT US PAGE END*/
 
+
+    /*PRODUCTS PAGE START*/
+
+    /*all_product_banner start*/
+    .all_product_banner h1 {
+        
+        font-size: 36px; /* Adjust the size of the heading */
+        
+    }
+    /*all_product_banner end*/
+
+    /*let_us_chat start*/
+
+.let_us_chat{
+    text-align: center;
+    padding: 40px 0px;
+}
+
+.let_us_chat .content{
+    text-align: center;
+    margin: 30px 200px;
+}
+
+.let_us_chat button{
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+}
+
+/*let_us_chat end*/
+
+    /*PRODUCTS PAGE END*/
+
+
+    /*MAIN PRODUCTS PAGES START*/
+
+    /*MAIN PRODUCTS PAGES END*/
+
     
     /*GALLERY PAGE START*/
 
@@ -5091,6 +5358,38 @@ footer .footer_end{
     /*cus_review end*/
     
     /*ABOUT US PAGE END*/
+
+
+    /*PRODUCTS PAGE START*/
+
+    /*let_us_chat start*/
+
+    .let_us_chat{
+        text-align: center;
+        padding: 40px 0px;
+    }
+
+    .let_us_chat .content{
+        text-align: center;
+        margin: 30px 200px;
+    }
+
+    .let_us_chat button{
+        background-color: black;
+        color: white;
+        padding: 10px 30px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    /*let_us_chat end*/
+
+    /*PRODUCTS PAGE END*/
+
+
+    /*MAIN PRODUCTS PAGES START*/
+    
+    /*MAIN PRODUCTS PAGES END*/
 }
 
 @media (min-width: 1441px) {
@@ -5269,6 +5568,23 @@ footer .footer_end{
     /*cus_review end*/
 
     /*ABOUT US PAGE END*/
+
+    /*all_product_banner start*/
+    .all_product_banner h1 {
+        
+        left: 16%; /* Adjust horizontal position */
+        
+    }
+    /*all_product_banner end*/
+
+    /*PRODUCTS PAGE START*/
+
+    /*PRODUCTS PAGE END*/
+
+
+    /*MAIN PRODUCTS PAGES START*/
+
+    /*MAIN PRODUCTS PAGES END*/
 
     /*GALLERY PAGE START*/
 
