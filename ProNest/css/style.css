@@ -1068,7 +1068,7 @@ body{
 
 /*About_us_banner section start*/
 
-#About_us_banner {
+.About_us_banner {
     position: relative; /* Establishes the positioning context for child elements */
     text-align: center; /* Aligns text horizontally */
     padding: 0;
@@ -1077,17 +1077,17 @@ body{
     overflow: hidden; /* Ensures content does not overflow the banner */
 }
 
-#About_us_banner img {
+.About_us_banner img {
     width: 100%;
     opacity: 0.2; /* Dim the background image */
 }
 
-#About_us_banner .banner_area {
+.About_us_banner .banner_area {
     position: relative; /* Ensures child elements are positioned relative to this area */
 }
 
-#About_us_banner h2,
-#About_us_banner p {
+.About_us_banner h2,
+.About_us_banner p {
     position: absolute;
     top: 20%; /* Start at 50% vertical height */
     left: 50%; /* Start at 50% horizontal width */
@@ -1096,13 +1096,13 @@ body{
     margin: 0;
 }
 
-#About_us_banner h2 {
+.About_us_banner h2 {
     font-size: 48px; /* Adjust heading size */
     margin-bottom: 1rem; /* Add spacing below heading */
     font-weight: 600;
 }
 
-#About_us_banner p {
+.About_us_banner p {
     position: absolute;
     top: 35%;
     font-size: 16px; /* Adjust paragraph size */
@@ -1118,7 +1118,7 @@ body{
 
 /*our_goals start*/
 
-#our_goals{
+.our_goals{
     text-align: center;
     padding: 30px 10px 0px 0px;
     margin: 0;
@@ -1126,36 +1126,36 @@ body{
     background-color: #E5ECF3;   
 }
 
-#our_goals h2{
+.our_goals h2{
     font-size: 36px;
     font-weight: 600;
     margin: 20px 0px;
 }
 
-#our_goals .row{
+.our_goals .row{
     margin: 0;
     padding: 0;
 }
 
-#our_goals .col-sm-4{
+.our_goals .col-sm-4{
     padding: 0;
     margin: 0;
     position: relative;
 }
 
-#our_goals img{
+.our_goals img{
     width: 100%;
     height: auto;
 }
 
-#our_goals h3{
+.our_goals h3{
     position: absolute;
     top: 30%;
     left: 35%;
     font-weight: 600;
 }
 
-#our_goals p{
+.our_goals p{
     position: absolute;
     top: 45%;
     padding:0px 20px;
@@ -1165,38 +1165,38 @@ body{
 
 /*our_team start*/
 
-#our_team{
+.our_team{
     margin:40px 0px;
     background-color: white;
 }
 
-#our_team h2{
+.our_team h2{
     font-weight: 600;
 }
 
-#our_team .rounded-circle {
+.our_team .rounded-circle {
     border-radius: 50%!important;
 }
 
-#our_team .border-5 {
+.our_team .border-5 {
     border-width: 5px;
 }
 
-#our_team .border-white {
+.our_team .border-white {
     border-opacity: 1;
     border-color: rgba(255,255,255, 1) !important;
 }
 
-#our_team .shadow {
+.our_team .shadow {
     box-shadow: 0 0.375rem 1.5rem 0 rgba(140,152,164,.125)!important;
 }
 
-#our_team img {
+.our_team img {
     max-width: 50%;
     height: auto;
 }
 
-#our_team .icon-sm {
+.our_team .icon-sm {
     width: 1.5rem;
     height: 1.5rem;
     display: inline-flex;
@@ -1206,62 +1206,63 @@ body{
     font-size: 75%;
     line-height: normal;
 }
-#our_team .rounded-circle {
+
+.our_team .rounded-circle {
     border-radius: 50%!important;
 }
 
-#our_team .hover-top-in .hover-top--in {
+.our_team .hover-top-in .hover-top--in {
     transition: ease-in-out all .35s;
     position: relative;
     top: 0
 }
 
-#our_team .hover-top-in:hover .hover-top--in {
+.our_team .hover-top-in:hover .hover-top--in {
     top: -10px
 }
 
-#our_team .me-1 {
+.our_team .me-1 {
     margin-right: 0.25rem!important;
 }
 
-#our_team .fw-700 {
+.our_team .fw-700 {
     font-weight: 700!important;
 }
-#our_team .mb-1 {
+.our_team .mb-1 {
     margin-bottom: 0.25rem!important;
 }
 
-#our_team .z-index-1 {
+.our_team .z-index-1 {
     z-index: 1!important;
 }
 
-#our_team .pt-6 {
+.our_team .pt-6 {
     padding-top: 2.5rem!important;
 }
-#our_team .p-4 {
+.our_team .p-4 {
     padding: 1.5rem!important;
 }
-#our_team .mt-n4 {
+.our_team .mt-n4 {
     margin-top: -1.5rem!important;
 }
 
-#our_team .shadow {
+.our_team .shadow {
     box-shadow: 0 0.375rem 1.5rem 0 rgba(var(--bs-gray-700-rgb),.125)!important;
 }
-#our_team .px-5 {
+.our_team .px-5 {
     padding-right: 2rem!important;
     padding-left: 2rem!important;
 }
-#our_team .position-relative {
+.our_team .position-relative {
     position: relative!important;
 }
-#our_team .overflow-hidden {
+.our_team .overflow-hidden {
     overflow: hidden!important;
 }
 /*our_team end*/
 
 /*about_img start*/
-#about_img {
+.about_img {
     position: relative; /* Establishes positioning context for child elements */
     overflow: hidden; /* Crops any part of the image that exceeds the container */
     width: 100%; /* Ensures the container spans the full width */
@@ -1269,7 +1270,7 @@ body{
     background-color: #333;
 }
 
-#about_img img {
+.about_img img {
     position: absolute;
     top: 0; /* Ensures the image starts from the top */
     left: 0;
@@ -1280,7 +1281,7 @@ body{
     
 }
 
-#about_img h1 {
+.about_img h1 {
     position: absolute; /* Allows precise positioning over the image */
     top: 40%; /* Vertically centers the text */
     left: 50%; /* Horizontally centers the text */
@@ -1294,7 +1295,7 @@ body{
     
 }
 
-#about_img h6{
+.about_img h6{
     position: absolute; /* Allows precise positioning over the image */
     top: 65%; /* Vertically centers the text */
     left: 50%; /* Horizontally centers the text */
@@ -1312,27 +1313,27 @@ body{
 
 /*cus_review start*/
 
-#cus_review {
+.cus_review {
     background-color: #f8f9fa; /* Light background for contrast */
     padding: 50px 0; /* Spacing around the section */
     text-align: center;
 }
 
-#cus_review h2{
+.cus_review h2{
     font-weight: 600;
 }
 
-#cus_review .carousel {
+.cus_review .carousel {
     max-width: 600px; /* Limit the width of the carousel */
     margin: 0 auto; /* Center align the carousel */
     position: relative;
 }
 
-#cus_review .carousel-inner {
+.cus_review .carousel-inner {
     text-align: center; /* Center-align content */
 }
 
-#cus_review .carousel-item img {
+.cus_review .carousel-item img {
     width: 80px; /* Profile image size */
     height: 80px;
     object-fit: cover; /* Ensures proper scaling of the image */
@@ -1340,7 +1341,7 @@ body{
     margin: 20px auto;
 }
 
-#cus_review .carousel-item p {
+.cus_review .carousel-item p {
     font-size: 1.1em;
     line-height: 1.6;
     margin: 10px 20px;
@@ -1348,8 +1349,8 @@ body{
     font-style: italic; /* Stylized review text */
 }
 
-#cus_review .carousel-control-prev-icon,
-#cus_review .carousel-control-next-icon {
+.cus_review .carousel-control-prev-icon,
+.cus_review .carousel-control-next-icon {
     background-color: #333; /* Dark background for navigation icons */
     border-radius: 50%; /* Rounded navigation buttons */
     padding: 10px;
@@ -1357,14 +1358,14 @@ body{
     height: 30px;
 }
 
-#cus_review .carousel-indicators button {
+.cus_review .carousel-indicators button {
     background-color: #333; /* Dark indicator dots */
     width: 10px;
     height: 10px;
     border-radius: 50%;
 }
 
-#cus_review .carousel-indicators .active {
+.cus_review .carousel-indicators .active {
     background-color: #004aad; /* Highlight active dot */
 }
 
@@ -2693,6 +2694,128 @@ footer .footer_end{
 }
 /*footer_bottom end*/
 
+
+/*ABOUT US PAGE START*/
+
+/*About_us_banner section start*/
+.About_us_banner {
+    height: 400px; /* Fixed banner height */
+}
+
+.About_us_banner img {
+    width: 100%;
+    opacity: 0.2; /* Dim the background image */
+}
+
+.About_us_banner h2,
+.About_us_banner p {
+    top: 25%; /* Start at 50% vertical height */
+    left: 47%; /* Start at 50% horizontal width */
+}
+
+
+.About_us_banner h2 {
+    font-size: 36px; /* Adjust heading size */
+}
+
+.About_us_banner p {
+    top: 70%;
+    font-size: 12px; /* Adjust paragraph size */
+}
+/*About_us_banner section end*/
+
+/*our_goals start*/
+
+.our_goals{
+    
+    padding: 30px 10px 0px 0px;
+    margin: 0;
+       
+}
+
+.our_goals h2{
+    font-size: 24px;
+    margin: 20px 0px;
+}
+
+.our_goals .row{
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.our_goals .col-sm-4{
+    padding: 0;
+    margin: 10px auto;
+    position: relative;
+    height: 500px;
+    width: 500px;
+}
+
+/*our_goals end*/
+
+/*our_team start*/
+
+/*our_team end*/
+
+
+/*about_img start*/
+.about_img {
+    position: relative; /* Establishes positioning context for child elements */
+    overflow: hidden; /* Crops any part of the image that exceeds the container */
+    width: 100%; /* Ensures the container spans the full width */
+    height: 200px; /* Fixes the container height */
+    background-color: #333;
+}
+
+.about_img img {
+    position: absolute;
+    top: 0; /* Ensures the image starts from the top */
+    left: 0;
+    width: 100%; /* Ensures the image spans the container width */
+    height: 100%; /* Ensures the image fills the container height */
+    object-fit: cover; /* Scales the image without distortion */
+    opacity: 0.1;
+    
+}
+
+.about_img h1 {
+    font-size: 36px; /* Adjust text size as needed */
+}
+
+.about_img h6{
+    font-size: 24px;
+}
+
+/*about_img end*/
+
+/*cus_review start*/
+
+.cus_review {
+    background-color: #f8f9fa; /* Light background for contrast */
+    padding: 50px 0; /* Spacing around the section */
+    text-align: center;
+}
+
+.cus_review h2{
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.cus_review .carousel {
+    max-width: 500px; /* Limit the width of the carousel */
+    margin: 0 auto; /* Center align the carousel */
+    position: relative;
+}
+
+/*cus_review end*/
+
+    
+/*ABOUT US PAGE END*/
+
+
+
 /*GALLERY PAGE START*/
 
 .gallery h1{
@@ -3480,6 +3603,117 @@ footer .footer_end{
     }
     /*footer_bottom end*/
 
+
+    /*ABOUT US PAGE START*/
+
+    /*About_us_banner section start*/
+    .About_us_banner h2,
+    .About_us_banner p {
+    position: absolute;
+    top: 25%; /* Start at 50% vertical height */
+    left: 50%; /* Start at 50% horizontal width */
+    transform: translate(-50%, -50%); /* Center elements using translation */
+    color: white; /* Ensure text is visible over the background */
+    margin: 0;
+    }
+
+    .About_us_banner h2 {
+        font-size: 36px; /* Adjust heading size */
+        margin-bottom: 1rem; /* Add spacing below heading */
+        font-weight: 600;
+    }
+
+    .About_us_banner p {
+        position: absolute;
+        top: 65%;
+        font-size: 12px; /* Adjust paragraph size */
+        width: 80%; /* Restrict width for better readability */
+        line-height: 1.5; /* Improve text spacing */
+        margin: 20px;
+        text-align: justify; /* Justify the text */
+        text-align-last: center;
+    }
+    /*About_us_banner section end*/
+
+    /*our_goals start*/
+
+    .our_goals{
+        text-align: center;
+        padding: 30px 10px 0px 0px;
+        margin: 0;
+        font-family: "Poppins", sans-serif; 
+        background-color: #E5ECF3;   
+    }
+
+    .our_goals h2{
+        font-size: 24px;
+        font-weight: 600;
+        margin: 20px 0px;
+    }
+
+    .our_goals .row{
+        margin: 0;
+        padding: 0;
+    }
+
+    .our_goals .col-sm-4{
+        padding: 0;
+        margin: 0;
+        position: relative;
+    }
+
+    .our_goals img{
+        width: 100%;
+        height: auto;
+    }
+
+    .our_goals h3{
+        position: absolute;
+        top: 5%;
+        left: 20%;
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    .our_goals p{
+        position: absolute;
+        top: 30%;
+        padding:0px 20px;
+        font-size: 10px;
+    }
+
+    /*our_goals end*/
+
+    /*about_img start*/
+
+    .about_img h1 {
+        top: 40%; /* Vertically centers the text */
+        left: 50%; /* Horizontally centers the text */
+        font-size: 48px; /* Adjust text size as needed */
+    }
+
+    .about_img h6{
+        position: absolute; /* Allows precise positioning over the image */
+        top: 65%; /* Vertically centers the text */
+        left: 50%; /* Horizontally centers the text */
+        font-size: 24px;
+    }
+
+    /*about_img end*/
+
+    /*cus_review start*/
+
+    .cus_review h2{
+        font-weight: 600;
+        font-size: 24px;
+    }
+    /*cus_review end*/
+
+    
+    /*ABOUT US PAGE END*/
+
+
+
     /*GALLERY PAGE START*/
 
     .gallery h1{
@@ -3575,133 +3809,133 @@ footer .footer_end{
     }
 
     
-.secondary-header {
-    
-    padding: 10px 0px; /* Optional: adjust padding for spacing */
-    
-}
-
-
-.secondary-header ul{
-    gap: 0px; /* Space between menu items */
-}
-
-
-
-.secondary-header li a {
-    font-size: 12px;
-    margin: 10px; 
-      
-}
-
-.secondary-header li i {
-    font-size: 12px;
-    margin: 0 2px;
-}
-
-.secondary-header li a:hover {
-    background-color: #E8F0FE;
-    border: none;
-    cursor: pointer;
-}
-
-
-.secondary-header .dropdown { 
-    margin: auto 5px;
-}
-
-
-.secondary-header .dropbtn {
-    font-size: 12px;
-    margin: 0;
-    padding: 0;
-}
-
-.secondary-header .dropbtn a {
-    text-decoration: none;
-    color: #333;           
-    display: inline-block;  
-    margin-right: 5px;
-    margin-top: 2px;
-    
+    .secondary-header {
         
-}
-
-.secondary-header .dropbtn .fa {
-    display: inline-block;  
-    margin-left: 5px; 
-    margin-top: 0px;     
-}
+        padding: 10px 0px; /* Optional: adjust padding for spacing */
+        
+    }
 
 
-.secondary-header .dropdown:hover .dropdown-content {
-    display: block; 
-}
+    .secondary-header ul{
+        gap: 0px; /* Space between menu items */
+    }
 
-.secondary-header .dropdown-content {
-    display: none; 
-    position: absolute;
-    background-color: #004aad;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    top: 100%; 
-    left: 0;
-}
 
-.secondary-header .dropdown-content a {
-    padding: 12px 0px;
-    color: white;
-    text-decoration: none;
-    display: block;
-    margin: 0px;
-}
 
-.secondary-header .dropdown-content a:hover {
-    background-color: #ddd;
-    color: #333;
-}
+    .secondary-header li a {
+        font-size: 12px;
+        margin: 10px; 
+        
+    }
 
-.secondary-header a {
-    font-size: 24px;
-    font-weight: 700;
-    color: white;
-    margin: 0 30px;
-    padding: 0;
-}
+    .secondary-header li i {
+        font-size: 12px;
+        margin: 0 2px;
+    }
 
-.secondary-header li button {
-    background-color: white;
-    border: none;
-    font-family: "Poppins", sans-serif;
-    
-}
+    .secondary-header li a:hover {
+        background-color: #E8F0FE;
+        border: none;
+        cursor: pointer;
+    }
 
-.secondary-header li button:hover {
-    background-color: #E8F0FE;
-}
 
-.menu-toggle {
-    display: none;
-    font-size: 30px;
-    cursor: pointer;
-}
+    .secondary-header .dropdown { 
+        margin: auto 5px;
+    }
 
-.secondary-header .submenu-content{
-    display: none;
-}
 
-/* Show submenu when hovering over the parent .dropdown-submenu */
-.secondary-header .dropdown-submenu:hover .submenu-content {
-    display: block;
-    position: absolute;
-    width: 100%;
-    left: 100%; /* Position the submenu to the right of the parent */
-    top: 0;
-    background-color: #004aad;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 2;
-}
+    .secondary-header .dropbtn {
+        font-size: 12px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .secondary-header .dropbtn a {
+        text-decoration: none;
+        color: #333;           
+        display: inline-block;  
+        margin-right: 5px;
+        margin-top: 2px;
+        
+            
+    }
+
+    .secondary-header .dropbtn .fa {
+        display: inline-block;  
+        margin-left: 5px; 
+        margin-top: 0px;     
+    }
+
+
+    .secondary-header .dropdown:hover .dropdown-content {
+        display: block; 
+    }
+
+    .secondary-header .dropdown-content {
+        display: none; 
+        position: absolute;
+        background-color: #004aad;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        top: 100%; 
+        left: 0;
+    }
+
+    .secondary-header .dropdown-content a {
+        padding: 12px 0px;
+        color: white;
+        text-decoration: none;
+        display: block;
+        margin: 0px;
+    }
+
+    .secondary-header .dropdown-content a:hover {
+        background-color: #ddd;
+        color: #333;
+    }
+
+    .secondary-header a {
+        font-size: 24px;
+        font-weight: 700;
+        color: white;
+        margin: 0 30px;
+        padding: 0;
+    }
+
+    .secondary-header li button {
+        background-color: white;
+        border: none;
+        font-family: "Poppins", sans-serif;
+        
+    }
+
+    .secondary-header li button:hover {
+        background-color: #E8F0FE;
+    }
+
+    .menu-toggle {
+        display: none;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .secondary-header .submenu-content{
+        display: none;
+    }
+
+    /* Show submenu when hovering over the parent .dropdown-submenu */
+    .secondary-header .dropdown-submenu:hover .submenu-content {
+        display: block;
+        position: absolute;
+        width: 100%;
+        left: 100%; /* Position the submenu to the right of the parent */
+        top: 0;
+        background-color: #004aad;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 2;
+    }
     /*third nav area start*/
     .third-bar {
         display: flex;
@@ -4292,6 +4526,115 @@ footer .footer_end{
     }
     /*footer_bottom end*/
 
+
+    /*ABOUT US PAGE START*/
+
+    /*About_us_banner section start*/
+    .About_us_banner h2,
+    .About_us_banner p {
+        position: absolute;
+        top: 25%; /* Start at 50% vertical height */
+        left: 48%; /* Start at 50% horizontal width */
+        transform: translate(-50%, -50%); /* Center elements using translation */
+        color: white; /* Ensure text is visible over the background */
+        margin: 0;
+    }
+
+    .About_us_banner h2 {
+        font-size: 36px; /* Adjust heading size */
+        margin-bottom: 1rem; /* Add spacing below heading */
+        font-weight: 600;
+    }
+
+    .About_us_banner p {
+        position: absolute;
+        top: 60%;
+        font-size: 14px; /* Adjust paragraph size */
+        width: 80%; /* Restrict width for better readability */
+        line-height: 1.5; /* Improve text spacing */
+        margin: 20px;
+        text-align: justify; /* Justify the text */
+        text-align-last: center;
+    }
+    /*About_us_banner section end*/
+
+    /*our_goals start*/
+
+    .our_goals{
+        text-align: center;
+        padding: 30px 10px 0px 0px;
+        margin: 0;
+        font-family: "Poppins", sans-serif; 
+        background-color: #E5ECF3;   
+    }
+
+    .our_goals h2{
+        font-size: 24px;
+        font-weight: 600;
+        margin: 20px 0px;
+    }
+
+    .our_goals .row{
+        margin: 0;
+        padding: 0;
+    }
+
+    .our_goals .col-sm-4{
+        padding: 0;
+        margin: 0;
+        position: relative;
+    }
+
+    .our_goals img{
+        width: 100%;
+        height: auto;
+    }
+
+    .our_goals h3{
+        position: absolute;
+        top: 20%;
+        left: 30%;
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    .our_goals p{
+        position: absolute;
+        top: 40%;
+        padding:0px 20px;
+        font-size: 10px;
+    }
+
+    /*our_goals end*/
+
+    /*about_img start*/
+
+    .about_img h1 {
+        top: 40%; /* Vertically centers the text */
+        left: 50%; /* Horizontally centers the text */
+        font-size: 40px; /* Adjust text size as needed */
+    }
+
+    .about_img h6{
+        position: absolute; /* Allows precise positioning over the image */
+        top: 65%; /* Vertically centers the text */
+        left: 50%; /* Horizontally centers the text */
+        font-size: 24px;
+    }
+
+    /*about_img end*/
+
+    /*cus_review start*/
+
+    .cus_review h2{
+        font-weight: 600;
+        font-size: 24px;
+    }
+    /*cus_review end*/
+
+    /*ABOUT US PAGE END*/
+
+
     /*GALLERY PAGE START*/
 
     .gallery h1{
@@ -4340,49 +4683,49 @@ footer .footer_end{
     /*Third Nav end*/
 
     
-/*banner start*/
+    /*banner start*/
 
-.banner-carousel .carousel-item {
-    position: relative; /* To position the content relative to the banner */
-}
+    .banner-carousel .carousel-item {
+        position: relative; /* To position the content relative to the banner */
+    }
 
-.banner-carousel .banner_content {
-    position: absolute; /* Allows precise placement */
-    top: 50%; /* Vertically center */
-    right: 10px; /* Align it to the right side of the banner */
-    width: 25%; /* Set the width of the banner_content to 25% */
-    transform: translateY(-50%); /* Adjust for proper vertical centering */
-    text-align: left; /* Left align the text inside the content */
-    padding: 20px; /* Add some padding around the content */
-    z-index: 1; /* Ensure it is above the image */
-}
+    .banner-carousel .banner_content {
+        position: absolute; /* Allows precise placement */
+        top: 50%; /* Vertically center */
+        right: 10px; /* Align it to the right side of the banner */
+        width: 25%; /* Set the width of the banner_content to 25% */
+        transform: translateY(-50%); /* Adjust for proper vertical centering */
+        text-align: left; /* Left align the text inside the content */
+        padding: 20px; /* Add some padding around the content */
+        z-index: 1; /* Ensure it is above the image */
+    }
 
-.banner-carousel .banner_content h4 {
-    font-size: 16px;
-    margin-bottom: 10px;
-    color: #333; /* Adjust text color */
-    text-align: left; /* Explicit left alignment */
-}
+    .banner-carousel .banner_content h4 {
+        font-size: 16px;
+        margin-bottom: 10px;
+        color: #333; /* Adjust text color */
+        text-align: left; /* Explicit left alignment */
+    }
 
-.banner-carousel .banner_content h2 {
-    font-size: 24px;
-    font-weight: bold;
-    color: #004aad; /* Adjust text color */
-    text-align: left; /* Explicit left alignment */
-    margin: 0;
-}
+    .banner-carousel .banner_content h2 {
+        font-size: 24px;
+        font-weight: bold;
+        color: #004aad; /* Adjust text color */
+        text-align: left; /* Explicit left alignment */
+        margin: 0;
+    }
 
-.banner-carousel .carousel-item img {
-    width: 100%;
-    height: auto; /* Maintain image proportions */
-    display: block;
-}
-
-
+    .banner-carousel .carousel-item img {
+        width: 100%;
+        height: auto; /* Maintain image proportions */
+        display: block;
+    }
 
 
 
-/*banner end*/
+
+
+    /*banner end*/
 
     /*banner end*/
 
@@ -4490,6 +4833,124 @@ footer .footer_end{
     }
 
     /*contact us end*/ 
+
+    /*ABOUT US PAGE START*/
+
+    /*About_us_banner section start*/
+    .About_us_banner h2,
+    .About_us_banner p {
+        position: absolute;
+        top: 25%; /* Start at 50% vertical height */
+        left: 48%; /* Start at 50% horizontal width */
+        transform: translate(-50%, -50%); /* Center elements using translation */
+        color: white; /* Ensure text is visible over the background */
+        margin: 0;
+    }
+
+    .About_us_banner h2 {
+        font-size: 42px; /* Adjust heading size */
+        margin-bottom: 1rem; /* Add spacing below heading */
+        font-weight: 600;
+    }
+
+    .About_us_banner p {
+        position: absolute;
+        top: 45%;
+        font-size: 14px; /* Adjust paragraph size */
+        width: 80%; /* Restrict width for better readability */
+        line-height: 1.5; /* Improve text spacing */
+        margin: 20px;
+        text-align: justify; /* Justify the text */
+        text-align-last: center;
+    }
+    /*About_us_banner section end*/
+
+    /*our_goals start*/
+
+    .our_goals{
+        text-align: center;
+        padding: 30px 10px 0px 0px;
+        margin: 0;
+        font-family: "Poppins", sans-serif; 
+        background-color: #E5ECF3;   
+    }
+
+    .our_goals h2{
+        font-size: 36px;
+        font-weight: 600;
+        margin: 20px 0px;
+    }
+
+    .our_goals .row{
+        margin: 0;
+        padding: 0;
+    }
+
+    .our_goals .col-sm-4{
+        padding: 0;
+        margin: 0;
+        position: relative;
+    }
+
+    .our_goals img{
+        width: 100%;
+        height: auto;
+    }
+
+    .our_goals h3{
+        position: absolute;
+        top: 20%;
+        left: 30%;
+        font-weight: 600;
+        font-size: 24px;
+    }
+
+    .our_goals p{
+        position: absolute;
+        top: 40%;
+        padding:0px 20px;
+        font-size: 12px;
+    }
+
+    /*our_goals end*/
+
+    /*our_team start*/
+
+    .our_team h2{
+        font-size: 36px;
+    }
+
+    /*our_team end*/
+
+    /*about_img start*/
+
+    .about_img h1 {
+        top: 35%; /* Vertically centers the text */
+        left: 50%; /* Horizontally centers the text */
+        font-size: 48px; /* Adjust text size as needed */
+    }
+
+    .about_img h6{
+        position: absolute; /* Allows precise positioning over the image */
+        top: 60%; /* Vertically centers the text */
+        left: 50%; /* Horizontally centers the text */
+        font-size: 36px;
+        margin: 10px 0px;
+        width: 100%;
+    }
+
+    /*about_img end*/
+
+    /*cus_review start*/
+
+    .cus_review h2{
+        font-weight: 600;
+        font-size: 24px;
+    }
+    /*cus_review end*/
+    
+    /*ABOUT US PAGE END*/
+
     
     /*GALLERY PAGE START*/
 
@@ -4512,6 +4973,124 @@ footer .footer_end{
     }
 
     /*contact us end*/ 
+
+
+    /*ABOUT US PAGE START*/
+
+    /*About_us_banner section start*/
+    .About_us_banner h2,
+    .About_us_banner p {
+        position: absolute;
+        top: 25%; /* Start at 50% vertical height */
+        left: 48%; /* Start at 50% horizontal width */
+        transform: translate(-50%, -50%); /* Center elements using translation */
+        color: white; /* Ensure text is visible over the background */
+        margin: 0;
+    }
+
+    .About_us_banner h2 {
+        font-size: 48px; /* Adjust heading size */
+        margin-bottom: 1rem; /* Add spacing below heading */
+        font-weight: 600;
+    }
+
+    .About_us_banner p {
+        position: absolute;
+        top: 40%;
+        font-size: 14px; /* Adjust paragraph size */
+        width: 80%; /* Restrict width for better readability */
+        line-height: 1.5; /* Improve text spacing */
+        margin: 20px;
+        text-align: justify; /* Justify the text */
+        text-align-last: center;
+    }
+    /*About_us_banner section end*/
+
+    /*our_goals start*/
+
+    .our_goals{
+        text-align: center;
+        padding: 30px 10px 0px 0px;
+        margin: 0;
+        font-family: "Poppins", sans-serif; 
+        background-color: #E5ECF3;   
+    }
+
+    .our_goals h2{
+        font-size: 36px;
+        font-weight: 600;
+        margin: 20px 0px;
+    }
+
+    .our_goals .row{
+        margin: 0;
+        padding: 0;
+    }
+
+    .our_goals .col-sm-4{
+        padding: 0;
+        margin: 0;
+        position: relative;
+    }
+
+    .our_goals img{
+        width: 100%;
+        height: auto;
+    }
+
+    .our_goals h3{
+        position: absolute;
+        top: 30%;
+        left: 30%;
+        font-weight: 600;
+        font-size: 24px;
+    }
+
+    .our_goals p{
+        position: absolute;
+        top: 45%;
+        padding:0px 20px;
+        font-size: 14px;
+    }
+
+    /*our_goals end*/
+
+    /*our_team start*/
+
+    .our_team h2{
+        font-size: 36px;
+    }
+
+    /*our_team end*/
+
+    /*about_img start*/
+
+    .about_img h1 {
+        top: 35%; /* Vertically centers the text */
+        left: 50%; /* Horizontally centers the text */
+        font-size: 48px; /* Adjust text size as needed */
+    }
+
+    .about_img h6{
+        position: absolute; /* Allows precise positioning over the image */
+        top: 60%; /* Vertically centers the text */
+        left: 50%; /* Horizontally centers the text */
+        font-size: 36px;
+        margin: 10px 0px;
+        width: 100%;
+    }
+
+    /*about_img end*/
+
+    /*cus_review start*/
+
+    .cus_review h2{
+        font-weight: 600;
+        font-size: 36px;
+    }
+    /*cus_review end*/
+    
+    /*ABOUT US PAGE END*/
 }
 
 @media (min-width: 1441px) {
@@ -4573,6 +5152,123 @@ footer .footer_end{
     }
 
     /*banner end*/
+
+    /*ABOUT US PAGE START*/
+
+    /*About_us_banner section start*/
+    .About_us_banner h2,
+    .About_us_banner p {
+        position: absolute;
+        top: 15%; /* Start at 50% vertical height */
+        left: 48%; /* Start at 50% horizontal width */
+        transform: translate(-50%, -50%); /* Center elements using translation */
+        color: white; /* Ensure text is visible over the background */
+        margin: 0;
+    }
+
+    .About_us_banner h2 {
+        font-size: 48px; /* Adjust heading size */
+        margin-bottom: 1rem; /* Add spacing below heading */
+        font-weight: 600;
+    }
+
+    .About_us_banner p {
+        position: absolute;
+        top: 30%;
+        font-size: 14px; /* Adjust paragraph size */
+        width: 80%; /* Restrict width for better readability */
+        line-height: 1.5; /* Improve text spacing */
+        margin: 20px;
+        text-align: justify; /* Justify the text */
+        text-align-last: center;
+    }
+    /*About_us_banner section end*/
+
+    /*our_goals start*/
+
+    .our_goals{
+        text-align: center;
+        padding: 30px 10px 0px 0px;
+        margin: 0;
+        font-family: "Poppins", sans-serif; 
+        background-color: #E5ECF3;   
+    }
+
+    .our_goals h2{
+        font-size: 36px;
+        font-weight: 600;
+        margin: 20px 0px;
+    }
+
+    .our_goals .row{
+        margin: 0;
+        padding: 0;
+    }
+
+    .our_goals .col-sm-4{
+        padding: 0;
+        margin: 0;
+        position: relative;
+    }
+
+    .our_goals img{
+        width: 100%;
+        height: auto;
+    }
+
+    .our_goals h3{
+        position: absolute;
+        top: 30%;
+        left: 35%;
+        font-weight: 600;
+        font-size: 24px;
+    }
+
+    .our_goals p{
+        position: absolute;
+        top: 45%;
+        padding:0px 25px;
+        font-size: 14px;
+    }
+
+    /*our_goals end*/
+
+    /*our_team start*/
+
+    .our_team h2{
+        font-size: 36px;
+    }
+
+    /*our_team end*/
+
+    /*about_img start*/
+
+    .about_img h1 {
+        top: 35%; /* Vertically centers the text */
+        left: 50%; /* Horizontally centers the text */
+        font-size: 48px; /* Adjust text size as needed */
+    }
+
+    .about_img h6{
+        position: absolute; /* Allows precise positioning over the image */
+        top: 60%; /* Vertically centers the text */
+        left: 50%; /* Horizontally centers the text */
+        font-size: 36px;
+        margin: 10px 0px;
+        width: 100%;
+    }
+
+    /*about_img end*/
+
+    /*cus_review start*/
+
+    .cus_review h2{
+        font-weight: 600;
+        font-size: 36px;
+    }
+    /*cus_review end*/
+
+    /*ABOUT US PAGE END*/
 
     /*GALLERY PAGE START*/
 
