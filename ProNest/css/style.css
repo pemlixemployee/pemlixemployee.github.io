@@ -316,9 +316,6 @@ body{
 }
 
 
-
-
-
 /*banner end*/
 
 /*main area start*/
@@ -904,7 +901,138 @@ body{
 /*contact us end*/
 
 
-/*ENERGY EFFICIENT DOORS PAGE START*/
+/*MAIN PRODUCTS PAGES START*/
+
+/*main_product_banner start*/
+
+.main_product_banner {
+    position: relative; /* Establish positioning context for child elements */
+    padding: 0;
+    margin: 0;
+}
+
+.main_product_banner img {
+    width: 100%; /* Ensure the image spans the full width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.main_product_banner .product_name_background {
+    position: absolute; /* Allows positioning relative to the .main_product_banner */
+    top: 90%; /* Centers the background vertically */
+    left: 25%; /* Centers the background horizontally */
+    transform: translate(-50%, -50%); /* Perfectly center the background */
+    height: 400px;
+    width: 600px;
+    background-color: rgba(255,255,255, 0.6); /* Semi-transparent black for contrast */
+    border-radius: 20px;
+    display: flex;
+    justify-content: center; /* Center the text horizontally */
+    align-items: center; /* Center the text vertically */
+    text-align: center; /* Center-align text inside */
+    border: 1px solid #004aad;
+}
+
+.main_product_banner .product_name_background h1 {
+    color: #004aad;
+    font-size: 48px; /* Adjust text size */
+    font-weight: bold; /* Emphasize the heading */
+    margin: 0; /* Remove default margin */
+}
+
+/*main_product_banner end*/
+
+/*main_product_section_one strat*/
+
+.main_product_section_one {
+    display: flex; /* Establish a flexbox layout */
+    justify-content: flex-end; /* Align content to the right */
+    align-items: center; /* Vertically center the content */
+    padding: 20px; /* Add some spacing inside the section */
+    background-color: #f2f3f4;
+    height: 100%; /* Adjust based on content or requirements */
+}
+
+.main_product_section_one .product_desc {
+    max-width: 600px; /* Limit the width of the description area */
+    text-align: left; /* Align text to the left */
+    margin-right: 100px; /* Add some spacing from the right edge */
+    padding: 20px; /* Add padding inside the description box */
+}
+
+.main_product_section_one h2 {
+    font-size: 32px; /* Adjust heading size */
+    margin-bottom: 10px; /* Add spacing below the heading */
+    color: black; /* Optional text color */
+}
+
+.main_product_section_one p {
+    font-size: 16px; /* Adjust paragraph size */
+    text-align: justify;
+    line-height: 1.6; /* Improve readability */
+    color: black;
+}
+
+/*main_product_section_one end*/
+
+/*con_details start*/
+.con_details {
+    text-align: center;
+}
+
+.con_details h3{
+    font-weight: 600;
+    margin-top: 50px;
+}
+
+.con_details span{
+    color: #004aad;
+}
+
+.con_details .row {
+    display: flex;
+    justify-content: center; /* Align items horizontally */
+    align-items: stretch;    /* Ensure all items are the same height */
+    text-align: center;
+    flex-wrap: nowrap;       /* Prevent wrapping */
+    gap: 20px;               /* Adds space between items */
+    margin: 50px;
+    padding: 100px;
+    background-color: #E8F0FE;
+    border-radius: 10px;
+}
+
+.con_details .con {
+    background-color: white;
+    margin: 10px;
+    padding: 50px;           /* Consistent inner padding */
+    border-radius: 20px;
+    flex: 1;                 /* Makes all items grow/shrink evenly */
+    max-width: 300px;        /* Sets a consistent maximum width */
+    min-width: 300px;        /* Prevents shrinking below a certain size */
+    display: flex;           /* Allows for vertical alignment inside */
+    flex-direction: column;  /* Stacks content vertically */
+    justify-content: center; /* Centers content vertically */
+    align-items: center;     /* Centers content horizontally */
+}
+
+.con_details .fa {
+    font-size: 42px;
+    color: #004aad;
+    margin-bottom: 20px;
+}
+
+.con_details h5 {
+    color: black;
+}
+
+/*con_details end*/
+
+/*MAIN PRODUCTS PAGES END*/
+
+
+
+
+/*SUB PAGES START*/
 
 /*banner start*/
 
@@ -1055,7 +1183,7 @@ body{
 }
 /*sub_faq end*/
 
-/*ENERGY EFFICIENT DOORS PAGE END*/
+/*SUB PAGES END*/
 
 
 
@@ -1374,134 +1502,7 @@ body{
 /*ABOUT US PAGE END*/
 
 
-/*MAIN PRODUCTS PAGES START*/
 
-/*main_product_banner start*/
-
-.main_product_banner {
-    position: relative; /* Establish positioning context for child elements */
-    padding: 0;
-    margin: 0;
-}
-
-.main_product_banner img {
-    width: 100%; /* Ensure the image spans the full width */
-    height: auto; /* Maintain aspect ratio */
-}
-
-.main_product_banner .product_name_background {
-    position: absolute; /* Allows positioning relative to the .main_product_banner */
-    top: 90%; /* Centers the background vertically */
-    left: 25%; /* Centers the background horizontally */
-    transform: translate(-50%, -50%); /* Perfectly center the background */
-    height: 400px;
-    width: 600px;
-    background-color: rgba(255,255,255, 0.6); /* Semi-transparent black for contrast */
-    border-radius: 20px;
-    display: flex;
-    justify-content: center; /* Center the text horizontally */
-    align-items: center; /* Center the text vertically */
-    text-align: center; /* Center-align text inside */
-    border: 1px solid #004aad;
-}
-
-.main_product_banner .product_name_background h1 {
-    color: #004aad;
-    font-size: 48px; /* Adjust text size */
-    font-weight: bold; /* Emphasize the heading */
-    margin: 0; /* Remove default margin */
-}
-
-/*main_product_banner end*/
-
-/*main_product_section_one strat*/
-
-.main_product_section_one {
-    display: flex; /* Establish a flexbox layout */
-    justify-content: flex-end; /* Align content to the right */
-    align-items: center; /* Vertically center the content */
-    padding: 20px; /* Add some spacing inside the section */
-    background-color: #f2f3f4;
-    height: 100%; /* Adjust based on content or requirements */
-}
-
-.main_product_section_one .product_desc {
-    max-width: 600px; /* Limit the width of the description area */
-    text-align: left; /* Align text to the left */
-    margin-right: 100px; /* Add some spacing from the right edge */
-    padding: 20px; /* Add padding inside the description box */
-}
-
-.main_product_section_one h2 {
-    font-size: 32px; /* Adjust heading size */
-    margin-bottom: 10px; /* Add spacing below the heading */
-    color: black; /* Optional text color */
-}
-
-.main_product_section_one p {
-    font-size: 16px; /* Adjust paragraph size */
-    text-align: justify;
-    line-height: 1.6; /* Improve readability */
-    color: black;
-}
-
-/*main_product_section_one end*/
-
-/*con_details start*/
-.con_details {
-    text-align: center;
-}
-
-.con_details h3{
-    font-weight: 600;
-    margin-top: 50px;
-}
-
-.con_details span{
-    color: #004aad;
-}
-
-.con_details .row {
-    display: flex;
-    justify-content: center; /* Align items horizontally */
-    align-items: stretch;    /* Ensure all items are the same height */
-    text-align: center;
-    flex-wrap: nowrap;       /* Prevent wrapping */
-    gap: 20px;               /* Adds space between items */
-    margin: 50px;
-    padding: 100px;
-    background-color: #E8F0FE;
-    border-radius: 10px;
-}
-
-.con_details .con {
-    background-color: white;
-    margin: 10px;
-    padding: 50px;           /* Consistent inner padding */
-    border-radius: 20px;
-    flex: 1;                 /* Makes all items grow/shrink evenly */
-    max-width: 300px;        /* Sets a consistent maximum width */
-    min-width: 300px;        /* Prevents shrinking below a certain size */
-    display: flex;           /* Allows for vertical alignment inside */
-    flex-direction: column;  /* Stacks content vertically */
-    justify-content: center; /* Centers content vertically */
-    align-items: center;     /* Centers content horizontally */
-}
-
-.con_details .fa {
-    font-size: 42px;
-    color: #004aad;
-    margin-bottom: 20px;
-}
-
-.con_details h5 {
-    color: black;
-}
-
-/*con_details end*/
-
-
-/*MAIN PRODUCTS PAGES END*/
 
 
 
@@ -1628,7 +1629,158 @@ body{
 /*PRODUCTS PAGE END*/
 
 
+/*SUB PAGES START*/
 
+/*banner start*/
+
+.sub_energy_banner{
+    font-family: "Poppins", sans-serif;
+    background-color: #004aad;
+    align-items: center;
+    text-align: center;
+}
+
+.sub_energy_banner h2{
+    color: white;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+/*banner end*/
+
+
+/*product_overview start*/
+
+.product_overview{
+   margin: 10px 0px;
+   padding: 0;
+}
+
+.product_overview .container{
+    padding: 0px 50px;
+}
+
+.product_overview .col-sm-2{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.product_overview img {
+      width: 100px;   
+      height: auto;
+      border-radius: 20px;
+}
+
+.product_overview .col-sm-10{
+    position: relative;
+    top: 0px;
+    text-align: left;
+}
+
+.product_overview h3{
+    font-weight: 600;
+}
+
+.product_overview p{
+    text-align: left;
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.product_overview .line_1{
+    border-top: 1px solid blue;
+}
+
+/*product_overview end*/
+
+/*product_cause strat*/
+.product_cause{
+    font-family: "Poppins", sans-serif;
+}
+
+.product_cause h3{
+    margin: 0px 50px 50px 50px;
+}
+
+.product_cause .row{
+    margin: 0px;
+}
+
+.product_cause .col-sm-2 {
+    display: flex;             /* Enable Flexbox */
+    flex-direction: column;    /* Stack child elements vertically */
+    justify-content: flex-start; /* Align child elements at the top */
+    padding-left: 30px;        /* Keep your existing left padding */
+    padding-bottom: 110px;     /* Keep your existing bottom padding, if necessary */
+}
+
+.product_cause .why_use {
+    background-color: #004aad;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    display: flex;
+    text-align: center;
+    align-items: center;       /* Center the image vertically inside the div */
+    justify-content: center;   /* Center the image horizontally inside the div */
+    margin-top: 0;             /* Ensure no margin, so it stays at the top */
+}
+
+
+.product_cause img{
+    height: 40px;
+    width: auto;
+}
+
+.product_cause h3{
+    font-weight: 600;
+}
+
+.product_cause .col-sm-6{
+    text-align: left;
+}
+
+.product_cause h4{
+    text-align: left;
+    font-weight: 600;
+    
+}
+
+.product_cause p{
+    text-align: justify
+}
+/*product_cause end*/
+
+/*image_area start*/
+.image_area {
+    text-align: center;
+}
+
+.image_area img{
+    height: 500px;
+    width: auto;
+    border-radius: 20px;
+}
+/*image_area end*/
+
+/*sub_faq start*/
+.sub_faq{
+    font-family: "Poppins", sans-serif;
+    margin: 50px 0px;
+}
+
+.sub_faq .container{
+
+}
+
+.sub_faq button{
+    font-size: 14px;
+}
+/*sub_faq end*/
+
+/*SUB PAGES END*/
 
 
 /*GALLERY PAGE START*/
@@ -1775,10 +1927,6 @@ i.red{
 }
 
 /*GALLERY PAGE END*/
-
-
-
-
 
 
 /*FOOTER START*/
@@ -2814,10 +2962,10 @@ footer .footer_end{
 /*cus_review end*/
 
     
-/*ABOUT US PAGE END*/
+    /*ABOUT US PAGE END*/
 
 
-/*PRODUCTS PAGE START*/
+    /*PRODUCTS PAGE START*/
 
     /*all_product_banner start*/
     .all_product_banner h1 {
@@ -2884,20 +3032,232 @@ footer .footer_end{
         border-radius: 5px;
     }
 
-/*let_us_chat end*/
+    /*let_us_chat end*/
        
 
-/*PRODUCTS PAGE END*/
+    /*PRODUCTS PAGE END*/
+
+    /*MAIN PRODUCTS PAGES START*/
+
+    /*main_product_banner start*/
+
+    .main_product_banner .product_name_background {
+        position: absolute; /* Allows positioning relative to the .main_product_banner */
+        top: 50%; /* Centers the background vertically */
+        left: 50%; /* Centers the background horizontally */
+        height: 200px;
+        width: 450px;
+    }
+
+    .main_product_banner .product_name_background h1 {
+        font-size: 24px; /* Adjust text size */
+        margin: 0; /* Remove default margin */
+    }
+
+    /*main_product_banner end*/
+
+    /*main_product_section_one strat*/
+
+    .main_product_section_one {
+        display: flex; /* Establish a flexbox layout */
+        justify-content: flex-end; /* Align content to the right */
+        align-items: center; /* Vertically center the content */
+        padding: 10px; /* Add some spacing inside the section */
+        background-color: #f2f3f4;
+        height: 100%; /* Adjust based on content or requirements */
+    }
+
+    .main_product_section_one .product_desc {
+        max-width: 600px; /* Limit the width of the description area */
+        text-align: left; /* Align text to the left */
+        margin: 0 auto;
+        padding: 10px 20px; /* Add padding inside the description box */
+        margin-top: 0px;
+    }
+
+    .main_product_section_one h2 {
+        font-size: 20px; /* Adjust heading size */
+        text-align: center;
+    }
+    
+    .main_product_section_one p {
+        font-size: 14px; /* Adjust paragraph size */
+        text-align: center;
+    }
+
+    /*main_product_section_one end*/
+    
+    /*con_details start*/
+
+    .con_details h3{
+        margin: 30px 0px;
+        font-size: 20px;
+    }
+
+    .con_details .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Align items horizontally */
+        align-items: stretch;    /* Ensure all items are the same height */
+        text-align: center;
+        flex-wrap: nowrap;       /* Prevent wrapping */
+        gap: 10px;               /* Adds space between items */
+        margin: 50px;
+        padding: 50px;
+        background-color: #E8F0FE;
+        border-radius: 10px;
+    }
+
+    .con_details .con {
+        background-color: white;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        padding: 50px;           /* Consistent inner padding */
+        border-radius: 20px;
+        flex: 1;                 /* Makes all items grow/shrink evenly */
+        max-width: 300px;        /* Sets a consistent maximum width */
+        min-width: 300px;        /* Prevents shrinking below a certain size */
+        display: flex;           /* Allows for vertical alignment inside */
+        flex-direction: column;  /* Stacks content vertically */
+        justify-content: center; /* Centers content vertically */
+        align-items: center;     /* Centers content horizontally */
+    }
+
+    /*con_details end*/
+
+    /*MAIN PRODUCTS PAGES END*/
+
+    /*SUB PAGES START*/
+
+    /*banner start*/
+
+    .sub_energy_banner h2{
+        font-size: 24px;
+    }
+
+    /*banner end*/
+
+    /*product_overview start*/
+    
+    .product_overview h3{
+        font-weight: 600;
+        font-size: 18px;
+    }
+    
+    .product_overview p{
+        font-size: 14px;
+    }
+
+    .product_overview{
+        margin: 10px 0px;
+        padding: 0;
+     }
+     
+     .product_overview .container{
+         padding: 0px 20px;
+     }
+    
+     .product_overview img {
+          margin: 0 auto;
+    }
+    
+    .product_overview .col-sm-10{
+        padding-left: 50px;
+        
+    }
+
+    .product_overview h3{
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .product_overview p{
+        text-align: left;
+        text-align: justify;
+        font-size: 12px;
+        font-weight: 600;
+    }
+    
+    /*product_overview end*/
+
+    /*product_cause strat*/
+
+    .product_cause h3{
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .product_cause .row{
+        padding: 0;
+        margin: 0px 20px;
+    }
+
+    .product_cause .col-sm-6{
+        padding: 0;
+        margin: 0;
+    }
+
+    .product_cause .col-sm-2{ 
+        padding: 0;
+        margin-left: 210px
+    }
+
+    #product_overview img {
+        
+    }
+
+    .product_cause .col-sm-10{
+        
+    }
+
+    .product_cause h4{
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .product_cause p{
+        font-size: 12px;
+    }
+    
+    /*product_cause end*/
+
+    /*image_area start*/
+    .image_area {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .image_area img{
+        height: 250px;
+        width: auto;
+        border-radius: 20px;
+    }
+    /*image_area end*/
+
+    /*sub_faq start*/
+    .sub_faq{
+        font-family: "Poppins", sans-serif;
+        margin: 20px 0px;
+    }
+
+    .sub_faq h1{
+        font-size: 20px;
+    }
+
+    /*sub_faq end*/
+
+    /*SUB PAGES END*/
 
 
-/*GALLERY PAGE START*/
+    /*GALLERY PAGE START*/
 
-.gallery h1{
-    font-size: 36px;
-    margin-top: 10px;
-}
+    .gallery h1{
+        font-size: 36px;
+        margin-top: 10px;
+    }
 
-/*GALLERY PAGE END*/   
+    /*GALLERY PAGE END*/   
 
 }
 
@@ -3854,11 +4214,214 @@ footer .footer_end{
         border-radius: 5px;
     }
 
-/*let_us_chat end*/
+    /*let_us_chat end*/
        
 
     /*PRODUCTS PAGE END*/
 
+    /*MAIN PRODUCTS PAGES START*/
+
+    /*main_product_banner start*/
+
+    .main_product_banner .product_name_background {
+        position: absolute; /* Allows positioning relative to the .main_product_banner */
+        top: 50%; /* Centers the background vertically */
+        left: 50%; /* Centers the background horizontally */
+        height: 200px;
+        width: 450px;
+    }
+
+    .main_product_banner .product_name_background h1 {
+        font-size: 24px; /* Adjust text size */
+        margin: 0; /* Remove default margin */
+    }
+
+    /*main_product_banner end*/
+
+    /*main_product_section_one strat*/
+
+    .main_product_section_one {
+        display: flex; /* Establish a flexbox layout */
+        justify-content: flex-end; /* Align content to the right */
+        align-items: center; /* Vertically center the content */
+        padding: 10px; /* Add some spacing inside the section */
+        background-color: #f2f3f4;
+        height: 100%; /* Adjust based on content or requirements */
+    }
+
+    .main_product_section_one .product_desc {
+        max-width: 600px; /* Limit the width of the description area */
+        text-align: left; /* Align text to the left */
+        margin: 0 auto;
+        padding: 10px 20px; /* Add padding inside the description box */
+        margin-top: 0px;
+    }
+
+    .main_product_section_one h2 {
+        font-size: 20px; /* Adjust heading size */
+        text-align: center;
+    }
+    
+    .main_product_section_one p {
+        font-size: 14px; /* Adjust paragraph size */
+        text-align: center;
+    }
+
+    /*main_product_section_one end*/
+    
+    /*con_details start*/
+
+    .con_details h3{
+        margin: 30px 0px;
+        font-size: 20px;
+    }
+
+    .con_details .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Align items horizontally */
+        align-items: stretch;    /* Ensure all items are the same height */
+        text-align: center;
+        flex-wrap: nowrap;       /* Prevent wrapping */
+        gap: 10px;               /* Adds space between items */
+        margin: 50px;
+        padding: 50px;
+        background-color: #E8F0FE;
+        border-radius: 10px;
+    }
+
+    .con_details .con {
+        background-color: white;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        padding: 50px;           /* Consistent inner padding */
+        border-radius: 20px;
+        flex: 1;                 /* Makes all items grow/shrink evenly */
+        max-width: 300px;        /* Sets a consistent maximum width */
+        min-width: 300px;        /* Prevents shrinking below a certain size */
+        display: flex;           /* Allows for vertical alignment inside */
+        flex-direction: column;  /* Stacks content vertically */
+        justify-content: center; /* Centers content vertically */
+        align-items: center;     /* Centers content horizontally */
+    }
+
+    /*con_details end*/
+
+    /*MAIN PRODUCTS PAGES END*/
+
+    /*SUB PAGES START*/
+
+    /*banner start*/
+
+    .sub_energy_banner h2{
+        font-size: 24px;
+    }
+
+    /*banner end*/
+
+    /*product_overview start*/
+    
+    .product_overview h3{
+        font-weight: 600;
+        font-size: 18px;
+    }
+    
+    .product_overview p{
+        font-size: 14px;
+    }
+
+    .product_overview{
+        margin: 10px 0px;
+        padding: 0;
+     }
+     
+     .product_overview .container{
+         padding: 0px 20px;
+     }
+    
+     .product_overview img {
+          margin-top:10px ;
+    }
+    
+    .product_overview .col-sm-10{
+        padding-left: 50px;
+    }
+
+    .product_overview h3{
+        font-size: 18px;
+    }
+    
+    .product_overview p{
+        text-align: left;
+        text-align: justify;
+        font-size: 12px;
+        font-weight: 600;
+    }
+    
+    /*product_overview end*/
+
+    /*product_cause strat*/
+
+    .product_cause h3{
+        font-size: 18px;
+        margin: 0px 50px 30px 50px;
+    }
+
+    .product_cause .row{
+        padding: 0;
+        margin: 0; 
+    }
+
+    .product_cause .col-sm-6{
+        padding: 0;
+        margin: 0;
+    }
+
+    .product_cause .col-sm-2{
+        padding-left: 0px;        /* Keep your existing left padding */    
+    }
+
+    .product_cause .col-sm-10{
+        
+    }
+
+    .product_cause h4{
+        font-size: 14px;
+        
+    }
+
+    .product_cause p{
+        font-size: 12px;
+    }
+    
+    /*product_cause end*/
+
+    /*image_area start*/
+    .image_area {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .image_area img{
+        height: 250px;
+        width: auto;
+        border-radius: 20px;
+    }
+    /*image_area end*/
+
+    /*sub_faq start*/
+    .sub_faq{
+        font-family: "Poppins", sans-serif;
+        margin: 20px 0px;
+    }
+
+    .sub_faq h1{
+        font-size: 20px;
+    }
+
+    /*sub_faq end*/
+
+    /*SUB PAGES END*/
 
 
     /*GALLERY PAGE START*/
@@ -4861,6 +5424,183 @@ footer .footer_end{
     /*PRODUCTS PAGE END*/
 
 
+    /*MAIN PRODUCTS PAGES START*/
+
+    /*main_product_banner start*/
+
+    .main_product_banner .product_name_background {
+        position: absolute; /* Allows positioning relative to the .main_product_banner */
+        top: 50%; /* Centers the background vertically */
+        left: 50%; /* Centers the background horizontally */
+        height: 300px;
+        width: 450px;
+    }
+
+    .main_product_banner .product_name_background h1 {
+        font-size: 36px; /* Adjust text size */
+        margin: 0; /* Remove default margin */
+    }
+
+    /*main_product_banner end*/
+
+    /*main_product_section_one strat*/
+
+    .main_product_section_one {
+        display: flex; /* Establish a flexbox layout */
+        justify-content: flex-end; /* Align content to the right */
+        align-items: center; /* Vertically center the content */
+        padding: 10px; /* Add some spacing inside the section */
+        background-color: #f2f3f4;
+        height: 100%; /* Adjust based on content or requirements */
+    }
+
+    .main_product_section_one .product_desc {
+        max-width: 600px; /* Limit the width of the description area */
+        text-align: left; /* Align text to the left */
+        margin: 0 auto;
+        padding: 20px; /* Add padding inside the description box */
+        margin-top: 20px;
+    }
+
+    .main_product_section_one h2 {
+        font-size: 24px; /* Adjust heading size */
+        text-align: center;
+    }
+    
+    .main_product_section_one p {
+        font-size: 14px; /* Adjust paragraph size */
+        text-align: center;
+    }
+
+    /*main_product_section_one end*/
+    
+    /*con_details start*/
+
+    .con_details h3{
+        margin: 30px 0px;
+    }
+
+    .con_details .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Align items horizontally */
+        align-items: stretch;    /* Ensure all items are the same height */
+        text-align: center;
+        flex-wrap: nowrap;       /* Prevent wrapping */
+        gap: 10px;               /* Adds space between items */
+        margin: 50px;
+        padding: 50px;
+        background-color: #E8F0FE;
+        border-radius: 10px;
+    }
+
+    .con_details .con {
+        background-color: white;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        padding: 50px;           /* Consistent inner padding */
+        border-radius: 20px;
+        flex: 1;                 /* Makes all items grow/shrink evenly */
+        max-width: 300px;        /* Sets a consistent maximum width */
+        min-width: 300px;        /* Prevents shrinking below a certain size */
+        display: flex;           /* Allows for vertical alignment inside */
+        flex-direction: column;  /* Stacks content vertically */
+        justify-content: center; /* Centers content vertically */
+        align-items: center;     /* Centers content horizontally */
+    }
+
+    /*con_details end*/
+
+    /*MAIN PRODUCTS PAGES END*/
+
+    /*SUB PAGES START*/
+
+    /*banner start*/
+
+    .sub_energy_banner h2{
+        font-size: 24px;
+    }
+
+    /*banner end*/
+
+    /*product_overview start*/
+    
+    .product_overview h3{
+        font-weight: 600;
+        font-size: 20px;
+    }
+    
+    .product_overview p{
+        font-size: 14px;
+    }
+
+    .product_overview{
+        margin: 10px 0px;
+        padding: 0;
+     }
+     
+     .product_overview .container{
+         padding: 0px 30px;
+     }
+    
+     .product_overview img {
+          margin-top:40px ;
+    }
+    
+    .product_overview .col-sm-10{
+        padding: 0px 20px;
+    }
+    
+    /*product_overview end*/
+
+    /*product_cause strat*/
+
+    .product_cause h3{
+        font-size: 20px;
+    }
+
+    .product_cause .col-sm-2{
+        padding-left: 10px;        /* Keep your existing left padding */
+    }
+
+    .product_cause h4{
+        font-size: 16px;
+        
+    }
+
+    .product_cause p{
+        font-size: 12px;
+    }
+    
+    /*product_cause end*/
+
+    /*image_area start*/
+    .image_area {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .image_area img{
+        height: 300px;
+        width: auto;
+        border-radius: 20px;
+    }
+    /*image_area end*/
+
+    /*sub_faq start*/
+    .sub_faq{
+        font-family: "Poppins", sans-serif;
+        margin: 50px 0px;
+    }
+
+    .sub_faq h1{
+        font-size: 20px;
+    }
+
+    /*sub_faq end*/
+
+    /*SUB PAGES END*/
+
 
     /*GALLERY PAGE START*/
 
@@ -5216,7 +5956,157 @@ footer .footer_end{
 
     /*MAIN PRODUCTS PAGES START*/
 
+    /*main_product_banner start*/
+
+    .main_product_banner .product_name_background {
+        position: absolute; /* Allows positioning relative to the .main_product_banner */
+        top: 80%; /* Centers the background vertically */
+        left: 30%; /* Centers the background horizontally */
+        height: 300px;
+        width: 450px;
+    }
+
+    .main_product_banner .product_name_background h1 {
+        font-size: 36px; /* Adjust text size */
+        margin: 0; /* Remove default margin */
+    }
+
+    /*main_product_banner end*/
+
+    /*main_product_section_one strat*/
+
+    .main_product_section_one {
+        display: flex; /* Establish a flexbox layout */
+        justify-content: flex-end; /* Align content to the right */
+        align-items: center; /* Vertically center the content */
+        padding: 10px; /* Add some spacing inside the section */
+        background-color: #f2f3f4;
+        height: 100%; /* Adjust based on content or requirements */
+    }
+
+    .main_product_section_one .product_desc {
+        max-width: 600px; /* Limit the width of the description area */
+        text-align: left; /* Align text to the left */
+        margin-right: 40px; /* Add some spacing from the right edge */
+        padding: 20px; /* Add padding inside the description box */
+        margin-top: 20px;
+    }
+
+    .main_product_section_one h2 {
+        font-size: 24px; /* Adjust heading size */
+    }
+    
+    .main_product_section_one p {
+        font-size: 14px; /* Adjust paragraph size */
+    }
+
+    /*main_product_section_one end*/
+    
+    /*con_details start*/
+
+    .con_details h3{
+        margin: 30px 0px;
+    }
+
+    .con_details .row {
+        display: flex;
+        justify-content: center; /* Align items horizontally */
+        align-items: stretch;    /* Ensure all items are the same height */
+        text-align: center;
+        flex-wrap: nowrap;       /* Prevent wrapping */
+        gap: 10px;               /* Adds space between items */
+        margin: 50px;
+        padding: 50px;
+        background-color: #E8F0FE;
+        border-radius: 10px;
+    }
+
+    .con_details .con {
+        background-color: white;
+        margin: 10px;
+        padding: 50px;           /* Consistent inner padding */
+        border-radius: 20px;
+        flex: 1;                 /* Makes all items grow/shrink evenly */
+        max-width: 250px;        /* Sets a consistent maximum width */
+        min-width: 250px;        /* Prevents shrinking below a certain size */
+        display: flex;           /* Allows for vertical alignment inside */
+        flex-direction: column;  /* Stacks content vertically */
+        justify-content: center; /* Centers content vertically */
+        align-items: center;     /* Centers content horizontally */
+    }
+
+    /*con_details end*/
+
     /*MAIN PRODUCTS PAGES END*/
+
+    /*SUB PAGES START*/
+
+    /*banner start*/
+
+    .sub_energy_banner h2{
+        font-size: 24px;
+    }
+
+    /*banner end*/
+
+    /*product_overview start*/
+    
+    .product_overview h3{
+        font-weight: 600;
+        font-size: 20px;
+    }
+    
+    .product_overview p{
+        font-size: 14px;
+    }
+    
+    /*product_overview end*/
+
+    /*product_cause strat*/
+    
+
+    .product_cause h3{
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .product_cause h4{
+        text-align: left;
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    .product_cause p{
+        text-align: justify;
+    }
+    /*product_cause end*/
+
+    /*image_area start*/
+    .image_area {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .image_area img{
+        height: 400px;
+        width: auto;
+        border-radius: 20px;
+    }
+    /*image_area end*/
+
+    /*sub_faq start*/
+    .sub_faq{
+        font-family: "Poppins", sans-serif;
+        margin: 50px 0px;
+    }
+
+    .sub_faq h1{
+        font-size: 24px;
+    }
+
+    /*sub_faq end*/
+
+    /*SUB PAGES END*/
 
     
     /*GALLERY PAGE START*/
@@ -5388,8 +6278,58 @@ footer .footer_end{
 
 
     /*MAIN PRODUCTS PAGES START*/
+
+    /*main_product_banner start*/
+
+    .main_product_banner .product_name_background {
+        position: absolute; /* Allows positioning relative to the .main_product_banner */
+        top: 85%; /* Centers the background vertically */
+        left: 25%; /* Centers the background horizontally */
+        height: 300px;
+        width: 450px;
+    }
+
+    .main_product_banner .product_name_background h1 {
+        font-size: 36px; /* Adjust text size */
+        margin: 0; /* Remove default margin */
+    }
+
+    /*main_product_banner end*/
+
+    /*main_product_section_one strat*/
+
+    .main_product_section_one {
+        display: flex; /* Establish a flexbox layout */
+        justify-content: flex-end; /* Align content to the right */
+        align-items: center; /* Vertically center the content */
+        padding: 10px; /* Add some spacing inside the section */
+        background-color: #f2f3f4;
+        height: 100%; /* Adjust based on content or requirements */
+    }
+
+    .main_product_section_one .product_desc {
+        max-width: 600px; /* Limit the width of the description area */
+        text-align: left; /* Align text to the left */
+        margin-right: 80px; /* Add some spacing from the right edge */
+        padding: 20px; /* Add padding inside the description box */
+        margin-top: 20px;
+    }
+
+    .main_product_section_one h2 {
+        font-size: 24px; /* Adjust heading size */
+    }
+    
+    .main_product_section_one p {
+        font-size: 14px; /* Adjust paragraph size */
+    }
+
+    /*main_product_section_one end*/
     
     /*MAIN PRODUCTS PAGES END*/
+
+    /*SUB PAGES START*/
+
+    /*SUB PAGES END*/
 }
 
 @media (min-width: 1441px) {
@@ -5585,6 +6525,12 @@ footer .footer_end{
     /*MAIN PRODUCTS PAGES START*/
 
     /*MAIN PRODUCTS PAGES END*/
+
+
+    /*SUB PAGES START*/
+
+    /*SUB PAGES END*/
+
 
     /*GALLERY PAGE START*/
 
