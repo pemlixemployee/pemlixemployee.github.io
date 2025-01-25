@@ -358,6 +358,7 @@ body{
 #jumpto_first .left p{
     text-align: justify;
     margin-top: 30px;
+    font-size: 24px;
 }
 
 /*button all states*/
@@ -1931,9 +1932,28 @@ i.red{
 
 /*PRIVACY POLICY START*/
 
+.privacy_policy{
+    font-family: "Poppins", sans-serif;   
+}
 
+.privacy_policy h1{
+    font-weight: 600;
+}
+
+.privacy_policy h3{
+    font-weight: 600;
+}
+
+.privacy_policy p,
+.privacy_policy li{
+    font-size: 14px;
+}
 
 /*PRIVACY POLICY END*/
+
+/*BLOG START*/
+
+/*BLOG END*/
 
 
 /*FOOTER START*/
